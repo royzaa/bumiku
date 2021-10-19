@@ -13,18 +13,19 @@ List<Developer> devData = [
       sosmedurl: 'https://github.com/royzaa'),
   Developer(
       imageUrl:
-          'https://drive.google.com/uc?id=1u4utbPl2GJvOF6uzhPtdZvEko-REF3HC',
-      name: 'Bayu Setiawan',
+          'https://drive.google.com/uc?id=1ORgjOfp8SwFpEHB8ctKTpTJeDp82Tgak',
+      name: 'Farhan Nasrullah',
       roles: [
-        '3D artist',
+        'Perancang materi',
+        'Perancang kuis',
       ],
-      sosmed: 'sosmed Bayu',
-      sosmedurl: 'https://instagram.com'),
+      sosmed: '@farhan_nashrullah',
+      sosmedurl: 'https://www.instagram.com/farhan_nashrullah/'),
   Developer(
       imageUrl: '',
-      name: 'Manikawati',
-      roles: ['Pembimbing'],
-      sosmed: 'BPMPK',
+      name: 'unknown',
+      roles: ['unknown'],
+      sosmed: 'unkown',
       sosmedurl: 'https://m-edukasi.kemdikbud.go.id/medukasi'),
   Developer(
       imageUrl: '',

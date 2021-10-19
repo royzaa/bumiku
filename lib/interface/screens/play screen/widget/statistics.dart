@@ -166,7 +166,7 @@ class _StatisticsState extends State<Statistics> {
                                   '${animation.value} %',
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 22.sp,
+                                    fontSize: 21.sp,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 );
@@ -176,7 +176,7 @@ class _StatisticsState extends State<Statistics> {
                               'Accuracy',
                               style: TextStyle(
                                 color: Colors.grey.shade400,
-                                fontSize: 12.sp,
+                                fontSize: 10.sp,
                               ),
                             )
                           ],

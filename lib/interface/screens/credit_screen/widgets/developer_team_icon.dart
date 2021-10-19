@@ -55,7 +55,7 @@ class DeveloperTeamIcon extends StatelessWidget {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   image: NetworkImage(imageUrl),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.scaleDown,
                 ),
               ),
             ),
@@ -86,7 +86,7 @@ class DeveloperTeamIcon extends StatelessWidget {
                           shape: BoxShape.circle,
                           image: DecorationImage(
                             image: NetworkImage(imageUrl),
-                            fit: BoxFit.cover,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                       ),

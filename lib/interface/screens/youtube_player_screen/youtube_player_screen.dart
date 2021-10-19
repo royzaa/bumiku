@@ -12,8 +12,10 @@ class YoutubePlayerScreen extends StatefulWidget {
   const YoutubePlayerScreen({
     Key? key,
     required this.videoId,
+    this.startAt,
   }) : super(key: key);
   final String videoId;
+  final int? startAt;
 
   @override
   State<YoutubePlayerScreen> createState() => _YoutubePlayerScreenState();
@@ -34,6 +36,9 @@ class _YoutubePlayerScreenState extends State<YoutubePlayerScreen>
   void initState() {
     controller = YoutubePlayerController(
       initialVideoId: widget.videoId,
+      flags: YoutubePlayerFlags(
+        startAt: widget.startAt ?? 0,
+      ),
     );
     player = YoutubePlayer(
       controller: controller!,

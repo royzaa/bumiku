@@ -93,6 +93,7 @@ class _LessonScreenState extends State<LessonScreen> {
                               style: TextStyle(
                                 fontSize: 14.sp,
                               ),
+                              textAlign: TextAlign.justify,
                             ),
                           ),
                         ),
@@ -114,6 +115,7 @@ class _LessonScreenState extends State<LessonScreen> {
                               style: TextStyle(
                                 fontSize: 14.sp,
                               ),
+                              textAlign: TextAlign.justify,
                             ),
                           ),
                         ),
@@ -155,6 +157,7 @@ class _LessonScreenState extends State<LessonScreen> {
                                   style: TextStyle(
                                     fontSize: 14.sp,
                                   ),
+                                  textAlign: TextAlign.justify,
                                 ),
                               ],
                             ),

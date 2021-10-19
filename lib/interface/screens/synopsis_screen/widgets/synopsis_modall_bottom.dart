@@ -40,7 +40,7 @@ class SynopsisModalBottom extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'My Wonderful City Vehicles',
+                      'Lapisan Bumi',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 22.sp,
@@ -51,9 +51,7 @@ class SynopsisModalBottom extends StatelessWidget {
                       height: 10.h,
                     ),
                     Text(
-                      '''        I have a car, a city car. The car is very helpful for my family. It transports the family members to the workplaces and schools or to somewhere we want to go.
-        My car is white just like snow. That is why I call it Snow White.  What makes the specific of the snow white is the interior of it. The seats are covered with cream and black leather. There is the “VS” logo in the head of the seats. Not only about the seat cover, I also put two accessories behind the front seats. I hang two cream accessories to put bottles and tissue in. They make us tide. Besides, I put three little dash bins in my Snow White, in front, in the middle, and I the back. The bins make my car clean. I always throw the trash after getting out of the car.
-''',
+                      '''        Bumi merupakan planet ketiga dalam sistem tata surya, tempat yang paling ideal bagi makhluk hidup untuk tinggal. Di dalamnya terdapat semua yang diperlukan untuk membantu kehidupan, termasuk berbagai macam mineral. Bumi tersusun oleh 3 lapisan, dari dalam keluar yaitu lapisan inti bumi, lapisan selimut bumi, dan lapisan kulit bumi.''',
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 17.sp,

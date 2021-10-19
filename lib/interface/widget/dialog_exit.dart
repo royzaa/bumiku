@@ -14,7 +14,7 @@ class DialogExit extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     final audioPlayer = Get.find<AudioPlayerController>();
     // final unityController = Get.find<UnityController>();
-    double seriesWidth = 160.w;
+
     return Dialog(
       insetAnimationCurve: Curves.easeIn,
       insetAnimationDuration: const Duration(milliseconds: 250),

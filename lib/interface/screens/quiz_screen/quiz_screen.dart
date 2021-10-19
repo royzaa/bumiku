@@ -143,9 +143,7 @@ class _QuestionScreenState extends State<QuizScreen> {
                         question: quizNum == 1
                             ? displayedQuizOne[index].quizQuestion
                             : displayedQuizTwo[index].quizQuestion,
-                        option: quizNum == 2
-                            ? displayedQuizTwo[index].choices
-                            : null,
+                        option: displayedQuizTwo[index].choices,
                         descriptiveText: quizNum == 2
                             ? displayedQuizTwo[index].descriptiveText
                             : null,

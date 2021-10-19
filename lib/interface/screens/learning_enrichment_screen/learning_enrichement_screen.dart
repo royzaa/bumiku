@@ -28,20 +28,20 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
       'title': 'Lapisan Bumi',
       'icon': null,
       'lightIcon': null,
-      'asset': 'assets/images/earth_layer2',
-      'lightAsset': 'assets/images/earth_layer1',
+      'asset': 'assets/images/earth_layer1.png',
+      'lightAsset': 'assets/images/earth_layer2.png',
     },
     {
       'title': 'Atmosfer & Litosfer',
-      'asset': 'assets/images/day.png',
-      'lightAsset': 'assets/images/night.png',
+      'asset': 'assets/images/night.png',
+      'lightAsset': 'assets/images/day.png',
       'icon': null,
       'lightIcon': null,
     },
     {
       'title': 'Gunung Api, Gempa Bumi, & Tsunami',
-      'asset': 'assets/images/mountain2.png',
-      'lightAsset': 'assets/images/mountain1.png',
+      'asset': 'assets/images/mountain1.png',
+      'lightAsset': 'assets/images/mountain2.png',
       'icon': null,
       'lightIcon': null,
     },
@@ -132,74 +132,96 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
     final List<List<Map<String, dynamic>>> _actions = [
       [
         {
-          'title': 'Transportation Vocabulary',
+          'title': 'Lapisan Bumi',
           'imageUrl':
-              'https://drive.google.com/uc?id=1D4rfclrFBHhHAlyl9IdpP19bvG4FJRiF',
+              'https://unsplash.com/photos/71QXQUSC_Do/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8ZWFydGh8fDB8fHx8MTYzNDY1MDM5OQ&force=true&w=1920',
           'function': () {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) =>
-                        const YoutubePlayerScreen(videoId: 'kSa-F4eXkwc')));
+                    builder: (context) => const YoutubePlayerScreen(
+                          videoId: 'kSqG-tNa7rY',
+                        )));
           },
         },
-        {
-          'title': 'Describing a Place',
-          'imageUrl':
-              'https://drive.google.com/uc?id=1cMlAGEmnGMpwSuzif6Vcj2SZDsQcO8rW',
-          'function': () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        const YoutubePlayerScreen(videoId: 'WKUZVA4agoQ')));
-          },
-        }
       ],
       [
         {
-          'title': 'First Low of Newton',
+          'title': 'Struktur atmosfer bumi',
           'imageUrl':
-              'https://drive.google.com/uc?id=1lMGFdH0i9ZZ05oF2eyTqmM64mwCRfKjA',
+              'https://unsplash.com/photos/HNkgPFBShSw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8ZWFydGh8fDB8fHx8MTYzNDY1MDM5OQ&force=true&w=1920',
           'function': () {
             Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) =>
-                        const YoutubePlayerScreen(videoId: '5oi5j11FkQg')));
+                        const YoutubePlayerScreen(videoId: '2zqgimfW61o')));
           },
         },
         {
-          'title': 'Second Low of Newton',
+          'title': 'Litosfer bumi',
           'imageUrl':
-              'https://drive.google.com/uc?id=1ugYSOBwc4ZlqG8mnBbY8ne-BkiBurSIg',
+              'https://unsplash.com/photos/EXdO9Z9Aof0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8ZWFydGglMjBsYXllcnx8MHx8fHwxNjM0NjQ1MTcw&force=true&w=1920',
           'function': () {
             Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) =>
-                        const YoutubePlayerScreen(videoId: '8YhYqN9BwB4')));
+                        const YoutubePlayerScreen(videoId: 'NuFg-qLH5fA')));
           },
         },
-        {
-          'title': 'Third law of Newton',
-          'imageUrl':
-              'https://drive.google.com/uc?id=1yJXQQL8pYQMIz-IqPjt6cM-v46rZW1gI',
-          'function': () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        const YoutubePlayerScreen(videoId: 'TVAxASr0iUY')));
-          },
-        }
       ],
       [
         {
-          'title': 'Areas and Volume',
+          'title': 'Bentuk dan tipe gunung api',
           'imageUrl':
-              'https://drive.google.com/uc?id=172cVDai-YgBq5GZyveVlYYrEFFkuEEuR',
-          'function': null,
+              'https://unsplash.com/photos/xfngap_DToE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8bW91bnRhaW58fDB8fHx8MTYzNDY1MDkxOQ&force=true&w=1920',
+          'function': () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        const YoutubePlayerScreen(videoId: '7P3K3BIYDKss')));
+          },
+        },
+        {
+          'title': 'Terjadinya gunung api',
+          'imageUrl':
+              'https://unsplash.com/photos/VbP9v1rh-sc/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0NjUyODc0&force=true&w=1920',
+          'function': () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const YoutubePlayerScreen(
+                          videoId: 'jJMm1l3acDg',
+                        )));
+          },
+        },
+        {
+          'title': 'Pergerakan lempeng',
+          'imageUrl':
+              'https://unsplash.com/photos/yNFVWsQicdg/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0NjUzMDg4&force=true&w=1920',
+          'function': () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const YoutubePlayerScreen(
+                          videoId: 'lrV0eZXV52E',
+                          startAt: 197,
+                        )));
+          },
+        },
+        {
+          'title': 'Lipatan dan Patahan',
+          'imageUrl':
+              'https://unsplash.com/photos/B9Csff69Rfg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8dGVjdG9uaWN8fDB8fHx8MTYzNDY1Mjk0Ng&force=true&w=1920',
+          'function': () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        const YoutubePlayerScreen(videoId: '5Z8EglUBVpE')));
+          },
         },
       ],
     ];

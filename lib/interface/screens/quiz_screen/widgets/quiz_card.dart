@@ -1,4 +1,5 @@
 import 'package:bumiku/interface/widget/cached_image.dart';
+import 'package:bumiku/interface/widget/cached_svg.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
@@ -18,7 +19,7 @@ class QuizCard extends StatefulWidget {
     required this.question,
     required this.controller,
     required this.index,
-    this.option,
+    required this.option,
     this.descriptiveText,
   }) : super(key: key);
 
@@ -139,8 +140,8 @@ class _QuizCardState extends State<QuizCard>
                 //     ),
                 //   ),
 
-                CachedImage(
-                  imageUrl:
+                CachedSvg(
+                  svgUrl:
                       'https://drive.google.com/uc?id=1Rl75BHbvnNsu56fzLyDhBXdq5fzH--h7',
                   height: widget.mediaQuery.height.h * 0.18,
                   width: widget.mediaQuery.width.w * 0.6,
@@ -179,106 +180,102 @@ class _QuizCardState extends State<QuizCard>
                   ),
                 ),
 
-                if (widget.option != null)
-                  Wrap(
-                    alignment: WrapAlignment.center,
-                    spacing: 15.h,
-                    children: shuffledChoices.map(
-                      (choiceChip) {
-                        return ChoiceChip(
-                          onSelected: (isSelected) {
-                            return setState(() {
-                              shuffledChoices =
-                                  shuffledChoices.map((otherChip) {
-                                final newChip =
-                                    otherChip.copy(isSelected: false);
-                                return choiceChip == newChip
-                                    ? newChip.copy(isSelected: isSelected)
-                                    : newChip;
-                              }).toList();
-                            });
-                          },
-                          shadowColor:
-                              Theme.of(context).primaryColor.withOpacity(0.8),
-                          pressElevation: 3,
-                          label: Text(
-                            choiceChip.choice,
-                            maxLines: 3,
-                          ),
-                          labelStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            color: Colors.white,
-                            fontSize: 13.sp,
-                          ),
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 12.w,
-                            vertical: 7.h,
-                          ),
-                          backgroundColor: choiceChip.color,
-                          selectedColor: Theme.of(context).primaryColor,
-                          selected: choiceChip.isSelected,
-                        );
-                      },
-                    ).toList(),
-                  ),
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  spacing: 15.h,
+                  children: shuffledChoices.map(
+                    (choiceChip) {
+                      return ChoiceChip(
+                        onSelected: (isSelected) {
+                          return setState(() {
+                            shuffledChoices = shuffledChoices.map((otherChip) {
+                              final newChip = otherChip.copy(isSelected: false);
+                              return choiceChip == newChip
+                                  ? newChip.copy(isSelected: isSelected)
+                                  : newChip;
+                            }).toList();
+                          });
+                        },
+                        shadowColor:
+                            Theme.of(context).primaryColor.withOpacity(0.8),
+                        pressElevation: 3,
+                        label: Text(
+                          choiceChip.choice,
+                          maxLines: 3,
+                        ),
+                        labelStyle: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white,
+                          fontSize: 13.sp,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 12.w,
+                          vertical: 7.h,
+                        ),
+                        backgroundColor: choiceChip.color,
+                        selectedColor: Theme.of(context).primaryColor,
+                        selected: choiceChip.isSelected,
+                      );
+                    },
+                  ).toList(),
+                ),
 
                 // submit button
-                if (widget.option != null)
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      boxShadow: [
-                        BoxShadow(
-                          color:
-                              Theme.of(context).primaryColor.withOpacity(0.4),
-                          offset: const Offset(0, 10),
-                          blurRadius: 20,
-                          spreadRadius: 2,
-                        ),
-                      ],
-                    ),
-                    child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.white,
-                          elevation: 0,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30)),
-                          padding: EdgeInsets.symmetric(
-                              vertical: 10.h, horizontal: 35.w),
-                        ),
-                        child: Text(
-                          'Submit',
-                          style: widget.textStyle,
-                        ),
-                        onPressed: () {
-                          try {
-                            final selectedChoice = shuffledChoices.firstWhere(
-                              (choice) => choice.isSelected == true,
-                            );
-                            if (selectedChoice.isRightChoice) {
-                              quizController.correctAnswer.value++;
-                              // second quiz
-                              final tempBlockScores = DataSharedPreferences
-                                  .getSecondQuizCompletion();
+
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(40),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Theme.of(context).primaryColor.withOpacity(0.4),
+                        offset: const Offset(0, 10),
+                        blurRadius: 20,
+                        spreadRadius: 2,
+                      ),
+                    ],
+                  ),
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.white,
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30)),
+                        padding: EdgeInsets.symmetric(
+                            vertical: 10.h, horizontal: 35.w),
+                      ),
+                      child: Text(
+                        'Submit',
+                        style: widget.textStyle,
+                      ),
+                      onPressed: () {
+                        try {
+                          final selectedChoice = shuffledChoices.firstWhere(
+                            (choice) => choice.isSelected == true,
+                          );
+                          if (selectedChoice.isRightChoice) {
+                            quizController.correctAnswer.value++;
+                            // second quiz
+                            final tempBlockScores =
+                                DataSharedPreferences.getSecondQuizCompletion();
+                            debugPrint(
+                                'block score 2' + tempBlockScores.toString());
+                            if (tempBlockScores[widget.index] == 0) {
+                              tempBlockScores[widget.index] = 20;
+                              DataSharedPreferences.setSecondQuizCompletion(
+                                  tempBlockScores);
                               debugPrint(
                                   'block score 2' + tempBlockScores.toString());
-                              if (tempBlockScores[widget.index] == 0) {
-                                tempBlockScores[widget.index] = 20;
-                                DataSharedPreferences.setSecondQuizCompletion(
-                                    tempBlockScores);
-                                debugPrint('block score 2' +
-                                    tempBlockScores.toString());
-                              }
-                            } else {
-                              quizController.wrongAnswer.value++;
                             }
-                            quizController.nextQuestion();
-                          } catch (e) {
-                            debugPrint(e.toString());
-                            Fluttertoast.showToast(msg: 'Select one answer');
+                          } else {
+                            quizController.wrongAnswer.value++;
                           }
-                        }),
-                  ),
+                          quizController.nextQuestion();
+                        } catch (e) {
+                          debugPrint(e.toString());
+                          Fluttertoast.showToast(msg: 'Select one answer');
+                        }
+                      }),
+                ),
                 SizedBox(
                   height: 15.h,
                 ),
