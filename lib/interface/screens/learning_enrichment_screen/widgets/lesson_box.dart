@@ -19,7 +19,7 @@ class LessonBox extends StatelessWidget {
       child: Container(
         height: 115.h,
         width: 100.w,
-        padding: EdgeInsets.all(20.r),
+        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
         margin: EdgeInsets.only(right: 20.r),
         decoration: BoxDecoration(
           color: Theme.of(context).primaryColor,
@@ -35,17 +35,17 @@ class LessonBox extends StatelessWidget {
         child: Column(
           children: [
             Expanded(
-              flex: 1,
+              flex: 2,
               child: Icon(
                 icon,
                 color: Colors.white,
               ),
             ),
             SizedBox(
-              height: 15.h,
+              height: 10.h,
             ),
             Expanded(
-              flex: 1,
+              flex: 3,
               child: Text(
                 title,
                 style: TextStyle(

@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 import '../model/youtube_video.dart';
 
 const youtubeVideosData = <YoutubeVideo>[

@@ -10,15 +10,15 @@ final List<OnBoarding> onBoadringData = [
   OnBoarding(
       title: 'Welcome $userName',
       desc:
-          """Hi $userName, I am mary. Today we will go around in our city. We will spot any of wonderful city vehicle. I am very looking forward to start a journey with you.
+          """Hi $userName. Today we will explore our planet. What do you think when we dig the earth, will we meet a peak point?
 """,
       imageUrl:
-          'https://drive.google.com/uc?id=1DyeB3wusaZZc3Iii5iEwWAkkqFnyrmoZ'),
+          'https://drive.google.com/uc?id=1MdfHxnyP9rzA4XkhcB6Tog6zHfCWH5rD'),
   const OnBoarding(
-      title: 'Wonderful City Vehicle',
+      title: 'Layers of Earth',
       desc:
-          """Many vehicles pass through the city. We will recognize them one by one. Together with Mary, we will learn to describe them. Don't worry, this will be a lot of fun.
+          """Do you know? Earth is not only made up of soil. It has many constituent layers. Earth also has a layer of sky. Each of these layers has a function. We'll find out. This will be a lot of fun.
 """,
       imageUrl:
-          'https://drive.google.com/uc?id=1k3t47zL5Gnq1VGl9rZHppVhree0AIRiE'),
+          'https://drive.google.com/uc?id=1WerkvHBrRcfCTz8JtMzbCUawRWRocwx6'),
 ];

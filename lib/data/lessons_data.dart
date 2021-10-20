@@ -73,15 +73,19 @@ Ketika Anda menyeduh kopi kemudian membiarkannya sesaat, akan menemukan bahwa pa
   1.	Troposfer
 
       Lapisan yang berada pada ketinggian 0 – 10 Km. lapisan atmosfer paling bawah, tempat aktivitas manusia dan hewan (termasuk burung), tempat berlangsungnya hujan, angin, salju dan awan.
+  
   2.	Stratosfer
 
       Lapisan yang berada pada ketinggian 10 – 50 Km. terdapat dari lapisan ozon (O3) untuk melindungi kita dari radiasi sinar ultraviolet, sekaligus tempat melintasnya pesawat udara saat berada di atas awan.
+  
   3.	Mesosfer
 
       Lapisan yang berada pada ketinggian 50 – 85 Km. tempat terbakarnya meteor yang menuju bumi, kebanyakan meteor yang menuju bumi akan habis terbakar di mesosfer.
+  
   4.	Termosfer
 
       Lapisan yang berada pada ketinggian 85 – 500 Km. tempat mengorbit teleskop Hubble milik NASA, memiliki suhu yang tinggi namun karena molekul udara sangat sedikit jadi objek yang berada di sana tidak terasa panas.
+  
   5.	Eksosfer
 
       Lapisan yang berada pada ketinggian diatas 500 Km. tempat mengorbit satelit buatan, memiliki molekul yang sangat sedikit.
@@ -93,7 +97,7 @@ Pada mesosfer dan termosfer terdapat lapisan yang memiliki partikel ion (bermuat
   ],
   gunungApi: [
     GunungApi(
-      content: 'Perhatikan struktur gunung api di bawah ini',
+      content: 'Perhatikan struktur gunung api di atas',
       name: 'Struktur gunung api',
       imageAsset: 'assets/images/gunung.jpg',
     ),

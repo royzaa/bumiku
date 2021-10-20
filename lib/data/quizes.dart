@@ -7,6 +7,7 @@ import '../services/shared_preferences.dart';
 MainQuiz firstQuiz = MainQuiz(
   imageUrl: 'https://drive.google.com/uc?id=1Rl75BHbvnNsu56fzLyDhBXdq5fzH--h7',
   isOpen: true,
+  quizNum: 1,
   quizItemData: [
     MainQuizItem(
       quizQuestion: 'What does the text tell about?',
@@ -216,7 +217,8 @@ MainQuiz firstQuiz = MainQuiz(
 
 MainQuiz secondQuiz = MainQuiz(
   imageUrl: 'https://drive.google.com/uc?id=1Rl75BHbvnNsu56fzLyDhBXdq5fzH--h7',
-  isOpen: false,
+  isOpen: DataSharedPreferences.getQuizTwoUnlocked() ?? false,
+  quizNum: 2,
   quizItemData: [
     MainQuizItem(
       quizQuestion: 'What does the text tell about?',

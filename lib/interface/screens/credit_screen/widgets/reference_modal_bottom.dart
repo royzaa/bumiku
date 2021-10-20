@@ -8,13 +8,15 @@ class ReferencModalBottom extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<String> references = [
       'Permendikbud nomor 37 tahun 2018',
-      'https://www.youtube.com/watch?v=kSa-F4eXkwc',
-      'https://www.youtube.com/watch?v=WKUZVA4agoQ',
-      'https://www.youtube.com/watch?v=5oi5j11FkQg',
-      'https://www.youtube.com/watch?v=TVAxASr0iUY',
-      'https://www.youtube.com/watch?v=8YhYqN9BwB4',
-      'http://math2.org/math/geometry/areasvols.html',
-      'http://englishclass.com'
+      'Herilna, L. dan Iskandar, R. B.(2020). Modul 10 Lapisan Bumi dan Bencana Alaam. Direktorat SMP Kemdikbud: Jakarta'
+          'https://www.youtube.com/watch?v=kSqG-tNa7rY',
+      'https://www.youtube.com/watch?v=2zqgimfW61o',
+      'https://www.youtube.com/watch?v=NuFg-qLH5fA',
+      'https://www.youtube.com/watch?v=QUJk6RzOIO8',
+      'https://www.youtube.com/watch?v=7P3K3BIYDKs',
+      'https://www.youtube.com/watch?v=jJMm1l3acDg',
+      'https://www.youtube.com/watch?v=lrV0eZXV52E',
+      'https://www.youtube.com/watch?v=5Z8EglUBVpE',
     ];
     Size size = MediaQuery.of(context).size;
     return GestureDetector(
@@ -25,7 +27,7 @@ class ReferencModalBottom extends StatelessWidget {
       child: GestureDetector(
         onTap: () {},
         child: DraggableScrollableSheet(
-          initialChildSize: 0.5,
+          initialChildSize: 0.55,
           maxChildSize: 1,
           minChildSize: 0.3,
           builder: (context, controller) => SingleChildScrollView(
@@ -62,9 +64,6 @@ class ReferencModalBottom extends StatelessWidget {
                         color: Colors.black,
                         fontSize: 20.sp,
                         fontWeight: FontWeight.w600),
-                  ),
-                  SizedBox(
-                    height: 20.h,
                   ),
                   Flexible(
                     child: SizedBox(

@@ -1,4 +1,3 @@
-import 'package:bumiku/interface/widget/cached_image.dart';
 import 'package:bumiku/interface/widget/cached_svg.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';

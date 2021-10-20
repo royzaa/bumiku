@@ -40,7 +40,7 @@ class _LessonScreenState extends State<LessonScreen> {
         clipBehavior: Clip.none,
         children: [
           Positioned(
-            height: 320.h,
+            height: 450.h,
             width: MediaQuery.of(context).size.width,
             top: 125.h,
             child: Stack(
@@ -48,7 +48,7 @@ class _LessonScreenState extends State<LessonScreen> {
               children: [
                 _currentIndex != 0
                     ? Positioned(
-                        left: 0.w,
+                        left: 5.w,
                         child: Icon(
                           Icons.arrow_back_ios_new,
                           size: 32.r,
@@ -58,7 +58,7 @@ class _LessonScreenState extends State<LessonScreen> {
                     : const SizedBox(),
                 _currentIndex != widget.lessonData.length - 1
                     ? Positioned(
-                        right: 0.w,
+                        right: 5.w,
                         child: Icon(
                           Icons.arrow_forward_ios,
                           size: 32.r,
@@ -84,7 +84,9 @@ class _LessonScreenState extends State<LessonScreen> {
                         child: Container(
                           padding: EdgeInsets.all(20.r),
                           decoration: BoxDecoration(
-                            color: Colors.grey[100],
+                            color: index % 2 != 0
+                                ? Colors.green[300]
+                                : Colors.grey[100],
                             borderRadius: BorderRadius.circular(30.r),
                           ),
                           child: SingleChildScrollView(
@@ -92,6 +94,9 @@ class _LessonScreenState extends State<LessonScreen> {
                               lessonData[index].content,
                               style: TextStyle(
                                 fontSize: 14.sp,
+                                color: index % 2 != 0
+                                    ? Colors.white
+                                    : Colors.black,
                               ),
                               textAlign: TextAlign.justify,
                             ),
@@ -106,7 +111,9 @@ class _LessonScreenState extends State<LessonScreen> {
                         child: Container(
                           padding: EdgeInsets.all(20.r),
                           decoration: BoxDecoration(
-                            color: Colors.grey[100],
+                            color: index % 2 != 0
+                                ? Colors.green[300]
+                                : Colors.grey[100],
                             borderRadius: BorderRadius.circular(30.r),
                           ),
                           child: SingleChildScrollView(
@@ -114,6 +121,9 @@ class _LessonScreenState extends State<LessonScreen> {
                               lessonData[index].content,
                               style: TextStyle(
                                 fontSize: 14.sp,
+                                color: index % 2 != 0
+                                    ? Colors.white
+                                    : Colors.black,
                               ),
                               textAlign: TextAlign.justify,
                             ),
@@ -127,7 +137,9 @@ class _LessonScreenState extends State<LessonScreen> {
                         child: Container(
                           padding: EdgeInsets.all(20.r),
                           decoration: BoxDecoration(
-                            color: Colors.grey[100],
+                            color: index % 2 != 0
+                                ? Colors.green[300]
+                                : Colors.grey[100],
                             borderRadius: BorderRadius.circular(30.r),
                           ),
                           child: SingleChildScrollView(
@@ -156,6 +168,9 @@ class _LessonScreenState extends State<LessonScreen> {
                                   lessonData[index].content,
                                   style: TextStyle(
                                     fontSize: 14.sp,
+                                    color: index % 2 != 0
+                                        ? Colors.white
+                                        : Colors.black,
                                   ),
                                   textAlign: TextAlign.justify,
                                 ),
@@ -170,6 +185,20 @@ class _LessonScreenState extends State<LessonScreen> {
                   },
                 ),
               ],
+            ),
+          ),
+          Positioned(
+            left: 30.w,
+            top: 50.h,
+            width: 330.w,
+            child: Text(
+              widget.lessonData[_currentIndex].name,
+              style: TextStyle(
+                color: Theme.of(context).primaryColor,
+                fontSize: 18.sp,
+                fontWeight: FontWeight.w600,
+              ),
+              maxLines: 2,
             ),
           ),
           Positioned(
@@ -188,18 +217,6 @@ class _LessonScreenState extends State<LessonScreen> {
                   color: Theme.of(context).primaryColor,
                   size: 24.r,
                 ),
-              ),
-            ),
-          ),
-          Positioned(
-            left: 30.w,
-            top: 50.h,
-            child: Text(
-              widget.lessonData[_currentIndex].name,
-              style: TextStyle(
-                color: Theme.of(context).primaryColor,
-                fontSize: 20.sp,
-                fontWeight: FontWeight.w600,
               ),
             ),
           ),

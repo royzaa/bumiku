@@ -112,7 +112,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         borderRadius: BorderRadius.circular(30.r),
                         child: SvgPicture.network(
                           onBoadringData[index].imageUrl,
+                          height: 300.h,
                           width: size.width - 40.w,
+                          fit: BoxFit.scaleDown,
                           placeholderBuilder: (context) => const Center(
                             child: PlaceholderLines(
                               count: 3,

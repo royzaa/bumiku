@@ -32,8 +32,6 @@ class QuizBox extends StatelessWidget {
         if (isOpen!) {
           audioPlayer.pause();
 
-          ;
-
           showDialog(
             context: context,
             builder: (context) => GestureDetector(

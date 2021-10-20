@@ -19,12 +19,13 @@ class MainQuiz extends Quiz {
   MainQuiz({
     String? title,
     String? imageUrl,
+    int? quizNum,
     required bool isOpen,
     required this.quizItemData,
   }) : super(
           isOpen: isOpen,
           imageUrl: imageUrl,
-          quizNum: 1,
+          quizNum: quizNum,
           title: title,
         );
 }
