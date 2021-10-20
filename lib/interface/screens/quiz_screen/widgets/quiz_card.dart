@@ -1,5 +1,6 @@
 import 'package:bumiku/interface/widget/cached_svg.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,17 +19,16 @@ class QuizCard extends StatefulWidget {
     required this.question,
     required this.controller,
     required this.index,
+    required this.quizNum,
     required this.option,
-    this.descriptiveText,
   }) : super(key: key);
 
   final Size mediaQuery;
   final TextStyle textStyle;
   final String question;
-  final String? descriptiveText;
   final List<choice.ChoiceChip>? option;
   final PageController controller;
-  final int index;
+  final int index, quizNum;
 
   @override
   State<QuizCard> createState() => _QuizCardState();
@@ -54,12 +54,6 @@ class _QuizCardState extends State<QuizCard>
     debugPrint('wrong ans:' + quizController.wrongAnswer.value.toString());
     _animationController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        if (isCorrectAnswer.value) {
-          quizController.correctAnswer.value += 1;
-        } else {
-          quizController.wrongAnswer.value += 1;
-        }
-
         quizController.nextQuestion();
 
         _animationController.reset();
@@ -142,7 +136,7 @@ class _QuizCardState extends State<QuizCard>
                 CachedSvg(
                   svgUrl:
                       'https://drive.google.com/uc?id=1Rl75BHbvnNsu56fzLyDhBXdq5fzH--h7',
-                  height: widget.mediaQuery.height.h * 0.18,
+                  height: widget.mediaQuery.height.h * 0.135,
                   width: widget.mediaQuery.width.w * 0.6,
                   fit: BoxFit.scaleDown,
                 ),
@@ -169,11 +163,11 @@ class _QuizCardState extends State<QuizCard>
                   width: widget.mediaQuery.width - 32 - 40,
                   child: Text(
                     widget.question,
-                    maxLines: 2,
+                    maxLines: 8,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Theme.of(context).primaryColor,
-                      fontSize: widget.option != null ? 18.sp : 14.sp,
+                      fontSize: 15.sp,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -251,24 +245,43 @@ class _QuizCardState extends State<QuizCard>
                           final selectedChoice = shuffledChoices.firstWhere(
                             (choice) => choice.isSelected == true,
                           );
+                          isAnswered.value = true;
+                          _animationController.forward();
                           if (selectedChoice.isRightChoice) {
                             quizController.correctAnswer.value++;
-                            // second quiz
-                            final tempBlockScores =
-                                DataSharedPreferences.getSecondQuizCompletion();
-                            debugPrint(
-                                'block score 2' + tempBlockScores.toString());
-                            if (tempBlockScores[widget.index] == 0) {
-                              tempBlockScores[widget.index] = 20;
-                              DataSharedPreferences.setSecondQuizCompletion(
-                                  tempBlockScores);
+                            isCorrectAnswer.value = true;
+                            if (widget.quizNum == 1) {
+                              // first quiz
+                              final tempBlockScores = DataSharedPreferences
+                                  .getFirstQuizCompletion();
+                              debugPrint(
+                                  'block score 1' + tempBlockScores.toString());
+                              if (tempBlockScores[widget.index] == 0) {
+                                tempBlockScores[widget.index] = 20;
+                                DataSharedPreferences.setFirstQuizCompletion(
+                                    tempBlockScores);
+                                debugPrint('block score 1' +
+                                    tempBlockScores.toString());
+                              }
+                            } else {
+                              // second quiz
+                              final tempBlockScores = DataSharedPreferences
+                                  .getSecondQuizCompletion();
                               debugPrint(
                                   'block score 2' + tempBlockScores.toString());
+                              if (tempBlockScores[widget.index] == 0) {
+                                tempBlockScores[widget.index] = 20;
+                                DataSharedPreferences.setSecondQuizCompletion(
+                                    tempBlockScores);
+                                debugPrint('block score 2' +
+                                    tempBlockScores.toString());
+                              }
                             }
                           } else {
+                            isCorrectAnswer.value = false;
+                            HapticFeedback.mediumImpact();
                             quizController.wrongAnswer.value++;
                           }
-                          quizController.nextQuestion();
                         } catch (e) {
                           debugPrint(e.toString());
                           Fluttertoast.showToast(msg: 'Select one answer');

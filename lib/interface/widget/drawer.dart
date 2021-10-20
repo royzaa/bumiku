@@ -31,7 +31,7 @@ class MyDrawer extends StatelessWidget {
                 ),
                 CachedImage(
                   imageUrl:
-                      'https://drive.google.com/uc?id=1FoTPZz6N6azP3WOoxTpdTIDzMfuTxj0k',
+                      'https://drive.google.com/uc?id=1kqcECr9yhih19I-sIKQ9Ris99kW-Iku9',
                   height: 150.h,
                 ),
                 SizedBox(

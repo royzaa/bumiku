@@ -131,7 +131,7 @@ class _SynopsisScreenState extends State<SynopsisScreen>
 
           Positioned(
             left: 56.w,
-            top: MediaQuery.of(context).padding.top + 12.h,
+            top: 12.h,
             child: Text(
               '${timeSession.getTimeSession()}, $userName',
               style: TextStyle(
@@ -141,13 +141,13 @@ class _SynopsisScreenState extends State<SynopsisScreen>
               ),
             ),
           ),
-          Positioned(
+          const Positioned(
             right: 0,
-            top: MediaQuery.of(context).padding.top,
-            child: const PopUpVolume(),
+            top: 0,
+            child: PopUpVolume(),
           ),
           Positioned(
-            top: MediaQuery.of(context).padding.top,
+            top: 0,
             child: IconButton(
               onPressed: () => Scaffold.of(context).openDrawer(),
               icon: Icon(
@@ -160,7 +160,7 @@ class _SynopsisScreenState extends State<SynopsisScreen>
 
           Positioned(
             left: 20.w,
-            top: MediaQuery.of(context).padding.top + 70.h,
+            top: 70.h,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

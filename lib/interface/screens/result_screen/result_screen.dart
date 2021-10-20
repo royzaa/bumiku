@@ -57,7 +57,7 @@ class ResultScreen extends StatelessWidget {
                 final dir = Directory.systemTemp;
                 Share.shareFiles(['${dir.path}/card.png'],
                     text:
-                        'Hi, I have tried Mary. It\'s pretty fun to learn with Mary. You can download Mary at ... . Enjoy the journey with me.');
+                        'Hai, Aku ${DataSharedPreferences.getTitle()} sudah bermain Bumiku. Rasanya sangat menyenangkan belajar dengan bumiku. Kamu bisa mengunduh bumiku di ... . Nikmati keseruan bersama!');
               }
             });
           },
@@ -115,13 +115,6 @@ class ResultScreen extends StatelessWidget {
                         ),
                       ),
                       onPressed: () {
-                        // DataSharedPreferences.setListOfScore(
-                        //   quizController.listOfScore
-                        //       .map(
-                        //         (score) => score.toString(),
-                        //       )
-                        //       .toList(),
-                        // );
                         debugPrint('correct:' +
                             quizController.correctAnswer.value.toString());
                         debugPrint('wrong:' +

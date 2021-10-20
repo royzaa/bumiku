@@ -27,37 +27,38 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  animated_text_kit: ^4.2.1
   audioplayers: ^0.19.1
   cupertino_icons: ^1.0.2
+  device_apps: ^2.1.1
   flutter:
     sdk: flutter
   flutter_placeholder_textlines: ^1.1.2
+  flutter_screenutil: ^5.0.0+2
   flutter_speed_dial: ^4.2.0
   flutter_svg: ^0.22.0
-  # flutter_unity_widget: ^4.2.1
   fluttertoast: ^8.0.8
   get: ^4.3.8
   google_fonts: ^2.1.0
   lottie: ^1.1.0
+  share_plus: ^3.0.2
   shared_preferences: ^2.0.7
   showcaseview: ^1.1.0
-  # speech_to_text: ^5.0.0
+  syncfusion_flutter_gauges: ^19.1.66
   url_launcher: ^6.0.9
   volume_controller: ^2.0.2
-  flutter_screenutil: ^5.0.0+2
   youtube_player_flutter: ^8.0.0
-  # avatar_glow: ^2.0.1
-  share_plus: ^3.0.2
-  device_apps: ^2.1.1
-  animated_text_kit: ^4.2.1
-  syncfusion_flutter_gauges: ^19.1.66
-  # permission_handler: ^8.2.5
 
 dev_dependencies:
   flutter_lints: ^1.0.0
+  # flutter_native_splash: ^1.2.4
   flutter_test:
     sdk: flutter
 
+# flutter_native_splash:
+#   color: "#ffffff"
+#   image: assets/images/splash.png
+#   android: true
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.

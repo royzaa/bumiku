@@ -10,209 +10,193 @@ MainQuiz firstQuiz = MainQuiz(
   quizNum: 1,
   quizItemData: [
     MainQuizItem(
-      quizQuestion: 'What does the text tell about?',
+      quizQuestion: 'Bumi tersusun dari … lapisan utama',
       choices: [
         ChoiceChip(
-          choice: 'Rose species',
+          choice: '3',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Gardening',
+          choice: '1',
         ),
         ChoiceChip(
-          choice: 'Flowers',
+          choice: '2',
         ),
         ChoiceChip(
-          choice: 'How to grow rose plant',
+          choice: '4',
         ),
       ],
-      descriptiveText:
-          'Rose is plant with enchanting flowers from genus Rosa which has more than 100 species. This woody perennial plant grows in groups, allowing them to form climbing shrubs with prickles. Rose has various flowers in shape and sizes, making it one among popular flowering plants found in a house. Most rose species are native to Asia, but some others are native to North America and Europe. It is typically grown for beauty and fragrant. Some species are used for commercial perfumery while some others are cut for ornamental flowers. In addition, rose also has minor medicinal uses.',
     ),
     MainQuizItem(
-      quizQuestion: 'This statement is correct, except...',
+      quizQuestion: 'Urutan lapisan bumi dari luar ke dalam yaitu …',
       choices: [
         ChoiceChip(
-          choice: 'Rose only has one variant of shape and size',
+          choice: 'Inti, selubung, dan kerak',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Rose has more than 100 species',
+          choice: 'Selubung, kerak dan inti',
         ),
         ChoiceChip(
-          choice: 'Rose is native to Asia',
+          choice: 'Kerak, selubung dan inti',
         ),
         ChoiceChip(
-          choice: 'Rose can be used for ornamental plant',
+          choice: 'Kerak, inti, dan selubung',
         ),
       ],
-      descriptiveText:
-          'Rose is plant with enchanting flowers from genus Rosa which has more than 100 species. This woody perennial plant grows in groups, allowing them to form climbing shrubs with prickles. Rose has various flowers in shape and sizes, making it one among popular flowering plants found in a house. Most rose species are native to Asia, but some others are native to North America and Europe. It is typically grown for beauty and fragrant. Some species are used for commercial perfumery while some others are cut for ornamental flowers. In addition, rose also has minor medicinal uses.',
-    ),
-    MainQuizItem(
-      quizQuestion: 'It is typically grown … . The word “it” refers to …',
-      choices: [
-        ChoiceChip(
-          choice: 'Rose species',
-          isRightChoice: true,
-        ),
-        ChoiceChip(
-          choice: 'Asia',
-        ),
-        ChoiceChip(
-          choice: 'Beauty',
-        ),
-        ChoiceChip(
-          choice: 'Commercial perfumery',
-        ),
-      ],
-      descriptiveText:
-          'Rose is plant with enchanting flowers from genus Rosa which has more than 100 species. This woody perennial plant grows in groups, allowing them to form climbing shrubs with prickles. Rose has various flowers in shape and sizes, making it one among popular flowering plants found in a house. Most rose species are native to Asia, but some others are native to North America and Europe. It is typically grown for beauty and fragrant. Some species are used for commercial perfumery while some others are cut for ornamental flowers. In addition, rose also has minor medicinal uses.',
-    ),
-    MainQuizItem(
-      quizQuestion: 'Based on the text, which statement is true?',
-      choices: [
-        ChoiceChip(
-          choice: 'Rose has minor benefit for medicinal uses',
-          isRightChoice: true,
-        ),
-        ChoiceChip(
-          choice: 'People grow rose only for beauty',
-        ),
-        ChoiceChip(
-          choice: 'Rose is not a popular flowering plant',
-        ),
-        ChoiceChip(
-          choice: 'North America is not a native to rose species',
-        ),
-      ],
-      descriptiveText:
-          'Rose is plant with enchanting flowers from genus Rosa which has more than 100 species. This woody perennial plant grows in groups, allowing them to form climbing shrubs with prickles. Rose has various flowers in shape and sizes, making it one among popular flowering plants found in a house. Most rose species are native to Asia, but some others are native to North America and Europe. It is typically grown for beauty and fragrant. Some species are used for commercial perfumery while some others are cut for ornamental flowers. In addition, rose also has minor medicinal uses.',
     ),
     MainQuizItem(
       quizQuestion:
-          'What makes Indonesia one of most populous countries in the world?',
+          'Lapisan bumi yang terdiri dari material cair kental dan berpijar yaitu....',
       choices: [
         ChoiceChip(
-          choice: 'Indonesia has more than 261 million people',
+          choice: 'Mantel bumi',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'It is located in South East Asia',
+          choice: 'Kerak bumi',
         ),
         ChoiceChip(
-          choice: 'Indonesia has more than 17,000 islands',
+          choice: 'Inti bumi',
         ),
         ChoiceChip(
-          choice: 'It has more ethnics and languages',
+          choice: 'Kerak samudra',
         ),
       ],
-      descriptiveText:
-          'Indonesia or commonly known as Republic of Indonesia is one of South East Asia countries. Located between Pacific and Indian Ocean, it makes Indonesia the world’s largest archipelago country. Also called as Nusantara, this country has more than 17,000 islands. Having more than 261 million people,  Indonesia becomes 4th most populous country in the world. Indonesia has more ethnics, languages and culture than other countries. Data showed that Indonesia has several ethnic groups including Javanese, Sundanese, and other with more than 700 recognized regional language.',
     ),
     MainQuizItem(
-      quizQuestion: 'What is the main idea of the paragraph?',
+      quizQuestion:
+          'Lithosfer berasal dari bahasa Yunani yaitu lithos dan sphera. Lithos yang berarti....',
       choices: [
         ChoiceChip(
-          choice: 'Indonesia is one of South East Asia countries',
+          choice: 'Batuan',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Indonesia is 4th most populous country',
+          choice: 'Bola bumi',
         ),
         ChoiceChip(
-          choice: 'Ethnics and languages make Indonesia rich',
+          choice: 'Lapisan',
         ),
         ChoiceChip(
-          choice:
-              'Indonesia is an Asian country which has\n many cultures, ethnics, as well as people',
+          choice: 'Uap',
         ),
       ],
-      descriptiveText:
-          'Indonesia or commonly known as Republic of Indonesia is one of South East Asia countries. Located between Pacific and Indian Ocean, it makes Indonesia the world’s largest archipelago country. Also called as Nusantara, this country has more than 17,000 islands. Having more than 261 million people,  Indonesia becomes 4th most populous country in the world. Indonesia has more ethnics, languages and culture than other countries. Data showed that Indonesia has several ethnic groups including Javanese, Sundanese, and other with more than 700 recognized regional language.',
     ),
     MainQuizItem(
-      quizQuestion: 'What does the tense of the paragraph?',
+      quizQuestion:
+          'Lempeng yang tersusun oleh mineral yang kaya akan Silika, dan Magnesium, disebut sima. Lempeng ini biasanya disebut lapisan basaltis karena batuan penyusunnya terutama berkomposisi basalt. Nama lempeng tersebut adalah …',
       choices: [
         ChoiceChip(
-          choice: 'Simple present tenses',
+          choice: 'Lempeng samudra',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Simple continous tenses',
+          choice: 'Lempeng tektonik',
         ),
         ChoiceChip(
-          choice: 'Perfect tenses',
+          choice: 'Lempeng benua',
         ),
         ChoiceChip(
-          choice: 'Simple future tenses',
+          choice: 'Lempeng besi',
         ),
       ],
-      descriptiveText:
-          'Indonesia or commonly known as Republic of Indonesia is one of South East Asia countries. Located between Pacific and Indian Ocean, it makes Indonesia the world’s largest archipelago country. Also called as Nusantara, this country has more than 17,000 islands. Having more than 261 million people,  Indonesia becomes 4th most populous country in the world. Indonesia has more ethnics, languages and culture than other countries. Data showed that Indonesia has several ethnic groups including Javanese, Sundanese, and other with more than 700 recognized regional language.',
     ),
     MainQuizItem(
-      quizQuestion: 'What are generic structure of text above?',
+      quizQuestion:
+          'Litosfer terbentuk dari beberapa mineral yang disebut silikat yang merupakan gabungan antara....',
       choices: [
         ChoiceChip(
-          choice: 'Description',
+          choice: 'Oksigen dan silikon',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Identification',
+          choice: 'Sulfur dan silikon',
         ),
         ChoiceChip(
-          choice: 'Orientation',
+          choice: 'Nitrogen dan silikon',
         ),
         ChoiceChip(
-          choice: 'Explanation',
+          choice: 'Karbondioksida dan silikon',
         ),
       ],
-      descriptiveText:
-          'My cat is a Persian cat with flat nose and fluffy hair. It has sharp, yellow eyes that glow in the dark. Shorty likes to run around the house, chasing any moving things. I like to see Shorty sleeping because it looks cute. Shorty does not like to eat canned food, instead it prefers fresh tuna.',
     ),
     MainQuizItem(
-      quizQuestion: 'Which breed is Shorty?',
+      quizQuestion: 'Besi dan nikel merupakan materi penyusun lapisan....',
       choices: [
         ChoiceChip(
-          choice: 'Persian',
+          choice: 'Inti bumi',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Angora',
+          choice: 'Kerak bumi',
         ),
         ChoiceChip(
-          choice: 'Egypt',
+          choice: 'Mantel bagian luar',
         ),
         ChoiceChip(
-          choice: 'Half-breed',
+          choice: 'Mantel bagian dalam',
         ),
       ],
-      descriptiveText:
-          'I have a new cat, its name is Shorty. I call it Shorty because it is short than the other cats. My cat is a Persian cat with flat nose and fluffy hair. It has sharp, yellow eyes that glow in the dark. Shorty likes to run around the house, chasing any moving things. I like to see Shorty sleeping because it looks cute. Shorty does not like to eat canned food, instead it prefers fresh tuna.',
     ),
     MainQuizItem(
-      quizQuestion: 'What does the writer tell about?',
+      quizQuestion:
+          'Lapisan yang berada dibawah litosfer termasuk dalam mantel bumi yang wujudnya sangat kental. Lapisan ini tersusun dari batuan yang meleleh akibat panas, namun kepadatannya rendah karenanya bersifat plastis. Lapisan ini kaya dengan silium, aluminium dan magnesium, dikenal dengan magma. Lapisan tersebut adalah …',
       choices: [
         ChoiceChip(
-          choice: 'New cat named Shorty',
+          choice: 'Astenosfer',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'New toy',
+          choice: 'Mesosfer',
         ),
         ChoiceChip(
-          choice: 'Family',
+          choice: 'Kerak bumi',
         ),
         ChoiceChip(
-          choice: 'Writer\'s new hobby',
+          choice: 'Inti bumi',
         ),
       ],
-      descriptiveText:
-          'I have a new cat, its name is Shorty. I call it Shorty because it is short than the other cats. My cat is a Persian cat with flat nose and fluffy hair. It has sharp, yellow eyes that glow in the dark. Shorty likes to run around the house, chasing any moving things. I like to see Shorty sleeping because it looks cute. Shorty does not like to eat canned food, instead it prefers fresh tuna.',
+    ),
+    MainQuizItem(
+      quizQuestion:
+          'Lapisan kulit bumi yang tersusun oleh mineral yang kaya akan Silika dan Aluminium, oleh karenanya di sebut sial. Lempeng ini biasanya disebut sebagai lapisan granitis karena batuan penyusunnya terutama terdiri dari batuan yang berkomposisi granit. Lepeng tersebut adalah …',
+      choices: [
+        ChoiceChip(
+          choice: 'Lempeng benua',
+          isRightChoice: true,
+        ),
+        ChoiceChip(
+          choice: 'Lempeng tektonik',
+        ),
+        ChoiceChip(
+          choice: 'Lempeng samudra',
+        ),
+        ChoiceChip(
+          choice: 'Lempeng besi',
+        ),
+      ],
+    ),
+    MainQuizItem(
+      quizQuestion: 'lapisan paling luar bumi adalah...',
+      choices: [
+        ChoiceChip(
+          choice: 'Kerak bumi',
+          isRightChoice: true,
+        ),
+        ChoiceChip(
+          choice: 'Inti bumi',
+        ),
+        ChoiceChip(
+          choice: 'Mantel bumi',
+        ),
+        ChoiceChip(
+          choice: 'Kerak samudra',
+        ),
+      ],
     ),
   ],
-  title: 'Contoh quiz 1 ...',
+  title: 'Lapisan bumi',
 );
 
 MainQuiz secondQuiz = MainQuiz(
@@ -221,207 +205,200 @@ MainQuiz secondQuiz = MainQuiz(
   quizNum: 2,
   quizItemData: [
     MainQuizItem(
-      quizQuestion: 'What does the text tell about?',
+      quizQuestion:
+          'Lapisan bumi diselimuti oleh lapisan gas yang biasa disebut …',
       choices: [
         ChoiceChip(
-          choice: 'Rose species',
+          choice: 'Atmosfer',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Gardening',
+          choice: 'Geosfer',
         ),
         ChoiceChip(
-          choice: 'Flowers',
+          choice: 'Antoposfer',
         ),
         ChoiceChip(
-          choice: 'How to grow rose plant',
+          choice: 'Hidrosfer',
         ),
       ],
-      descriptiveText:
-          'Rose is plant with enchanting flowers from genus Rosa which has more than 100 species. This woody perennial plant grows in groups, allowing them to form climbing shrubs with prickles. Rose has various flowers in shape and sizes, making it one among popular flowering plants found in a house. Most rose species are native to Asia, but some others are native to North America and Europe. It is typically grown for beauty and fragrant. Some species are used for commercial perfumery while some others are cut for ornamental flowers. In addition, rose also has minor medicinal uses.',
     ),
     MainQuizItem(
-      quizQuestion: 'This statement is correct, except...',
+      quizQuestion: '''Perhatikan Lapisan Atmosfer berikut !
+
+1)	Eksosfer
+2)	Mesosfer
+3)	Troposfer
+4)	Stratosfer
+5)	Termosfer
+
+Urutan lapisan atmosfer berdasarkan ketinggiannya dari permukaan laut dari yang terendah sampai yang tertinggi adalah….
+''',
       choices: [
         ChoiceChip(
-          choice: 'Rose only has one variant of shape and size',
+          choice: '(3) – (4) – (2) – (5) – (1)',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Rose has more than 100 species',
+          choice: '(1) – (2) – (4) – (5) – (3)',
         ),
         ChoiceChip(
-          choice: 'Rose is native to Asia',
+          choice: '(3) – (4) – (2) – (1) – (5)',
         ),
         ChoiceChip(
-          choice: 'Rose can be used for ornamental plant',
+          choice: '(4) – (5) – (2) – (1) – (3)',
         ),
       ],
-      descriptiveText:
-          'Rose is plant with enchanting flowers from genus Rosa which has more than 100 species. This woody perennial plant grows in groups, allowing them to form climbing shrubs with prickles. Rose has various flowers in shape and sizes, making it one among popular flowering plants found in a house. Most rose species are native to Asia, but some others are native to North America and Europe. It is typically grown for beauty and fragrant. Some species are used for commercial perfumery while some others are cut for ornamental flowers. In addition, rose also has minor medicinal uses.',
-    ),
-    MainQuizItem(
-      quizQuestion: 'It is typically grown … . The word “it” refers to …',
-      choices: [
-        ChoiceChip(
-          choice: 'Rose species',
-          isRightChoice: true,
-        ),
-        ChoiceChip(
-          choice: 'Asia',
-        ),
-        ChoiceChip(
-          choice: 'Beauty',
-        ),
-        ChoiceChip(
-          choice: 'Commercial perfumery',
-        ),
-      ],
-      descriptiveText:
-          'Rose is plant with enchanting flowers from genus Rosa which has more than 100 species. This woody perennial plant grows in groups, allowing them to form climbing shrubs with prickles. Rose has various flowers in shape and sizes, making it one among popular flowering plants found in a house. Most rose species are native to Asia, but some others are native to North America and Europe. It is typically grown for beauty and fragrant. Some species are used for commercial perfumery while some others are cut for ornamental flowers. In addition, rose also has minor medicinal uses.',
-    ),
-    MainQuizItem(
-      quizQuestion: 'Based on the text, which statement is true?',
-      choices: [
-        ChoiceChip(
-          choice: 'Rose has minor benefit for medicinal uses',
-          isRightChoice: true,
-        ),
-        ChoiceChip(
-          choice: 'People grow rose only for beauty',
-        ),
-        ChoiceChip(
-          choice: 'Rose is not a popular flowering plant',
-        ),
-        ChoiceChip(
-          choice: 'North America is not a native to rose species',
-        ),
-      ],
-      descriptiveText:
-          'Rose is plant with enchanting flowers from genus Rosa which has more than 100 species. This woody perennial plant grows in groups, allowing them to form climbing shrubs with prickles. Rose has various flowers in shape and sizes, making it one among popular flowering plants found in a house. Most rose species are native to Asia, but some others are native to North America and Europe. It is typically grown for beauty and fragrant. Some species are used for commercial perfumery while some others are cut for ornamental flowers. In addition, rose also has minor medicinal uses.',
     ),
     MainQuizItem(
       quizQuestion:
-          'What makes Indonesia one of most populous countries in the world?',
+          'Atmosfer dibagi menjadi beberapa lapisan. Lapisan atmosfer dimana tempat terjadinya cuaca seperti awan, hujan yaitu....',
       choices: [
         ChoiceChip(
-          choice: 'Indonesia has more than 261 million people',
+          choice: 'Troposfer',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'It is located in South East Asia',
+          choice: 'Eksosfer',
         ),
         ChoiceChip(
-          choice: 'Indonesia has more than 17,000 islands',
+          choice: 'Mesosfer',
         ),
         ChoiceChip(
-          choice: 'It has more ethnics and languages',
+          choice: 'Stratosfer',
         ),
       ],
-      descriptiveText:
-          'Indonesia or commonly known as Republic of Indonesia is one of South East Asia countries. Located between Pacific and Indian Ocean, it makes Indonesia the world’s largest archipelago country. Also called as Nusantara, this country has more than 17,000 islands. Having more than 261 million people,  Indonesia becomes 4th most populous country in the world. Indonesia has more ethnics, languages and culture than other countries. Data showed that Indonesia has several ethnic groups including Javanese, Sundanese, and other with more than 700 recognized regional language.',
     ),
     MainQuizItem(
-      quizQuestion: 'What is the main idea of the paragraph?',
+      quizQuestion:
+          'Lapisan ozon diperlukan untuk melindungi Bumi dari radiasi sinar ultraviolet. Lapisan ozon ini terdapat pada ….',
       choices: [
         ChoiceChip(
-          choice: 'Indonesia is one of South East Asia countries',
+          choice: 'Stratosfer',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Indonesia is 4th most populous country',
+          choice: 'Termosfer',
         ),
         ChoiceChip(
-          choice: 'Ethnics and languages make Indonesia rich',
+          choice: 'Troposfer',
         ),
         ChoiceChip(
-          choice:
-              'Indonesia is an Asian country which has\n many cultures, ethnics, as well as people',
+          choice: 'Mesosfer',
         ),
       ],
-      descriptiveText:
-          'Indonesia or commonly known as Republic of Indonesia is one of South East Asia countries. Located between Pacific and Indian Ocean, it makes Indonesia the world’s largest archipelago country. Also called as Nusantara, this country has more than 17,000 islands. Having more than 261 million people,  Indonesia becomes 4th most populous country in the world. Indonesia has more ethnics, languages and culture than other countries. Data showed that Indonesia has several ethnic groups including Javanese, Sundanese, and other with more than 700 recognized regional language.',
     ),
     MainQuizItem(
-      quizQuestion: 'What does the tense of the paragraph?',
+      quizQuestion:
+          'Berikut ini yang merupakan fungsi dari lapisan ozon di atmosfer adalah .... ',
       choices: [
         ChoiceChip(
-          choice: 'Simple present tenses',
+          choice: 'meindungi Bumi dari sinar ultraviolet ',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Simple continous tenses',
+          choice: 'mengatur suhu Bumi ',
         ),
         ChoiceChip(
-          choice: 'Perfect tenses',
+          choice: 'sebagai pemantul gelombang radio ',
         ),
         ChoiceChip(
-          choice: 'Simple future tenses',
+          choice: 'melindungi Bumi dari cahaya Matahari ',
         ),
       ],
-      descriptiveText:
-          'Indonesia or commonly known as Republic of Indonesia is one of South East Asia countries. Located between Pacific and Indian Ocean, it makes Indonesia the world’s largest archipelago country. Also called as Nusantara, this country has more than 17,000 islands. Having more than 261 million people,  Indonesia becomes 4th most populous country in the world. Indonesia has more ethnics, languages and culture than other countries. Data showed that Indonesia has several ethnic groups including Javanese, Sundanese, and other with more than 700 recognized regional language.',
     ),
     MainQuizItem(
-      quizQuestion: 'What are generic structure of text above?',
+      quizQuestion: 'Lapisan mesosfer berfungsi melindungi bumi dari...',
       choices: [
         ChoiceChip(
-          choice: 'Description',
+          choice: 'Benda luar angkasa yang jatuh ke bumi',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Identification',
+          choice: 'Benda bumi yang jatuh ke bumi',
         ),
         ChoiceChip(
-          choice: 'Orientation',
+          choice: 'Radiasi matahari yang berupa ultraviolet',
         ),
         ChoiceChip(
-          choice: 'Explanation',
+          choice: 'Radiasi matahari yang berupa infra merah',
         ),
       ],
-      descriptiveText:
-          'My cat is a Persian cat with flat nose and fluffy hair. It has sharp, yellow eyes that glow in the dark. Shorty likes to run around the house, chasing any moving things. I like to see Shorty sleeping because it looks cute. Shorty does not like to eat canned food, instead it prefers fresh tuna.',
     ),
     MainQuizItem(
-      quizQuestion: 'Which breed is Shorty?',
+      quizQuestion:
+          'Pada mesosfer dan termosfer terdapat lapisan \nyang memiliki partikel ion (bermuatan) yang \ndisebut lapisan …',
       choices: [
         ChoiceChip(
-          choice: 'Persian',
+          choice: 'ionosfer',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Angora',
+          choice: 'termosfer',
         ),
         ChoiceChip(
-          choice: 'Egypt',
+          choice: 'stratosfer',
         ),
         ChoiceChip(
-          choice: 'Half-breed',
+          choice: 'troposfer',
         ),
       ],
-      descriptiveText:
-          'I have a new cat, its name is Shorty. I call it Shorty because it is short than the other cats. My cat is a Persian cat with flat nose and fluffy hair. It has sharp, yellow eyes that glow in the dark. Shorty likes to run around the house, chasing any moving things. I like to see Shorty sleeping because it looks cute. Shorty does not like to eat canned food, instead it prefers fresh tuna.',
     ),
     MainQuizItem(
-      quizQuestion: 'What does the writer tell about?',
+      quizQuestion:
+          'Lapisan yang berada pada ketinggian diatas 500 Km, tempat mengorbit satelit buatan, memiliki molekul yang sangat sedikit. Merupakan lapisan atmosfer yaitu …',
       choices: [
         ChoiceChip(
-          choice: 'New cat named Shorty',
+          choice: 'Eksosfer',
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'New toy',
+          choice: 'Stratosfer',
         ),
         ChoiceChip(
-          choice: 'Family',
+          choice: 'Mesosfer',
         ),
         ChoiceChip(
-          choice: 'Writer\'s new hobby',
+          choice: 'Termosfer',
         ),
       ],
-      descriptiveText:
-          'I have a new cat, its name is Shorty. I call it Shorty because it is short than the other cats. My cat is a Persian cat with flat nose and fluffy hair. It has sharp, yellow eyes that glow in the dark. Shorty likes to run around the house, chasing any moving things. I like to see Shorty sleeping because it looks cute. Shorty does not like to eat canned food, instead it prefers fresh tuna.',
+    ),
+    MainQuizItem(
+      quizQuestion: 'Lapisan Troposfer berada pada ketinggian …',
+      choices: [
+        ChoiceChip(
+          choice: '0 - 10 KM',
+          isRightChoice: true,
+        ),
+        ChoiceChip(
+          choice: '10 - 50 KM',
+        ),
+        ChoiceChip(
+          choice: '50 - 85 KM',
+        ),
+        ChoiceChip(
+          choice: '85 - 500 KM',
+        ),
+      ],
+    ),
+    MainQuizItem(
+      quizQuestion: 'Lapisan Mesosfer berada pada ketinggian …',
+      choices: [
+        ChoiceChip(
+          choice: '50 - 85 KM',
+          isRightChoice: true,
+        ),
+        ChoiceChip(
+          choice: '0 - 10 KM',
+        ),
+        ChoiceChip(
+          choice: '10 - 50 KM',
+        ),
+        ChoiceChip(
+          choice: '85 - 500 KM',
+        ),
+      ],
     ),
   ],
-  title: 'Quiz 2 ...',
+  title: 'Atmosfer dan litosfer',
 );

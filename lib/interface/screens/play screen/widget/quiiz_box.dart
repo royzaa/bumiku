@@ -168,8 +168,8 @@ class QuizBox extends StatelessWidget {
                         borderRadius: BorderRadius.circular(15.r),
                         child: CachedSvg(
                           svgUrl: imageUrl!,
-                          width: 110.w,
-                          height: 80.h,
+                          width: 100.w,
+                          height: 70.h,
                           fit: BoxFit.scaleDown,
                         ),
                       ),
@@ -179,6 +179,7 @@ class QuizBox extends StatelessWidget {
                           color: Theme.of(context).primaryColor.withRed(20),
                           fontSize: 14.sp,
                         ),
+                        textAlign: TextAlign.center,
                       )
                     ],
                   )

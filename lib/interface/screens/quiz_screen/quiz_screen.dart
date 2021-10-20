@@ -7,7 +7,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import './widgets/quiz_card.dart';
 import '../../../services/quiz_controller.dart';
 import '../../../data/quizes.dart';
-import '../../../services/shared_preferences.dart';
 import '../../../model/quiz_item.dart';
 
 class QuizScreen extends StatefulWidget {
@@ -35,11 +34,10 @@ class _QuestionScreenState extends State<QuizScreen> {
     quizController.correctAnswer.value = 0;
     quizController.wrongAnswer.value = 0;
 
-    if (!DataSharedPreferences.getFirstTimeQuiz()!) {
-      quizController.animationController
-          .forward()
-          .whenComplete(() => quizController.nextQuestion());
-    }
+    quizController.animationController
+        .forward()
+        .whenComplete(() => quizController.nextQuestion());
+
     super.initState();
   }
 
@@ -140,13 +138,13 @@ class _QuestionScreenState extends State<QuizScreen> {
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w500,
                         ),
+                        quizNum: quizNum,
                         question: quizNum == 1
                             ? displayedQuizOne[index].quizQuestion
                             : displayedQuizTwo[index].quizQuestion,
-                        option: displayedQuizTwo[index].choices,
-                        descriptiveText: quizNum == 2
-                            ? displayedQuizTwo[index].descriptiveText
-                            : null,
+                        option: quizNum == 1
+                            ? displayedQuizOne[index].choices
+                            : displayedQuizTwo[index].choices,
                         controller: controller,
                       ),
                     ),
