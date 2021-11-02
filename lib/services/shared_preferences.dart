@@ -19,6 +19,8 @@ class DataSharedPreferences {
 
   static const _keySecondQuizCompletion = 'quiz two completion';
 
+  static const _keyFirstTimeResult = 'result';
+
   static Future init() async =>
       _preferences = await SharedPreferences.getInstance();
 
@@ -53,6 +55,14 @@ class DataSharedPreferences {
   static Future setQuizTwoUnlocked(bool status) async {
     await _preferences.setBool(_keyUnlockQuiz, status);
   }
+
+  static Future setFirstTimeResult(bool status) async {
+    await _preferences.setBool(_keyFirstTimeResult, status);
+  }
+
+  /// wheter the user already see the result for the first time or not
+  static bool? getFirstTimeResult() =>
+      _preferences.getBool(_keyFirstTimeResult) ?? true;
 
   /// wheter the second quiz has unlocked or not
   static bool? getQuizTwoUnlocked() =>

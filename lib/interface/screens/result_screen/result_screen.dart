@@ -14,10 +14,27 @@ import '../../../services/audio_player_controller.dart';
 import '../../../data/quizes.dart';
 import '../../../services/shared_preferences.dart';
 import '../../widget/share_card.dart';
+import '../../widget/my_show_case.dart';
 
-class ResultScreen extends StatelessWidget {
+class ResultScreen extends StatefulWidget {
   const ResultScreen({Key? key}) : super(key: key);
   static const routeName = 'Result-Screen';
+
+  @override
+  State<ResultScreen> createState() => _ResultScreenState();
+}
+
+class _ResultScreenState extends State<ResultScreen> {
+  final GlobalKey _five = GlobalKey();
+  @override
+  void initState() {
+    if (DataSharedPreferences.getFirstTimeResult()!) {
+      WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+        ShowCaseWidget.of(context)!.startShowCase([_five]);
+      });
+    }
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -61,10 +78,15 @@ class ResultScreen extends StatelessWidget {
               }
             });
           },
-          child: Icon(
-            Icons.share,
-            size: 28.r,
-            color: Colors.white,
+          child: MyShowCase(
+            showCaseKey: _five,
+            desc: 'Tekan untuk membagikan pencapaian anda',
+            title: 'Bagikan',
+            child: Icon(
+              Icons.share,
+              size: 28.r,
+              color: Colors.white,
+            ),
           ),
           autofocus: true,
         ),
@@ -126,13 +148,14 @@ class ResultScreen extends StatelessWidget {
                         tempQuizData.add(score);
                         DataSharedPreferences.setQuizTracking(tempQuizData);
                         Get.off(
-                          ShowCaseWidget(
+                          () => ShowCaseWidget(
                             builder: Builder(
                               builder: (context) {
                                 return const BottomNavBar();
                               },
                             ),
                           ),
+                          routeName: BottomNavBar.routeName,
                           curve: Curves.easeInCubic,
                           transition: Transition.cupertino,
                         );

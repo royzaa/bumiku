@@ -9,10 +9,10 @@ const youtubeVideosData = <YoutubeVideo>[
     assetImage: 'assets/images/earth_layer2.png',
   ),
   YoutubeVideo(
-    videoId: '2zqgimfW61o',
+    videoId: 'SYucAQFPRmU',
     subjectId: 'atm&lit',
     subjectTitle: 'Atmosfer dan Litosfer',
-    videoTitle: 'Geografi - Struktur Lapisan Atmosfer - 10 SMA, PPLS dan Ronin',
+    videoTitle: 'Visualisasi Animasi 2D - Atmosfer Bumi IPA #iwanistic',
     assetImage: 'assets/images/day.png',
   ),
   YoutubeVideo(

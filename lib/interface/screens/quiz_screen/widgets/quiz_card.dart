@@ -102,40 +102,10 @@ class _QuizCardState extends State<QuizCard>
                   duration: 30,
                   mediaQuery: widget.mediaQuery,
                 ),
-                // if (widget.descriptiveText != null)
-                //   Container(
-                //     decoration: BoxDecoration(
-                //       borderRadius: BorderRadius.only(
-                //         bottomLeft: Radius.circular(30.r),
-                //         bottomRight: Radius.circular(30.r),
-                //       ),
-                //       gradient: LinearGradient(
-                //         colors: [
-                //           Theme.of(context).primaryColor,
-                //           const Color.fromRGBO(79, 88, 170, 1),
-                //         ],
-                //         begin: Alignment.bottomLeft,
-                //         end: Alignment.topRight,
-                //       ),
-                //     ),
-                //     padding: EdgeInsets.all(15.r),
-                //     margin: EdgeInsets.only(
-                //       top: 15.h,
-                //       right: 15.w,
-                //       left: 15.w,
-                //     ),
-                //     child: Text(
-                //       widget.descriptiveText!,
-                //       style: TextStyle(
-                //         color: Colors.white,
-                //         fontSize: 12.sp,
-                //       ),
-                //     ),
-                //   ),
 
                 CachedSvg(
                   svgUrl:
-                      'https://drive.google.com/uc?id=1Rl75BHbvnNsu56fzLyDhBXdq5fzH--h7',
+                      'https://drive.google.com/uc?id=1J7YstBT8XAho0NhlbsTdfdutDKQJKw9D',
                   height: widget.mediaQuery.height.h * 0.135,
                   width: widget.mediaQuery.width.w * 0.6,
                   fit: BoxFit.scaleDown,

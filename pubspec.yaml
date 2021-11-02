@@ -48,6 +48,7 @@ dependencies:
   url_launcher: ^6.0.9
   volume_controller: ^2.0.2
   youtube_player_flutter: ^8.0.0
+  flutter_unity_widget: ^4.2.1
 
 dev_dependencies:
   flutter_lints: ^1.0.0

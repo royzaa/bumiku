@@ -75,8 +75,12 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
           'icon': Icons.looks_two,
         },
         {
-          'title': 'Lapisan kulit bumi',
+          'title': 'Lapisan mantel bumi',
           'icon': Icons.looks_3,
+        },
+        {
+          'title': 'Lapisan kulit bumi',
+          'icon': Icons.looks_4,
         },
       ],
       [
@@ -147,7 +151,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
       ],
       [
         {
-          'title': 'Struktur atmosfer bumi',
+          'title': 'Atmosfer bumi',
           'imageUrl':
               'https://unsplash.com/photos/HNkgPFBShSw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8ZWFydGh8fDB8fHx8MTYzNDY1MDM5OQ&force=true&w=1920',
           'function': () {
@@ -155,7 +159,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
                 context,
                 MaterialPageRoute(
                     builder: (context) =>
-                        const YoutubePlayerScreen(videoId: '2zqgimfW61o')));
+                        const YoutubePlayerScreen(videoId: 'SYucAQFPRmU')));
           },
         },
         {
@@ -181,13 +185,26 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
                 context,
                 MaterialPageRoute(
                     builder: (context) =>
-                        const YoutubePlayerScreen(videoId: '7P3K3BIYDKss')));
+                        const YoutubePlayerScreen(videoId: 'QUJk6RzOIO8')));
           },
         },
         {
           'title': 'Terjadinya gunung api',
           'imageUrl':
               'https://unsplash.com/photos/VbP9v1rh-sc/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0NjUyODc0&force=true&w=1920',
+          'function': () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const YoutubePlayerScreen(
+                          videoId: '7P3K3BIYDKs',
+                        )));
+          },
+        },
+        {
+          'title': 'Mengenal Macam-macam Gempa Bumi dan Penyebab Terjadinya',
+          'imageUrl':
+              'https://unsplash.com/photos/9xAYGSnNmo0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTN8fHRzdW5hbWl8fDB8fHx8MTYzNDY0MTA3OQ&force=true&w=1920',
           'function': () {
             Navigator.push(
                 context,

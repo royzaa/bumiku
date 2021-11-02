@@ -18,7 +18,7 @@ import './services/time_session.dart';
 import './services/audio_player_controller.dart';
 import './interface/screens/quiz_screen/quiz_screen.dart';
 import './services/quiz_controller.dart';
-// import './services/unity_controller.dart';
+import './services/unity_controller.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -83,7 +83,7 @@ class MyApp extends StatelessWidget {
     Get.put(MyCacheManager());
     Get.put(TimeSession());
     final quizController = Get.put(QuizController());
-    // Get.put(UnityController());
+    Get.put(UnityController());
 
     return ScreenUtilInit(
       designSize: const Size(360, 700),
