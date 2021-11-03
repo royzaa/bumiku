@@ -1,16 +1,7 @@
-# mary
+## Bumiku
 
-A new Flutter project.
+Media pembelajaran geografi SMP materi Lapisan Bumi.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Credit to
+- **gggg** for engineering asset: https://sketchfab.com/3d-models/engineer-16560bba5fac4c4985f20fa1c0781d9b
+- **dimaponomar2019** for low poly bag: https://sketchfab.com/3d-models/backpack-low-poly-d7225bdd1d6c42d992485d72438cab28
