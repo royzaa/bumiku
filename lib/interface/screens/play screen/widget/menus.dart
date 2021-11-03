@@ -326,7 +326,7 @@ class _MenusState extends State<Menus> {
                                                       AudioPlayerController>()
                                                   .pause();
                                               await getx.Get.to(
-                                                const ArScreen(),
+                                                () => const ArScreen(),
                                                 transition:
                                                     getx.Transition.zoom,
                                               );

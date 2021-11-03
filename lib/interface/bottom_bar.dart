@@ -233,6 +233,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                           isArCoreInstalled
                               ? TextButton(
                                   onPressed: () async {
+                                    Navigator.pop(context);
+                                    Get.find<AudioPlayerController>().pause();
                                     await Get.to(
                                       const ArScreen(),
                                       transition: Transition.zoom,

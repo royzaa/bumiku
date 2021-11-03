@@ -21,14 +21,8 @@ class _ArScreenState extends State<ArScreen> {
   bool isSimulationDone = false;
   @override
   void initState() {
-    SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]);
+    HapticFeedback.heavyImpact();
     super.initState();
-  }
-
-  @override
-  void dispose() {
-    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    super.dispose();
   }
 
   RxDouble scaleFactor = 1.0.obs;
@@ -36,8 +30,16 @@ class _ArScreenState extends State<ArScreen> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        await _unityController.unityController!.pause();
-        Navigator.of(context).pop();
+        if (isSimulationDone) {
+          HapticFeedback.mediumImpact();
+          _unityController.unityController!
+              .postMessage('Canvas', 'RestartScene', 'restart');
+          await _unityController.unityController!.pause();
+          Get.back();
+        } else {
+          await _unityController.unityController!.pause();
+          Get.back();
+        }
         return false;
       },
       child: Scaffold(
@@ -54,11 +56,16 @@ class _ArScreenState extends State<ArScreen> {
                     debugPrint('new UnityAR player has already created');
                   }
                 },
-                onUnityMessage: (message) {
-                  if (message == 'simulation done') {
+                onUnityMessage: (message) async {
+                  if (message as String == "simulation done") {
                     setState(() {
                       isSimulationDone = true;
                     });
+                  } else if (message == "pop") {
+                    _unityController.unityController!
+                        .postMessage('Canvas', 'RestartScene', 'restart');
+                    await _unityController.unityController!.pause();
+                    Get.back();
                   }
                 },
                 onUnityCreated: (controller) async {
@@ -99,11 +106,16 @@ class _ArScreenState extends State<ArScreen> {
                     ),
                   ),
                   onPressed: () async {
-                    Navigator.of(context).pop();
+                    _unityController.unityController!
+                        .postMessage('Canvas', 'RestartScene', 'restart');
                     await _unityController.unityController!.pause();
+                    Get.back();
                     Get.find<AudioPlayerController>().resume();
                   },
-                  icon: const Icon(Icons.arrow_back),
+                  icon: Icon(
+                    Icons.arrow_back,
+                    size: 24.r,
+                  ),
                   label: Text(
                     'Kembali',
                     style: TextStyle(fontSize: 24.sp),
