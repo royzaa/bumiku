@@ -1,6 +1,9 @@
 include ':app'
+/*
+## UNCOMMENT FOR UNITY
 include ":unityLibrary"
 project(":unityLibrary").projectDir = file("./unityLibrary")
+*/
 
 def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
 def properties = new Properties()

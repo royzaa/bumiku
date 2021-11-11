@@ -24,7 +24,7 @@ import '../services/audio_player_controller.dart';
 import './widget/learning_goal.dart';
 import './screens/learning_guide_screen/learning_guide_screen.dart';
 import './screens/learning_enrichment_screen/learning_enrichement_screen.dart';
-import './screens/ar_screen.dart';
+// import './screens/ar_screen.dart';
 // import '../services/unity_controller.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -204,65 +204,17 @@ class _BottomNavBarState extends State<BottomNavBar> {
                       builder: (context) => const LearningGoal());
                 }),
             SpeedDialChild(
-                elevation: 20,
-                labelWidget: const LabelMenu(
-                  title: 'Augmented Reality',
-                ),
-                child: Icon(
-                  Icons.camera_alt,
-                  color: Theme.of(context).primaryColor,
-                  size: 24.r,
-                ),
-                onTap: () async {
-                  final isArCoreInstalled =
-                      await DeviceApps.isAppInstalled('com.google.ar.core');
-                  showDialog(
-                    context: context,
-                    builder: (context) {
-                      return AlertDialog(
-                        content: isArCoreInstalled
-                            ? Text(
-                                'Gawaimu mendukung markerless AR, kamu dapat menikmati fitur ini',
-                                style: TextStyle(
-                                  fontSize: 14.sp,
-                                ),
-                              )
-                            : const Text(
-                                'You need to install Google AR Service to enjoy this feature. If you can not, then your device does not heve compitiability with ARCOre.'),
-                        actions: [
-                          isArCoreInstalled
-                              ? TextButton(
-                                  onPressed: () async {
-                                    Navigator.pop(context);
-                                    Get.find<AudioPlayerController>().pause();
-                                    await Get.to(
-                                      const ArScreen(),
-                                      transition: Transition.zoom,
-                                    );
-                                  },
-                                  child: Text(
-                                    'Mainkan',
-                                    style: TextStyle(
-                                      fontSize: 16.sp,
-                                      color: Theme.of(context).primaryColor,
-                                    ),
-                                  ),
-                                )
-                              : TextButton(
-                                  onPressed: () async {
-                                    await canLaunch(
-                                            'https://play.google.com/store/apps/details?id=com.google.ar.core')
-                                        ? await launch(
-                                            'https://play.google.com/store/apps/details?id=com.google.ar.core')
-                                        : throw 'Couldn\'t launch';
-                                  },
-                                  child: const Text('Install ARCore'),
-                                ),
-                        ],
-                      );
-                    },
-                  );
-                }),
+              elevation: 20,
+              labelWidget: const LabelMenu(
+                title: 'Augmented Reality',
+              ),
+              child: Icon(
+                Icons.camera_alt,
+                color: Theme.of(context).primaryColor,
+                size: 24.r,
+              ),
+              onTap: contactDev,
+            ),
             SpeedDialChild(
               onTap: () async {
                 await Navigator.of(context).push(MaterialPageRoute(
@@ -281,6 +233,91 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ],
         ),
       ),
+    );
+  }
+  // void goToArScreen() {
+  //    final isArCoreInstalled =
+  //                               await DeviceApps.isAppInstalled(
+  //                                   'com.google.ar.core');
+  //                           showDialog(
+  //                             context: context,
+  //                             builder: (context) {
+  //                               return AlertDialog(
+  //                                 content: isArCoreInstalled
+  //                                     ? Text(
+  //                                         'Gawaimu mendukung markerless AR, kamu dapat menikmati fitur ini',
+  //                                         style: TextStyle(
+  //                                           fontSize: 14.sp,
+  //                                         ),
+  //                                       )
+  //                                     : const Text(
+  //                                         'You need to install Google AR Service to enjoy this feature. If you can not, then your device does not heve compitiability with ARCOre.'),
+  //                                 actions: [
+  //                                   isArCoreInstalled
+  //                                       ? TextButton(
+  //                                           onPressed: () async {
+  //                                             Navigator.pop(context);
+  //                                             getx.Get.find<
+  //                                                     AudioPlayerController>()
+  //                                                 .pause();
+  //                                             await getx.Get.to(
+  //                                               () => const ArScreen(),
+  //                                               transition:
+  //                                                   getx.Transition.zoom,
+  //                                             );
+  //                                           },
+  //                                           child: Text(
+  //                                             'Mainkan',
+  //                                             style: TextStyle(
+  //                                               fontSize: 16.sp,
+  //                                               color: Theme.of(context)
+  //                                                   .primaryColor,
+  //                                             ),
+  //                                           ),
+  //                                         )
+  //                                       : TextButton(
+  //                                           onPressed: () async {
+  //                                             await canLaunch(
+  //                                                     'https://play.google.com/store/apps/details?id=com.google.ar.core')
+  //                                                 ? await launch(
+  //                                                     'https://play.google.com/store/apps/details?id=com.google.ar.core')
+  //                                                 : throw 'Couldn\'t launch';
+  //                                           },
+  //                                           child: const Text('Install ARCore'),
+  //                                         ),
+  //                                 ],
+  //                               );
+  //                             },
+  //                           );
+  // }
+
+  void contactDev() {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          content: Text(
+            'Mohon maaf aplikasi pada pameran ini hanya demo. Untuk mendapatkan versi utuh silakan hubungi developer',
+            style: TextStyle(
+              fontSize: 14.sp,
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () async {
+                Navigator.pop(context);
+              },
+              child: Text(
+                'Baik',
+                style: TextStyle(
+                  fontSize: 16.sp,
+                  color: Theme.of(context).primaryColor,
+                ),
+              ),
+            )
+          ],
+        );
+      },
     );
   }
 }

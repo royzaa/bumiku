@@ -48,18 +48,18 @@ dependencies:
   url_launcher: ^6.0.9
   volume_controller: ^2.0.2
   youtube_player_flutter: ^8.0.0
-  flutter_unity_widget: ^4.2.1
+  # flutter_unity_widget: ^4.2.1
 
 dev_dependencies:
   flutter_lints: ^1.0.0
-  # flutter_native_splash: ^1.2.4
+  flutter_native_splash: ^1.2.4
   flutter_test:
     sdk: flutter
 
-# flutter_native_splash:
-#   color: "#ffffff"
-#   image: assets/images/splash.png
-#   android: true
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/splash.png
+  android: true
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.
