@@ -5,6 +5,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../services/audio_player_controller.dart';
 // import '../../services/unity_controller.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class DialogExit extends StatelessWidget {
   const DialogExit({Key? key}) : super(key: key);
@@ -32,7 +36,7 @@ class DialogExit extends StatelessWidget {
               height: 20.h,
             ),
             Text(
-              'Confirm to exit',
+              _i10n.confirmExit,
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 20.sp,
@@ -63,7 +67,7 @@ class DialogExit extends StatelessWidget {
                     // exit(0);
                   },
                   child: Text(
-                    'Yes',
+                    _i10n.yes,
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 14.sp,
@@ -82,7 +86,7 @@ class DialogExit extends StatelessWidget {
                   ),
                   onPressed: () => Navigator.pop(context),
                   child: Text(
-                    'No',
+                    _i10n.no,
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 14.sp,

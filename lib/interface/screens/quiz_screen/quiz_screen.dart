@@ -8,6 +8,10 @@ import './widgets/quiz_card.dart';
 import '../../../services/quiz_controller.dart';
 import '../../../data/quizes.dart';
 import '../../../model/quiz_item.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class QuizScreen extends StatefulWidget {
   static const routeName = '/quiz-screen';
@@ -78,7 +82,8 @@ class _QuestionScreenState extends State<QuizScreen> {
                     ),
                     child: Obx(
                       () => Text(
-                        'Question No. ${quizController.questionNumber.value}',
+                        _i10n.questionNo(
+                            '${quizController.questionNumber.value}'),
                         style: TextStyle(
                           color: Theme.of(context).primaryColor,
                           fontSize: 16.sp,

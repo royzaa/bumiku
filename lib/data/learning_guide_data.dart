@@ -1,34 +1,33 @@
 import '../model/learning_guide.dart';
+import '../l10n/generated/l10n.dart';
+import '../services/locator.dart';
 
-const learningGuides = <LearningGuide>[
+final I10n _i10n = locator<I10n>();
+
+final learningGuides = <LearningGuide>[
   LearningGuide(
-    descriptions:
-        '''Praying can increase mental and spiritual strength. It will help you realize your best fit for studying. Takes time to pray according to your beliefs.''',
+    descriptions: _i10n.learningGuide0,
     svgUrl: 'https://drive.google.com/uc?id=1UQtqLKrTYEczcH4Ik-9ph6Iw5hiXFyoK',
-    title: 'Pray First',
+    title: _i10n.learningGuideTitle0,
   ),
   LearningGuide(
-    descriptions:
-        '''Read the learning objectives then you will understand what lesson you are studying now. Make sure to read it for the continuity of your learning process.''',
+    descriptions: _i10n.learningGuide1,
     svgUrl: 'https://drive.google.com/uc?id=1HJEI55HjcyOTrLqx1_ZldmZMFhkCdzwE',
-    title: 'Read Objective',
+    title: _i10n.learningGuideTitle1,
   ),
   LearningGuide(
-    descriptions:
-        '''Study the topics one by one. Pay close attention to each chapter so you can study in a more structured way. Fighting! You have to give your best.''',
+    descriptions: _i10n.learningGuide2,
     svgUrl: 'https://drive.google.com/uc?id=1tFSPW-ljWWCwGeujfYzXOM57lrcybjDV',
-    title: 'Learn one by one',
+    title: _i10n.learningGuideTitle2,
   ),
   LearningGuide(
-    descriptions:
-        '''If your device supports google AR, you can try to display vehicle objects in your reality. Use this opportunity to gain comprehensive about learning material.''',
+    descriptions: _i10n.learningGuide3,
     svgUrl: 'https://drive.google.com/uc?id=1kC7RgV5vmbNdbtENKYltFuXAHT2MdW1S',
-    title: 'Play AR',
+    title: _i10n.learningGuideTitle3,
   ),
   LearningGuide(
-    descriptions:
-        '''Challange your knowledge to ensure how much your competencies in spesific topic. Give all your best to get highest grade. Share the result to your friend.''',
+    descriptions: _i10n.learningGuide4,
     svgUrl: 'https://drive.google.com/uc?id=17LMYS7ZKORBnT3dZxc939bu8AOHW96w2',
-    title: 'Take a quiz',
+    title: _i10n.learningGuideTitle4,
   ),
 ];

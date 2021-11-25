@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:device_apps/device_apps.dart';
+// import 'package:device_apps/device_apps.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
@@ -26,6 +26,10 @@ import './screens/learning_guide_screen/learning_guide_screen.dart';
 import './screens/learning_enrichment_screen/learning_enrichement_screen.dart';
 // import './screens/ar_screen.dart';
 // import '../services/unity_controller.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
@@ -68,6 +72,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
     ];
     super.initState();
     WidgetsBinding.instance!.addPostFrameCallback((_) {
+      debugPrint(
+          'show case finish? ${!DataSharedPreferences.getFinishShowCase()!}');
       if (!DataSharedPreferences.getFinishShowCase()!) {
         ShowCaseWidget.of(context)!.startShowCase(
           [_one, _two, _three, _four],
@@ -90,7 +96,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           lastPressed = DateTime.now();
 
           Fluttertoast.showToast(
-              msg: 'Tap twice to close the app',
+              msg: _i10n.tapTwice,
               fontSize: 18,
               toastLength: Toast.LENGTH_LONG);
           Timer(maxDuration, () => Fluttertoast.cancel());
@@ -130,26 +136,26 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   Icons.source_outlined,
                   size: 24.r,
                 ),
-                label: 'Credit',
-                tooltip: 'Sources and developer team',
+                label: _i10n.bottomNavBar0Title,
+                tooltip: _i10n.bottomNavBar0Tooltip,
               ),
-              const BottomNavigationBarItem(
-                icon: Icon(null),
-                label: 'Play',
-                tooltip: 'Play',
+              BottomNavigationBarItem(
+                icon: const Icon(null),
+                label: _i10n.bottomNavBar1Title,
+                tooltip: _i10n.bottomNavBar1Tooltip,
               ),
               BottomNavigationBarItem(
                 icon: MyShowCase(
-                  title: "Bottom tab bar",
-                  desc: "Tap here to change tab",
+                  title: _i10n.bottomTabShowCaseTitle,
+                  desc: _i10n.bottomTabShowCaseDesc,
                   showCaseKey: _one,
                   child: Icon(
                     Icons.menu_book_outlined,
                     size: 24.r,
                   ),
                 ),
-                label: 'Synopsis',
-                tooltip: 'Synopsis',
+                label: _i10n.bottomNavBar2Title,
+                tooltip: _i10n.bottomNavBar2Title,
               ),
             ],
           ),
@@ -172,8 +178,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
           },
           children: [
             SpeedDialChild(
-                labelWidget: const LabelMenu(
-                  title: 'Learning Guide',
+                labelWidget: LabelMenu(
+                  title: _i10n.speedDial0,
                 ),
                 elevation: 20,
                 child: Icon(
@@ -186,8 +192,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                       builder: (context) => const LearningGuideScreen()));
                 }),
             SpeedDialChild(
-                labelWidget: const LabelMenu(
-                  title: 'Goal',
+                labelWidget: LabelMenu(
+                  title: _i10n.speedDial1,
                 ),
                 elevation: 20,
                 child: Icon(
@@ -205,8 +211,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 }),
             SpeedDialChild(
               elevation: 20,
-              labelWidget: const LabelMenu(
-                title: 'Augmented Reality',
+              labelWidget: LabelMenu(
+                title: _i10n.speedDial2,
               ),
               child: Icon(
                 Icons.camera_alt,
@@ -221,8 +227,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                     builder: (context) => const LearningEnrichmentScreen()));
               },
               elevation: 20,
-              labelWidget: const LabelMenu(
-                title: 'Learning Enrichment',
+              labelWidget: LabelMenu(
+                title: _i10n.speedDial3,
               ),
               child: Icon(
                 Icons.border_color_sharp,
@@ -297,7 +303,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       builder: (context) {
         return AlertDialog(
           content: Text(
-            'Mohon maaf aplikasi pada pameran ini hanya demo. Untuk mendapatkan versi utuh silakan hubungi developer',
+            _i10n.sorryJustDemo,
             style: TextStyle(
               fontSize: 14.sp,
             ),
@@ -308,7 +314,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 Navigator.pop(context);
               },
               child: Text(
-                'Baik',
+                'Ok',
                 style: TextStyle(
                   fontSize: 16.sp,
                   color: Theme.of(context).primaryColor,

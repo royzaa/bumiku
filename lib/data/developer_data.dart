@@ -1,4 +1,8 @@
+import '../l10n/generated/l10n.dart';
 import '../model/developer.dart';
+import '../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 List<Developer> devData = [
   Developer(
@@ -16,8 +20,8 @@ List<Developer> devData = [
           'https://drive.google.com/uc?id=1ORgjOfp8SwFpEHB8ctKTpTJeDp82Tgak',
       name: 'Farhan Nasrullah',
       roles: [
-        'Perancang materi',
-        'Perancang kuis',
+        _i10n.role1,
+        _i10n.role2,
       ],
       sosmed: '@farhan_nashrullah',
       sosmedurl: 'https://www.instagram.com/farhan_nashrullah/'),

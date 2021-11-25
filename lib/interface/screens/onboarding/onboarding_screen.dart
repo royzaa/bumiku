@@ -8,6 +8,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../data/onboarding_data.dart';
 import '../../bottom_bar.dart';
 import './welcome_dialog.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);
@@ -97,7 +101,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                         curve: Curves.easeInCirc);
                                   },
                                   child: Text(
-                                    'Next',
+                                    _i10n.next,
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 16.sp,
@@ -170,7 +174,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                         BottomNavBar.routeName);
                                   },
                                   child: Text(
-                                    'Get Started',
+                                    _i10n.getStarted,
                                     style: TextStyle(
                                       color: Theme.of(context).primaryColor,
                                       fontSize: 20.sp,

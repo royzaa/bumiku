@@ -4,6 +4,10 @@ import 'package:syncfusion_flutter_gauges/gauges.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../services/shared_preferences.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class Statistics extends StatefulWidget {
   const Statistics({
@@ -84,7 +88,7 @@ class _StatisticsState extends State<Statistics> {
                   height: 15.h,
                 ),
                 Text(
-                  'Oops you don\'t have any statistics, try the quiz!',
+                  _i10n.dontHaveStat,
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w500,
@@ -173,7 +177,7 @@ class _StatisticsState extends State<Statistics> {
                               },
                             ),
                             Text(
-                              'Accuracy',
+                              _i10n.accuracy,
                               style: TextStyle(
                                 color: Colors.grey.shade400,
                                 fontSize: 10.sp,
@@ -196,7 +200,7 @@ class _StatisticsState extends State<Statistics> {
                       height: 10.h,
                     ),
                     Text(
-                      'Completion',
+                      _i10n.completion,
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 14.sp,
@@ -255,7 +259,7 @@ class _StatisticsState extends State<Statistics> {
                     Row(
                       children: [
                         Text(
-                          'Total correct answer :   ',
+                          _i10n.totalCorrect,
                           style: TextStyle(
                             color: Colors.grey,
                             fontSize: 13.sp,
@@ -291,7 +295,7 @@ class _StatisticsState extends State<Statistics> {
                     Row(
                       children: [
                         Text(
-                          'Number of try :   ',
+                          _i10n.numOfTry,
                           style: TextStyle(
                             color: Colors.grey,
                             fontSize: 13.sp,
@@ -299,7 +303,7 @@ class _StatisticsState extends State<Statistics> {
                           ),
                         ),
                         Text(
-                          '${allQuizTrack.length} times',
+                          _i10n.tryTimes('${allQuizTrack.length}'),
                           style: TextStyle(
                             color: Colors.green,
                             fontSize: 13.sp,

@@ -1,20 +1,24 @@
 import 'dart:async';
 
-import 'package:device_apps/device_apps.dart';
+// import 'package:device_apps/device_apps.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart' as getx;
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 import '../../../widget/cached_svg.dart';
 import '../../learning_guide_screen/learning_guide_screen.dart';
 import '../../../widget/learning_goal.dart';
 import '../../learning_enrichment_screen/learning_enrichement_screen.dart';
-import '../../ar_screen.dart';
-import '../../../../services/audio_player_controller.dart';
+// import '../../ar_screen.dart';
+// import '../../../../services/audio_player_controller.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class Menus extends StatefulWidget {
   const Menus({
@@ -55,24 +59,24 @@ class _MenusState extends State<Menus> {
     Icons.border_color_sharp,
   ];
 
-  List<String> menusTitle = const [
-    'Learning Guide',
-    'Goal',
-    'Augmented Reality',
-    'Learning Enrichment'
+  List<String> menusTitle = [
+    _i10n.menusTitle0,
+    _i10n.menusTitle1,
+    _i10n.menusTitle2,
+    _i10n.menusTitle3,
   ];
 
-  List<String> menusDescription = const [
-    'Get started to learn with our guide',
-    'Know your learning goal for better learning',
-    'Display city vechicle in real world',
-    'Learn and practice more'
+  List<String> menusDescription = [
+    _i10n.menusDesc0,
+    _i10n.menusDesc1,
+    _i10n.menusDesc2,
+    _i10n.menusDesc3,
   ];
 
   List<String> imageUrl = const [
     'https://drive.google.com/uc?id=1HmAV91jQZrnbW3BC7rctzTGkyGYjTX8l',
     'https://drive.google.com/uc?id=1pOcsVSHT-xx9mgZctTAAgZr1Xt6weKkt',
-    'https://drive.google.com/uc?id=1vao14CDXKQ5vofm0B9OT-RLTZdp7z51N',
+    'https://drive.google.com/uc?id=14qMTpB_N3d_RmYF_X584y9L3ZOO8NKNi',
     'https://drive.google.com/uc?id=1uFBqz1x_cM9T-8hMAXnzn3mg1FcHFkOX',
   ];
   @override
@@ -263,7 +267,10 @@ class _MenusState extends State<Menus> {
                                 ),
                                 Flexible(
                                     flex: 2,
-                                    child: CachedSvg(svgUrl: imageUrl[index])),
+                                    child: CachedSvg(
+                                      svgUrl: imageUrl[index],
+                                      fit: BoxFit.contain,
+                                    )),
                               ],
                             ),
                           ),
@@ -336,7 +343,7 @@ class _MenusState extends State<Menus> {
                                   blurRadius: 20),
                             ]),
                         child: Text(
-                          'Select menu',
+                          _i10n.selectMenu,
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 22.sp,
@@ -416,7 +423,7 @@ class _MenusState extends State<Menus> {
       builder: (context) {
         return AlertDialog(
           content: Text(
-            'Mohon maaf aplikasi pada pameran ini hanya demo. Untuk mendapatkan versi utuh silakan hubungi developer',
+            _i10n.sorryJustDemo,
             style: TextStyle(
               fontSize: 14.sp,
             ),
@@ -427,7 +434,7 @@ class _MenusState extends State<Menus> {
                 Navigator.pop(context);
               },
               child: Text(
-                'Baik',
+                'Ok',
                 style: TextStyle(
                   fontSize: 16.sp,
                   color: Theme.of(context).primaryColor,

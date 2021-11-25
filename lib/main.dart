@@ -5,6 +5,7 @@ import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,6 +19,9 @@ import './services/time_session.dart';
 import './services/audio_player_controller.dart';
 import './interface/screens/quiz_screen/quiz_screen.dart';
 import './services/quiz_controller.dart';
+import './l10n/generated/l10n.dart';
+import './services/locator.dart';
+import './services/lang_controller.dart';
 // import './services/unity_controller.dart';
 
 Future main() async {
@@ -27,6 +31,7 @@ Future main() async {
   await _localPath().then((dirApp) async {
     await compute(writeMusicinLocal, dirApp);
   });
+  setupLocator();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((_) => runApp(const MyApp()));
 }
@@ -72,18 +77,31 @@ void writeMusicinLocal(String dirApp) async {
   }
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
 
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     Get.put(AudioPlayerController());
     Get.put(MyCacheManager());
     Get.put(TimeSession());
     final quizController = Get.put(QuizController());
+    final langController = Get.put(LangController());
     // Get.put(UnityController());
+
+    void refreshApp() {
+      if (langController.langValue != null) {
+        debugPrint('called');
+        setState(() {});
+      }
+    }
+
+    langController.langRefresh = refreshApp;
 
     return ScreenUtilInit(
       designSize: const Size(360, 700),
@@ -119,6 +137,26 @@ class MyApp extends StatelessWidget {
                     },
                   ),
                 ),
+          },
+          locale: langController.langValue ?? const Locale('id', ''),
+          supportedLocales: I10n.delegate.supportedLocales,
+          localizationsDelegates: const [
+            I10n.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+          ],
+          localeResolutionCallback: (deviceLocale, supportedLocales) {
+            if (langController.langValue != null) {
+              return langController.langValue!;
+            }
+            if (supportedLocales
+                .map((e) => e.languageCode)
+                .contains(deviceLocale?.languageCode)) {
+              return deviceLocale;
+            } else if (langController.langValue == null) {
+              return const Locale('id', '');
+            }
           },
         );
       },

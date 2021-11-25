@@ -7,6 +7,10 @@ import 'package:bumiku/model/youtube_video.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 import '../../../data/youtube_videos_data.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class YoutubePlayerScreen extends StatefulWidget {
   const YoutubePlayerScreen({
@@ -136,7 +140,7 @@ class _YoutubePlayerScreenState extends State<YoutubePlayerScreen>
             elevation: 0,
             backgroundColor: Colors.grey[100],
             title: Text(
-              'Video Player',
+              _i10n.videoPlayer,
               style: TextStyle(
                 color: Colors.grey[700],
                 fontSize: 20.sp,
@@ -358,7 +362,7 @@ class _YoutubePlayerScreenState extends State<YoutubePlayerScreen>
                                   height: 20.h,
                                 ),
                                 Text(
-                                  'Now playing',
+                                  _i10n.nowPlaying,
                                   style: TextStyle(
                                     fontSize: 15.sp,
                                     color: fontColor,
@@ -406,7 +410,13 @@ class _YoutubePlayerScreenState extends State<YoutubePlayerScreen>
                                             ),
                                           ),
                                           Text(
-                                            '${controller!.metadata.duration.inMinutes} minutes ${controller!.metadata.duration.toString().split(':')[2].split('.').first} seconds',
+                                            _i10n.videoDuration(
+                                                '${controller!.metadata.duration.inMinutes}',
+                                                controller!.metadata.duration
+                                                    .toString()
+                                                    .split(':')[2]
+                                                    .split('.')
+                                                    .first),
                                             style: TextStyle(
                                               color: Theme.of(context)
                                                   .primaryColor,
@@ -423,7 +433,7 @@ class _YoutubePlayerScreenState extends State<YoutubePlayerScreen>
                                 ),
                                 if (true) ...[
                                   Text(
-                                    'Other related videos',
+                                    _i10n.relatedVideo,
                                     style: TextStyle(
                                       fontSize: 15.sp,
                                       color: fontColor,
@@ -494,14 +504,6 @@ class _YoutubePlayerScreenState extends State<YoutubePlayerScreen>
                                                         color: fontColor,
                                                       ),
                                                     ),
-                                                    // Text(
-                                                    //   '${anotherList[index].metadata.duration.inMinutes} minutes ${anotherList[index].metadata.duration.toString().split(':')[2].split('.').first} seconds',
-                                                    //   style: TextStyle(
-                                                    //     color: Theme.of(context)
-                                                    //         .primaryColor,
-                                                    //     fontSize: 12.sp,
-                                                    //   ),
-                                                    // ),
                                                   ],
                                                 ),
                                               ),

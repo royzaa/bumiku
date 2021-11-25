@@ -8,11 +8,15 @@ import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../services/shared_preferences.dart';
-import '../play screen/widget/pop_up_volume.dart';
+import '../play screen/widget/pop_up_settings.dart';
 import './widgets/synopsis_modall_bottom.dart';
 import '../../../services/time_session.dart';
 import './widgets/chat_bubble.dart';
 import '../../widget/cached_network_lottie.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class SynopsisScreen extends StatefulWidget {
   const SynopsisScreen({Key? key}) : super(key: key);
@@ -55,7 +59,7 @@ class _SynopsisScreenState extends State<SynopsisScreen>
       CurvedAnimation(parent: _bubbleController!, curve: Curves.fastOutSlowIn),
     );
 
-    messages = 'Hi, are you calling me?';
+    messages = _i10n.callingMe;
 
     _bubbleController!.forward();
 
@@ -68,9 +72,7 @@ class _SynopsisScreenState extends State<SynopsisScreen>
     _bubbleController!.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         Future.delayed(
-          Duration(
-              milliseconds:
-                  messages == 'Hi, are you calling me?' ? 2500 : 4000),
+          Duration(milliseconds: messages == _i10n.callingMe ? 2500 : 4000),
           () => _bubbleController!.reverse().then(
                 (_) => _bubbleController!.reset(),
               ),
@@ -101,9 +103,9 @@ class _SynopsisScreenState extends State<SynopsisScreen>
   String messages = '';
   String message() {
     if (startScrolled) {
-      messages = 'Are you start reading? Good luck';
+      messages = _i10n.startReading;
     } else if (tapInScreen) {
-      messages = 'Read synospis carefully';
+      messages = _i10n.defaultMsg;
     }
     return messages;
   }
@@ -144,7 +146,7 @@ class _SynopsisScreenState extends State<SynopsisScreen>
           const Positioned(
             right: 0,
             top: 0,
-            child: PopUpVolume(),
+            child: PopUpSettings(),
           ),
           Positioned(
             top: 0,
@@ -165,7 +167,7 @@ class _SynopsisScreenState extends State<SynopsisScreen>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Synopsis',
+                  _i10n.summary,
                   style: TextStyle(
                     color: timeSession.isDay ? Colors.black : Colors.white,
                     fontWeight: FontWeight.w600,
@@ -178,7 +180,7 @@ class _SynopsisScreenState extends State<SynopsisScreen>
                 SizedBox(
                   width: size.width * 0.45.w,
                   child: Text(
-                    'Let\'s read this beautiful synopsis for understanding more about our topic',
+                    _i10n.summaryDesc,
                     style: TextStyle(
                       color: timeSession.isDay ? Colors.black : Colors.white,
                       fontWeight: FontWeight.w500,

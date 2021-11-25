@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class DeveloperTeamIcon extends StatelessWidget {
   const DeveloperTeamIcon({
@@ -24,7 +28,7 @@ class DeveloperTeamIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return PopupMenuButton(
       enableFeedback: true,
-      tooltip: 'look our profile',
+      tooltip: _i10n.developerTooltip,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(25),
       ),
@@ -106,7 +110,7 @@ class DeveloperTeamIcon extends StatelessWidget {
                 height: 5.h,
               ),
               Text(
-                'Roles:',
+                _i10n.developerRoles,
                 style: TextStyle(color: Colors.grey, fontSize: 14.sp),
               ),
               SizedBox(

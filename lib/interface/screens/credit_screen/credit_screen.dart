@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../play screen/widget/pop_up_volume.dart';
+import '../play screen/widget/pop_up_settings.dart';
 import '../../../services/time_session.dart';
 import '../../../services/shared_preferences.dart';
 import '../synopsis_screen/widgets/start_learning_button.dart';
@@ -14,6 +14,10 @@ import './widgets/developer_team_icon.dart';
 import './widgets/reference_modal_bottom.dart';
 import './widgets/attribution.dart';
 import '../../widget/cached_network_lottie.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class CreditScreen extends StatelessWidget {
   const CreditScreen({Key? key}) : super(key: key);
@@ -80,7 +84,7 @@ class CreditScreen extends StatelessWidget {
                                   child: FittedBox(
                                     fit: BoxFit.contain,
                                     child: Text(
-                                      'Thanks for hard work',
+                                      _i10n.thanks,
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 22.sp,
@@ -95,7 +99,7 @@ class CreditScreen extends StatelessWidget {
                                   child: FittedBox(
                                     fit: BoxFit.scaleDown,
                                     child: Text(
-                                      'Your contributions give significant\nother in this project',
+                                      _i10n.thanksDesc,
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 16.sp,
@@ -172,7 +176,7 @@ class CreditScreen extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 20.w, top: 40.h),
                   child: Text(
-                    'Our team',
+                    _i10n.ourTeam,
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 18.sp,
@@ -208,7 +212,7 @@ class CreditScreen extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 20.w),
                   child: Text(
-                    'Attribution',
+                    _i10n.attribution,
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 18.sp,
@@ -219,16 +223,16 @@ class CreditScreen extends StatelessWidget {
                 SizedBox(
                   height: 15.h,
                 ),
-                const Attribution(
-                  brandName: 'Royalty Free Music from Bensound',
+                Attribution(
+                  brandName: _i10n.royaltyFreeMusic,
                   logoUrl:
                       'https://drive.google.com/uc?id=1zJRJ1iK5xDTeFgojbzsBe1Gz0wc0ifjM',
                 ),
                 SizedBox(
                   height: 15.h,
                 ),
-                const Attribution(
-                  brandName: 'Pray illustration by Storyset',
+                Attribution(
+                  brandName: _i10n.prayIllus,
                   logoUrl:
                       'https://drive.google.com/uc?id=1WLyBmvjCFZVlbVpzZV7x4nYtysJk0QwC',
                 ),
@@ -276,7 +280,7 @@ class CreditScreen extends StatelessWidget {
         Positioned(
           right: 0,
           top: MediaQuery.of(context).padding.top,
-          child: const PopUpVolume(
+          child: const PopUpSettings(
             isInCreditScreen: true,
           ),
         ),

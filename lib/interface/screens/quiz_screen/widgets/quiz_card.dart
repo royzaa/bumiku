@@ -10,6 +10,10 @@ import '../../../../services/shared_preferences.dart';
 import './count_down.dart';
 import '../../../../services/quiz_controller.dart';
 import '../../../../model/choice_chip.dart' as choice;
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class QuizCard extends StatefulWidget {
   const QuizCard({
@@ -119,7 +123,7 @@ class _QuizCardState extends State<QuizCard>
                     ),
                     color: const Color.fromRGBO(255, 187, 187, 1),
                     child: Text(
-                      '20 points',
+                      _i10n.points20,
                       style: TextStyle(
                         color: Colors.red.shade400,
                         fontSize: 14.sp,
@@ -207,7 +211,7 @@ class _QuizCardState extends State<QuizCard>
                             vertical: 10.h, horizontal: 35.w),
                       ),
                       child: Text(
-                        'Submit',
+                        _i10n.submit,
                         style: widget.textStyle,
                       ),
                       onPressed: () {
@@ -254,7 +258,7 @@ class _QuizCardState extends State<QuizCard>
                           }
                         } catch (e) {
                           debugPrint(e.toString());
-                          Fluttertoast.showToast(msg: 'Select one answer');
+                          Fluttertoast.showToast(msg: _i10n.selectOneAnswer);
                         }
                       }),
                 ),

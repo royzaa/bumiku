@@ -1,0 +1,763 @@
+{
+    "language": "Indonesia",
+    "@language": {
+        "description": "The current language"
+    },
+    "role1": "Perancang materi",
+    "@role1": {
+        "description": "peran1"
+    },
+    "role2": "Perancang kuis",
+    "@role2": {
+        "description": "peran2"
+    },
+    "learningGuide0": "Berdoa akan meningkatkan kekuatan mental dan spiritual. Hal itu membantumu mendapatkan kondisi terbaik untuk belajar. Senggangkan waktu untuk berdoa sesuai kepercayaanmu",
+    "@learningGuide0": {
+        "description": "learning guide 0"
+    },
+    "learningGuide1": "Bacalah tujuan pembelajaran maka Kamu akan mengerti pelajaran apa yang Kamu pelajari sekarang. Pastikan untuk membacanya untuk kelangsungan proses belajar Kamu",
+    "@learningGuide1": {
+        "description": "learning guide 1"
+    },
+    "learningGuide2": "Pelajari topik satu per satu. Perhatikan baik-baik setiap bab sehingga Anda dapat belajar dengan cara yang lebih terstruktur. Berkelahi! Anda harus memberikan yang terbaik",
+    "@learningGuide2": {
+        "description": "learning guide 2"
+    },
+    "learningGuide3": "Jika perangkat Anda mendukung google AR, Anda dapat mencoba menampilkan objek kendaraan dalam realitas Anda. Gunakan kesempatan ini untuk mendapatkan pemahaman yang komprehensif tentang materi pembelajaran",
+    "@learningGuide3": {
+        "description": "learning guide 3"
+    },
+    "learningGuide4": "Tantang pengetahuan Anda untuk memastikan seberapa besar kompetensi Anda dalam topik tertentu. Berikan yang terbaik untuk mendapatkan nilai tertinggi. Bagikan hasilnya ke teman Anda",
+    "@learningGuide4": {
+        "description": "learning guide 4"
+    },
+    "learningGuideTitle0": "Berdoa Dahulu",
+    "@learningGuideTitle0":  {
+        "description": "learning guide title 0"
+    },
+    "learningGuideTitle1": "Baca Tujuan",
+    "@learningGuideTitle1":  {
+        "description": "learning guide title 1"
+    },
+    "learningGuideTitle2": "Belajar Satu Per Satu",
+    "@learningGuideTitle2":  {
+        "description": "learning guide title 2"
+    },
+    "learningGuideTitle3": "Mainkan AR",
+    "@learningGuideTitle3":  {
+        "description": "learning guide title 3"
+    },
+    "learningGuideTitle4": "Ambil Kuis",
+    "@learningGuideTitle4":  {
+        "description": "learning guide title 4"
+    },
+    "lessonNameForEarthLayer0": "Lapisan penyusun bumi",
+    "@lessonNameForEarthLayer0":  {
+        "description": "lesson name for earth layer 0"
+    },
+    "lessonNameForEarthLayer1": "Lapisan inti bumi",
+    "@lessonNameForEarthLayer1":  {
+        "description": "lesson name for earth layer 1"
+    },
+    "lessonNameForEarthLayer2": "Lapisan mantel bumi",
+    "@lessonNameForEarthLayer2":  {
+        "description": "lesson name for earth layer 2"
+    },
+    "lessonNameForEarthLayer3": "Lapisan kulit bumi",
+    "@lessonNameForEarthLayer3":  {
+        "description": "lesson name for earth layer 3"
+    },
+    "lessonContentForEarthLayer0": "Lapisan Penyusun Bumi\n\n\tBumi merupakan planet ketiga dalam sistem tata surya, tempat yang paling ideal bagi makhluk hidup untuk tinggal. Di dalamnya terdapat semua yang diperlukan untuk membantu kehidupan, termasuk berbagai macam mineral. Bumi tersusun oleh 3 lapisan, dari dalam keluar yaitu lapisan inti bumi, lapisan selimut bumi, dan lapisan kulit bumi.",
+    "@lessonContentForEarthLayer0":  {
+        "description": "lesson content for earth layer 0"
+    },
+    "lessonContentForEarthLayer1": "1.\tLapisan Inti Bumi\n\nLapisan terdalam bumi membentuk inti Bumi. Inti bumi terbentuk dari material cair yang bertekanan sangat tinggi. Inti bumi tersusun dari mineral cair Besi(Fe)dan Nikel (Ni), disebut Nife. Inti bumi terbagai menjadi dua, yaitu inti dalam bumi (inner core) yang berupa material padat, dan inti luar bumi (outer core)\n\n\ta.\tLapisan Inti Dalam\n\n\tInti bagian dalam adalah lapisan terdalam bumi. Ketebalan inti dalam bumi sekitar 1.216 Km dengan suhu yang sangat tinggi mencapai 6.000oC Tekanan di lapisan bumi ini sangat tinggi sehingga walaupun suhunya sangat tinggi, bahan inti dalam bumi yaitu besi tidak dapat bergerak, tidak meleleh, dan tetap berwujud besi yang padat.\n\n\tb.\tLapisan Inti Luar\n\n\tInti Bumi luar dapat dianggap sebagai bola logam yang sangat panas. Ketebalan inti luar sekitar 2.270 kilometer dan suhu sekitar 3.800oC Lapisan ini cair dan berisi besi dan nikel. Para ilmuwan berpendapat bahwa sulfur dan oksigen juga terdapat dalam inti luar. Hal ini karena, kedua elemen ini mudah larut dalam besi cair",
+    "@lessonContentForEarthLayer1":  {
+        "description": "lesson content for earth layer 1"
+    },
+    "lessonContentForEarthLayer2": "2.\tLapisan Mantel Bumi\n\n\t\tLapisan kedua dari dalam bumi adalah lapisan selimut bumi atau selubung bumi atau mantel bumi. Lapisan selimut bumi merupakan lapisan terbesar, sebagian besar massa bumi (± 80%) berada dalam lapisan mantel ini. Ketebalan keseluruhan lapisan mantel adalah 2.900 Km. Mantel bagian atas yang mengalasi kulit bumi bersifat padat dan bersama dengan kulit bumi membentuk satu kesatuan yang dinamakan litosfer. Mantel bagian bawah yang bersifat plastis disebut asthenosfer. Secara umum lapisan selimut bumi terdiri atas 3 bagian, yaitu lithosfer, astenosfer, dan mesosfer.\n\n\t\ta.\tLitosfer\n\n\t\tLitosfer berasal dari kata Yunani lithos artinya batuan, dan sphere artinya lapisan. Secara harfiah litosfer adalah lapisan bumi yang paling luar atau biasa disebut dengan kulit bumi. Lapisan ini pada umumnya tersusun dari materi-materi yang berwujud padat dan senyawa kimia yang kaya akan Si02, itulah sebabnya lapisan litosfer sering dinamakan lapisan silikat. Tebal lapisan ini sekitar 50-100 Km. Litosfer bersuhu dingin. Litosfer membentuk lempeng-lempeng yang kaku, bergerak diatas astenosfer yang lebih cair.\n\n\t\tb.\tAstenosfer\n\n\t\tAstenosfer berasal dari bahasa Yunani, asthenes yang berarti lemah dan sphere yang berarti lapisan/bulatan. Astenosfer merupakan lapisan dibawah litosfer yang wujudnya sangat kental. Lapisan astenosfer tersusun dari batuan yang meleleh akibat panas, namun kepadatannya rendah karenanya bersifat plastis. Tebal lapisan ini sekitar 130-160 Km. Lapisan ini kaya dengan silium, aluminium dan magnesium, dikenal dengan magma.\n\n\t\tc.\tMesosfer\n\n\t\tMesosfer merupakan lapisan batuan yang lebih berat dan tebal, kaya dengan silium dan magnesium. Lapisan ini merupakan lapisan terbesar dari lapisan selubung bumi. Tebalnya sekitar 2400-2750 Km. Mesosfer lebih kaku dibandingkan astenosfer namun lebih kental dibandingkan litosfer.",
+    "@lessonContentForEarthLayer2":  {
+        "description": "lesson content for earth layer 2"
+    },
+    "lessonContentForEarthLayer3": "3.\tLapisan Kulit Bumi\n\n\t\tLapisan ketiga yang merupakan bagian terluar bumi adalah kulit bumi. Ketebalan lapisan kulit bumi antara 5-70 Km, dan merupakan lapisan tanah dan bebatuan. Lapisan ini hanya sekitar satu persen dari massa bumi dan merupakan lapisan tipis dibandingkan dengan lapisan lainnya. Lapisan ini menjadi tempat tinggal seluruh makhluk hidup di bumi. Lapisan kulit bumi dibedakan menjadi dua yaitu lapisan benua dan lapisan samudra.\n\n\t\ta.\tLempeng Samudera\n\n\t\tLempeng samudra tersusun oleh mineral yang kaya akan Silika, dan Magnesium, disebut sima. Lempeng samudra biasanya disebut lapisan basaltis karena batuan penyusunnya terutama berkomposisi basalt.\n\n\t\tb.\tLempeng Benua\n\n\t\tLempeng benua tersusun oleh mineral yang kaya akan Silika dan Aluminium, oleh karenanya di sebut sial. Lempeng benua biasanya disebut sebagai lapisan granitis karena batuan penyusunnya terutama terdiri dari batuan yang berkomposisi granit.",
+    "@lessonContentForEarthLayer3":  {
+        "description": "lesson content for earth layer 3"
+    },
+    "lessonNameForAtmosphere0": "Lapisan litosfer bumi",
+    "@lessonNameForAtmosphere0":  {
+        "description": "lesson name for atmosphere 0"
+    },
+    "lessonNameForAtmosphere1": "Lapisan atmosfer bumi",
+    "@lessonNameForAtmosphere1":  {
+        "description": "lesson name for atmosphere 1"
+    },
+    "lessonContentForAtmosphere0": "Lapisan Litosfer Bumi\n\n\t\tLitosfer merupakan bagian bumi yang terluar, atau biasa disebut sebagai kulit bumi. Pengertian lain dari bagian bumi ini adalah bagian terluar dari lapisan kerak bumi berupa batuan. Batuan di sini sebenarnya bukan saja berupa benda keras seperti batu yang biasa kita jumpai dalam kehidupan sehari-hari, akan tetapi bisa dalam bentuk tanah liat, pasir, kerikil, abu gunung berapi, dan lain sebagainya.",
+    "@lessonContentForAtmosphere0":  {
+        "description": "lesson content for atmosphere 0"
+    },
+    "lessonContentForAtmosphere1": "Lapisan Atmosfer Bumi\n\n\t\tKetika Anda menyeduh kopi kemudian membiarkannya sesaat, akan menemukan bahwa pada gelas tersebut terdapat 2 lapisan. Pada lapisan atas memiliki warna lebih cerah dibandingkan lapisan bawah. Layaknya secangkir kopi, atmosfer Bumi juga terdiri atas berbagai lapisan. Setiap lapisan memiliki karakteristik sebagai berikut :\n\n\t\t1.\tTroposfer\n\n\t\tLapisan yang berada pada ketinggian 0 – 10 Km. lapisan atmosfer paling bawah, tempat aktivitas manusia dan hewan (termasuk burung), tempat berlangsungnya hujan, angin, salju dan awan.\n\n\t\t2.\tStratosfer\n\n\t\tLapisan yang berada pada ketinggian 10 – 50 Km. terdapat dari lapisan ozon (O3) untuk melindungi kita dari radiasi sinar ultraviolet, sekaligus tempat melintasnya pesawat udara saat berada di atas awan.\n\n\t\t3.\tMesosfer\n\n\t\tLapisan yang berada pada ketinggian 50 – 85 Km. tempat terbakarnya meteor yang menuju bumi, kebanyakan meteor yang menuju bumi akan habis terbakar di mesosfer.\n\n\t\t4.\tTermosfer\n\n\t\tLapisan yang berada pada ketinggian 85 – 500 Km. tempat mengorbit teleskop Hubble milik NASA, memiliki suhu yang tinggi namun karena molekul udara sangat sedikit jadi objek yang berada di sana tidak terasa panas.\n\n\t\t5.\tEksosfer\n\n\t\tLapisan yang berada pada ketinggian diatas 500 Km. tempat mengorbit satelit buatan, memiliki molekul yang sangat sedikit.\n\n\t\tPada mesosfer dan termosfer terdapat lapisan yang memiliki partikel ion (bermuatan) yang disebut ionosfer. Ketika Anda mendengarkan radio pada malam hari, siaran radio dari kota lain akan terdengar lebih jelas. Hal ini disebabkan karena adanya lapisan ionosfer. Pada siang hari, energi dari Matahari mengenai partikel pada ionosfer mengakibatkan partikel tersebut menyerap gelombang radio dengan frekuensi AM. Pada malam hari, tanpa energi Matahari, gelombang radio dipantulkan pada ionosfer, sehingga dapat terpancar dengan jarak yang lebih jauh",
+    "@lessonContentForAtmosphere1":  {
+        "description": "lesson content for atmosphere 1"
+    },
+    "lessonNameForVolcano0": "Struktur gunung api",
+    "@lessonNameForVolcano0":  {
+        "description": "lesson name for volcane 0"
+    },
+    "lessonNameForVolcano1": "Klaisifikasi gunung api berdasarkan bentuknya",
+    "@lessonNameForVolcano1":  {
+        "description": "lesson name for volcane 1"
+    },
+    "lessonNameForVolcano2": "Klaisifikasi gunung api berdasarkan letusannya",
+    "@lessonNameForVolcano2":  {
+        "description": "lesson name for volcane 2"
+    },
+    "lessonNameForVolcano3": "Proses terbentuknya gunung api",
+    "@lessonNameForVolcano3":  {
+        "description": "lesson name for volcane 3"
+    },
+    "lessonNameForVolcano4": "Gempa bumi",
+    "@lessonNameForVolcano4":  {
+        "description": "lesson name for volcane 4"
+    },
+    "lessonNameForVolcano5": "Macam gempa bumi",
+    "@lessonNameForVolcano5":  {
+        "description": "lesson name for volcane 5"
+    },
+    "lessonNameForVolcano6": "Pergerakan lempeng",
+    "@lessonNameForVolcano6":  {
+        "description": "lesson name for volcane 6"
+    },
+    "lessonNameForVolcano7": "Lipatan dan Patahan",
+    "@lessonNameForVolcano7":  {
+        "description": "lesson name for volcane 7"
+    },
+    "lessonNameForVolcano8": "Tsunami",
+    "@lessonNameForVolcano8":  {
+        "description": "lesson name for volcane 8"
+    },
+    "lessonContentForVolcano0": "Perhatikan struktur gunung api di atas",
+    "@lessonContentForVolcano0":  {
+        "description": "lesson content for volcane 0"
+    },
+    "lessonContentForVolcano1": "Klasifikasi Berdasarkan Bentuk Gunung Api\n\n\t\t1️⃣\tGunung api strato\n\n\t\tMempunyai bentuk kerucut berlereng curam dan luas yang terdiri atas banyak lapisan lava yang terbentuk dari aliran lava yang berulang-ulang. Lava dapat mengalir melalui sisi kerucut. Sifat letusan keras.\n\n\t\t2️⃣\tGunung api maar\n\n\t\tTerbentuk karena letusan akan tetapi tidak terlalu kuat dan hanya terjadi sekaili sehingga menghasilkan kawah yang menyerupai danau. Contoh Gunung Api Lamongan di Jawa Timur.\n\n\t\t3️⃣\tGunung api perisai\n\n\t\tTerbentuk karena lava yang cair dan tekanan yang rendah. Berbentuk landai dan aliran lava panas dari saluran tengah. Daerah persebaran magma luas serta proses pendinginan dan pembekuannya pelan. Frekuensi letusan sedang dan pelan dengan jumlah cairan lava cair yang banyak.",
+    "@lessonContentForVolcano1":  {
+        "description": "lesson content for volcane 1"
+    },
+    "lessonContentForVolcano2": "Klasifikasi Berdasarkan Letusan Gunung Api\n\n\t\t1️⃣\tTipe Stromboli\n\n\t\tMerupakan jenis letusan yang mempunyai interval waktu yang hampir sama di setiap letusannya sehingga letusan dapat terjadi setiap beberapa kali dalam interval waktu yang sama. Material-material yang keluar akibat letusan ini berupa bom, lipari maupun abu vulkanik.\n\n\t\t2️⃣\tTipe Hawaiian\n\n\t\tMerupakan letusan yang terjadi pada gunung yang memiliki lava sangat cair dan memiliki bentuk seperti perisai atau tameng yang dapat mengalir ke segala arah. Skala letusan tipe Hawaii ini relatif kecil namun memiliki intensitas yang tinggi.\n\n\t\t3️⃣\tTipe Merapi\n\n\t\tAdalah letusan untuk gunung yang memiliki lava yang kental yang dapat menyumbat mulut kawah. Hal ini akan berakibat tekanan gas menjadi semakin kuat dan menyebabkan sumbatan di mulut kawah menjadi pecah dan terangkat ke atas. Sumbatan di mulut kawah yang terangkat ke atas dan pecah ini pada akhirnya terlempar keluar. Material- material ini akan turun ke lereng gunung menjadi sebuah ladu atau gloedlawine. Tipe letusan ini juga mengeluarkan awan panas atau yang disebut dengan gloedlawine, orang jawa biasa menyebutnya “wedhus gembel” Tipe letusan ini pernah terjadi di Gunung Merapi (Jawa Tengah) yang pernah menimbulkan banyak korban jiwa.\n\n\t\t4️⃣\tTipe Volcano\n\n\t\tMerupakan letusan yang mengeluarkan material- material padat seperti bom, abu vulkanik, lapili dan juga bahan- bahan padat atau cair seperti lava.\n\n\t\t5️⃣\tTipe Perret atau Plinian\n\n\t\tAdalah letusan gunung berapi yang disertai ledakan yang sangat dahsyat dan dapat merusak lingkungan. Dengan demikian, material yang dikeluarkan pun jangkauannya bisa sangat sejauh hingga 80 km. Karakteristik yang dimiliki oleh letusan ini adalah ketika erupsi dikeluarkannya juga gas yang sangat tinggi dan juga awan yang menyembur menyerupai kembang kol.\n\n\t\t6️⃣\tTipe Pelee\n\n\t\tAdalah letusan yang terjadi apabila terdapat sumbatan kawah di puncak gunung api yang berbentuk jarum sehingga akan menyebabkan tekanan gas menjadi bertambah besar. Apabila sumbatan pada kawah gunung tersebut tidak terlalu kuat maka gunung ini akan meletus.\n\n\t\t7️⃣\tTipe Saint Vincent\n\n\t\tTerjadi pada gunung api yang memiliki danau kawah. Ketika gunung ini meletus maka air di danau kawah tersebut akan tumpah bersama lava.",
+    "@lessonContentForVolcano2":  {
+        "description": "lesson content for volcane 2"
+    },
+    "lessonContentForVolcano3": "Proses Terbentuknya Gunung Api\n\n\t\tMayoritas gunung berapi di dunia terbentuk di sepanjang batas lempeng tektonik bumi. Ketika lempeng tektonik bertabrakan, lempeng yang satu jatuh akan melesat ke dalam bumi dan yang lain diam di tempat. Inilah yang dikenal sebagai zona subduksi. Lempeng yang jatuh perlahan-lahan meleleh karena suhu bawah lempeng bumi yang sangat tinggi. Lelehan ini kemudian menjadi magma. Magma merupakan materi panas yang tersusun atas mineral cair dan batuan panas. Magma memiliki berat jenis yang lebih kecil daripada berat jenis batuan di sekitarnya. Hal ini menyebabkan magma terdesak hingga ke permukaan Bumi. Magma yang keluar dari gunung berapi kemudian disebut lava. Lava dan abu yang meledak dari waktu ke waktu akan menumpuk dan membentuk gunung berapi. Namun, tidak semua gunung berapi terbentuk akibat subduksi. Ada cara lain untuk gunung berapi terbentuk yang dikenal sebagai vulkanisme hotspot. Dalam situasi ini, zona aktivitas magmatik di tengah lempeng tektonik mendorong melalui kerak bumi untuk membentuk gunung berapi. Meskipun titik panas itu sendiri dianggap tidak bergerak, lempeng tektonik terus bergerak lambat, kemudian membentuk garis gunung berapi atau pulau di permukaan. Mekanisme ini diduga berada di belakang rantai vulkanikHawaii.",
+    "@lessonContentForVolcano3":  {
+        "description": "lesson content for volcane 3"
+    },
+    "lessonContentForVolcano4": "Gempa Bumi\n\n\t\tGempa bumi merupakan getaran yang terjadi di permukaan bumi akibat yang disebabkan oleh lempengan bumi yang bergerak sehingga terjadi pelepasan energi dari dalam perut bumi secara tiba-tiba yang biasanya diikuti dengan terjadinya patahan/sesar (fault). Timbulnya patahan atau sesar tersebut karena adanya gerakan plat-plat tektonik/lapis kerak bumi yang saling bertumbukan, bergeser atau saling menyusup satu dengan yang lain (subduksi).",
+    "@lessonContentForVolcano4":  {
+        "description": "lesson content for volcane 4"
+    },
+    "lessonContentForVolcano5": "Macam-macam Gempa Bumi :\n\n\t\ta.\tGempa Bumi Runtuhan\n\n\t\tgempa bumi ini biasanya terjadi pada daerah kapur ataupun pada daerah pertambangan, gempabumi ini jarang terjadi dan bersifat lokal.\n\n\t\tb.\tGempa bumi tumbukan\n\n\t\tgempa bumi ini diakibatkan oleh tumbukan meteor atau asteroid yang jatuh ke Bumi, jenis gempa Bumi ini jarang terjadi.\n\n\t\tc.\tGempa bumi buatan\n\n\t\tgempa bumi buatan adalah gempa bumi yang disebabkan oleh aktivitas dari manusia, seperti peledakan dinamit, nuklir atau palu yang dipukulkan ke permukaan bumi.\n\n\t\td.\tGempa bumi vulkanik\n\n\t\tgempa bumi ini terjadi akibat adanya aktivitas magma, yang biasa terjadi sebelum gunung api meletus. Apabila keaktifannya semakin tinggi maka akan menyebabkan timbulnya ledakan yang juga akan menimbulkan terjadinya gempa bumi. Gempa bumi tersebut hanya terasa di sekitar gunung api tersebut.\n\n\t\te.\tGempa bumi tektonik\n\n\t\tgempa bumi ini disebabkan oleh adanya aktivitas tektonik, yaitu pergeseran lempeng-lempeng tektonik secara mendadak yang mempunyai kekuatan dari yang sangat kecil hingga yang sangat besar. Gempa bumi ini banyak menimbulkan kerusakan atau bencana alam di Bumi, getaran gempa Bumi yang kuat mampu menjalar keseluruh bagian Bumi. Gempa bumi tektonik disebabkan oleh pelepasan tenaga yang terjadi karena pergeseran lempengan plat tektonik seperti layaknya gelang karet ditarik dan dilepaskan dengan tiba-tiba",
+    "@lessonContentForVolcano5":  {
+        "description": "lesson content for volcane 5"
+    },
+    "lessonContentForVolcano6": "Pergerakan Lempeng\n\n\t\tSeperti yang dijelaskan sebelumnya,  Lempeng-lempeng di bumi selalu bergerak karena adanya arus konveksi atau arus panas pada lapisan astenosfer (mantel bumi). Pergerakan lempeng tersebut diklasifikasikan menjadi tiga macam, yaitu sebagai berikut:\n\n\t\ta.\tKonvergen\n\n\t\tMerupakan pergerakan lempeng yang saling mendekati satu sama lain/ bertubrukan. Gerak konvergen antara dua kerak benua menyebabkan pembentukan pegunungan (lipatan) misalnya pembentukan Pegunungan Himalaya (interaksi lempeng India dengan Lempeng Eurasia). Gerak konvergen antara lempeng benua dengan lempeng samudra menyebabkan penujaman sehingga terbentuk gunung api dan palung laut misalnya pada Pegunungan Andes (interaksi lempeng Nazca dan lempeng Amerika Selatan).\n\n\t\tb.\tDivergen\n\n\t\tMerupakan pergerakan lempeng yang saling menjauh. Gerakan ini menyebabkan pembentukan punggung, samudera (mid ocean ridge).\n\n\t\tc.\tTransform\n\n\t\tMerupakan pergerakan lempeng yang saling berpapasan yang dapat menimbulkan patahan secara mendatar.",
+    "@lessonContentForVolcano6":  {
+        "description": "lesson content for volcane 6"
+    },
+    "lessonContentForVolcano7": "Lipatan dan Patahan\n\n\t\tDampak dari pergerakan lempeng – lempeng bumi yaitu terbentuknya lipatan dan patahan/sesar pada lapisan tanah sehingga terbentuk gunung dan pegunungan, lembah, bukit dan perbukitan, jurang dan lain sebagainya.\n\n\t\ta.\tLipatan\n\n\t\tLipatan disebabkan oleh gerakan dari dalam tekanan yang besar dalam bumi akibat arus konveksi dan temperatur yang tinggi dari, sehingga menjadikan sifat batuan menjadi cair liat atau plastis. Keplastisannya ini membuat batuan tersebut akan terlipat apabila ada dorongan dari lempeng. Lipatan lapisan Bumi ini akan membentuk pegunungan, yang punggungnya disebut antiklinal dan wilayah lembahnya disebut sinklinal.\n\n\t\tb.\tPatahan\n\n\t\tPatahan bumi adalah perubahan bentuk bumi yang terjadi akibat adanya tekanan tenaga dari pusat bumi yang cepat sehingga permukaan bumi tidak sempat melipat atau melewati batas elastisitasnya dan menyebabkan patahan. Hal ini seperti karet yang diregangkan secara terus menerus. Jika tarikan terhadap karet tersebut melewati batas elastisitasnya maka karet tersebut akan putus. Patahan (Sesar) ini biasanya terjadi di daerah yang berbentuk bebatuan.",
+    "@lessonContentForVolcano7":  {
+        "description": "lesson content for volcane 7"
+    },
+    "lessonContentForVolcano8": "Tsunami\n\n\t\tAdalah gelombang air besar yang diakibatkan oleh gangguan di dasar laut, seperti gempa bumi. Gangguan ini membentuk gelombang yang menyebar ke segala arah dengan kecepatan gelombang mencapai 600–900 km/jam. Awalnya gelombang tersebut memiliki amplitudo kecil (umumnya 30–60 cm) sehingga tidak terasa di laut lepas, tetapi amplitudonya membesar saat mendekati pantai. Saat mencapai pantai, tsunami kadang menghantam daratan berupa dinding air raksasa (terutama pada tsunami-tsunami besar), tetapi bentuk yang lebih umum adalah naiknya permukaan air secara tiba-tiba. Kenaikan permukaan air dapat mencapai 15–30 meter, menyebabkan banjir dengan kecepatan arus hingga 90 km/jam, menjangkau beberapa kilometer dari pantai, dan menyebabkan kerusakan dan korban jiwa yang besar.\n\n\t\tGejala/Hal yang harus diperhatikan :\n\n\t\t1)\tMendapat peringatan dari Tsunami Early Warning (TEWS)\n\n\t\t2)\tTerjadi gempa yang besar di kawasan pantai (di atas 7.0 SR)\n\n\t\t3)\tGempa berpusat di tengah laut\n\n\t\t4)\tAir laut mendadak surut\n\n\t\t5)\tAir laut meninggi dan terdengar gemuruh di laut",
+    "@lessonContentForVolcano8":  {
+        "description": "lesson content for volcane 8"
+    },
+    "onboardingTitle0": "Selamat datang {username}",
+    "@onboardingTitle0": {
+        "description" : "onboarding title 0",
+        "placeholders" : {
+            "username" : {
+                "type" : "String"
+            }
+        }
+    },
+    "onboardingTitle1": "Lapisan Bumi",
+    "@onboardingTitle1": {
+        "description" : "onboarding title 1"   
+    },
+    "onboardingDesc0": "Hai {username}. Hari ini kita akan menjelajahi planet kita. Apa yang Kamu pikirkan ketika seseorang menggali bumi, apakah kita akan menemukan suatu ujung?",
+    "@onboardingDesc0": {
+        "description" : "onboarding desc 0",
+        "placeholders" : {
+            "username" : {
+                "type" : "String"
+            }
+        }  
+    },
+    "onboardingDesc1": "Apakah Kamu tahu? Bumi tidak hanya terdiri dari tanah. Bumi memiliki banyak lapisan penyusun. Bumi juga memiliki lapisan langit. Masing-masing lapisan tersebut memiliki fungsi. Kita akan mencari tahu semua itu. Ini akan sangat menyenangkan.",
+    "@onboardingDesc1": {
+        "description" : "onboarding desc 1"   
+    },
+    "quiz1Question1": "Bumi tersusun dari … lapisan utama",
+    "@quiz1Question1": {
+        "description" : "quiz 1 question 1"   
+    },
+    "quiz1Question1Choice1": "3",
+    "quiz1Question1Choice2": "1",
+    "quiz1Question1Choice3": "2",
+    "quiz1Question1Choice4": "4",
+    "quiz1Question2": "Urutan lapisan bumi dari luar ke dalam yaitu …",
+    "@quiz1Question12": {
+        "description" : "quiz 1 question 2"   
+    },
+    "quiz1Question2Choice1": "Inti, selubung, dan kerak",
+    "quiz1Question2Choice2": "Selubung, kerak dan inti",
+    "quiz1Question2Choice3": "Kerak, selubung dan inti",
+    "quiz1Question2Choice4": "Kerak, inti, dan selubung",
+    "quiz1Question3": "Lapisan bumi yang terdiri dari material cair kental dan berpijar yaitu...",
+    "@quiz1Question3": {
+        "description" : "quiz 1 question 3"   
+    },
+    "quiz1Question3Choice1": "Mantel bumi",
+    "quiz1Question3Choice2": "Kerak bumi",
+    "quiz1Question3Choice3": "Inti bumi",
+    "quiz1Question3Choice4": "Kerak samudra",
+    "quiz1Question4": "Litosfer berasal dari bahasa Yunani yaitu lithos dan sphera. Lithos yang berarti...",
+    "@quiz1Question4": {
+        "description" : "quiz 1 question 4"   
+    },
+    "quiz1Question4Choice1": "Batuan",
+    "quiz1Question4Choice2": "Bola bumi",
+    "quiz1Question4Choice3": "Lapisan",
+    "quiz1Question4Choice4": "Uap",
+    "quiz1Question5": "Lempeng yang tersusun oleh mineral yang kaya akan Silika, dan Magnesium, disebut sima. Lempeng ini biasanya disebut lapisan basaltis karena batuan penyusunnya terutama berkomposisi basalt. Nama lempeng tersebut adalah …",
+    "@quiz1Question5": {
+        "description" : "quiz 1 question 5"   
+    },
+    "quiz1Question5Choice1": "Lempeng samudra",
+    "quiz1Question5Choice2": "Lempeng tektonik",
+    "quiz1Question5Choice3": "Lempeng benua",
+    "quiz1Question5Choice4": "Lempeng besi",
+    "quiz1Question6": "Litosfer terbentuk dari beberapa mineral yang disebut silikat yang merupakan gabungan antara...",
+    "@quiz1Question6": {
+        "description" : "quiz 1 question 6"   
+    },
+    "quiz1Question6Choice1": "Oksigen dan silikon",
+    "quiz1Question6Choice2": "Sulfur dan silikon",
+    "quiz1Question6Choice3": "Nitrogen dan silikon",
+    "quiz1Question6Choice4": "Karbondioksida dan silikon",
+    "quiz1Question7": "Besi dan nikel merupakan materi penyusun lapisan...",
+    "@quiz1Question7": {
+        "description" : "quiz 1 question 7"   
+    },
+    "quiz1Question7Choice1": "Inti bumi",
+    "quiz1Question7Choice2": "Kerak bumi",
+    "quiz1Question7Choice3": "Mantel bagian luar",
+    "quiz1Question7Choice4": "Mantel bagian dalam",
+    "quiz1Question8": "Lapisan yang berada dibawah litosfer termasuk dalam mantel bumi yang wujudnya sangat kental. Lapisan ini tersusun dari batuan yang meleleh akibat panas, namun kepadatannya rendah karenanya bersifat plastis. Lapisan ini kaya dengan silium, aluminium dan magnesium, dikenal dengan magma. Lapisan tersebut adalah …",
+    "@quiz1Question8": {
+        "description" : "quiz 1 question 8"   
+    },
+    "quiz1Question8Choice1": "Astenosfer",
+    "quiz1Question8Choice2": "Mesosfer",
+    "quiz1Question8Choice3": "Kerak bumi",
+    "quiz1Question8Choice4": "Inti bumi",
+    "quiz1Question9": "Lapisan kulit bumi yang tersusun oleh mineral yang kaya akan Silika dan Aluminium, oleh karenanya di sebut sial. Lempeng ini biasanya disebut sebagai lapisan granitis karena batuan penyusunnya terutama terdiri dari batuan yang berkomposisi granit. Lempeng tersebut adalah …",
+    "@quiz1Question9": {
+        "description" : "quiz 1 question 9"   
+    },
+    "quiz1Question9Choice1": "Lempeng benua",
+    "quiz1Question9Choice2": "Lempeng tektonik",
+    "quiz1Question9Choice3": "Lempeng samudra",
+    "quiz1Question9Choice4": "Lempeng besi",
+    "quiz1Question10": "Lapisan paling luar bumi adalah...",
+    "@quiz1Question10": {
+        "description" : "quiz 1 question 10"   
+    },
+    "quiz1Question10Choice1": "Kerak bumi",
+    "quiz1Question10Choice2": "Inti bumi",
+    "quiz1Question10Choice3": "Mantel bumi",
+    "quiz1Question10Choice4": "Kerak bumi",
+    "quiz1Title": "Lapisan bumi",
+    "@quiz1Title": {
+        "description" : "quiz 1 title"   
+    },
+    "quiz2Question1": "Lapisan bumi diselimuti oleh lapisan gas yang biasa disebut …",
+    "@quiz2Question1": {
+        "description" : "quiz 2 question 1"   
+    },
+    "quiz2Question1Choice1": "Atmosfer",
+    "quiz2Question1Choice2": "Geosfer",
+    "quiz2Question1Choice3": "Antoposfer",
+    "quiz2Question1Choice4": "Hidrosfer",
+    "quiz2Question2": "Perhatikan Lapisan Atmosfer berikut !\n\n\t\t1)\tEksosfer\n\n\t\t2)\tMesosfer\n\n\t\t3)\tTroposfer\n\n\t\t4)\tStratosfer\n\n\t\t5)\tTermosfer\n\n\t\tUrutan lapisan atmosfer berdasarkan ketinggiannya dari permukaan laut dari yang terendah sampai yang tertinggi adalah…",
+     "@quiz2Question2": {
+         "description" : "quiz 2 question 2"
+     },
+     "quiz2Question2Choice1": "(3) – (4) – (2) – (5) – (1)",
+     "quiz2Question2Choice2": "(1) – (2) – (4) – (5) – (3)",
+     "quiz2Question2Choice3": "(3) – (4) – (2) – (1) – (5)",
+     "quiz2Question2Choice4": "(4) – (5) – (2) – (1) – (3)",
+     "quiz2Question3": "Atmosfer dibagi menjadi beberapa lapisan. Lapisan atmosfer dimana tempat terjadinya cuaca seperti awan atau hujan yaitu...",
+     "@quiz2Question3": {
+         "description" : "quiz 2 question 3"
+     },
+     "quiz2Question3Choice1": "Troposfer",
+     "quiz2Question3Choice2": "Eksosfer",
+     "quiz2Question3Choice3": "Mesosfer",
+     "quiz2Question3Choice4": "Stratosfer",
+     "quiz2Question4": "Lapisan ozon diperlukan untuk melindungi Bumi dari radiasi sinar ultraviolet. Lapisan ozon ini terdapat pada …",
+     "@quiz2Question4": {
+         "description" : "quiz 2 question 4"
+     },
+     "quiz2Question4Choice1": "Stratosfer",
+     "quiz2Question4Choice2": "Termosfer",
+     "quiz2Question4Choice3": "Mesosfer",
+     "quiz2Question4Choice4": "Troposfer",
+     "quiz2Question5": "Berikut ini yang merupakan fungsi dari lapisan ozon di atmosfer adalah ...",
+     "@quiz2Question5": {
+         "description" : "quiz 2 question 5"
+     },
+     "quiz2Question5Choice1": "meindungi Bumi dari sinar ultraviolet",
+     "quiz2Question5Choice2": "mengatur suhu Bumi",
+     "quiz2Question5Choice3": "sebagai pemantul gelombang radio",
+     "quiz2Question5Choice4": "melindungi Bumi dari cahaya Matahari",
+     "quiz2Question6": "Lapisan mesosfer berfungsi melindungi bumi dari...",
+     "@quiz2Question6": {
+         "description" : "quiz 2 question 6"
+     },
+     "quiz2Question6Choice1": "Benda luar angkasa yang jatuh ke bumi",
+     "quiz2Question6Choice2": "Benda bumi yang jatuh ke bumi",
+     "quiz2Question6Choice3": "Radiasi matahari yang berupa ultraviolet",
+     "quiz2Question6Choice4": "Radiasi matahari yang berupa infra merah",
+     "quiz2Question7": "Pada mesosfer dan termosfer terdapat lapisan \nyang memiliki partikel ion (bermuatan) yang \ndisebut lapisan …",
+     "@quiz2Question7": {
+         "description" : "quiz 2 question 7"
+     },
+     "quiz2Question7Choice1": "ionosfer",
+     "quiz2Question7Choice2": "termosfer",
+     "quiz2Question7Choice3": "stratosfer",
+     "quiz2Question7Choice4": "skypia",
+     "quiz2Question8": "Lapisan yang berada pada ketinggian diatas 500 Km, tempat mengorbit satelit buatan, memiliki molekul yang sangat sedikit merupakan lapisan atmosfer yaitu …",
+     "@quiz2Question8": {
+         "description" : "quiz 2 question 8"
+     },
+     "quiz2Question8Choice1": "Eksosfer",
+     "quiz2Question8Choice2": "termosfer",
+     "quiz2Question8Choice3": "stratosfer",
+     "quiz2Question8Choice4": "ionosfer",
+     "quiz2Question9": "Lapisan Troposfer berada pada ketinggian …",
+     "@quiz2Question9": {
+         "description" : "quiz 2 question 9"
+     },
+     "quiz2Question9Choice1": "0 - 10 Km",
+     "quiz2Question9Choice2": "10 - 50 Km",
+     "quiz2Question9Choice3": "50 - 85 Km",
+     "quiz2Question9Choice4": "85 - 500 Km",
+     "quiz2Question10": "Lapisan Mesosfer berada pada ketinggian …",
+     "@quiz2Question10": {
+         "description" : "quiz 2 question 10"
+     },
+     "quiz2Question10Choice1": "50 - 85 KM",
+     "quiz2Question10Choice2": "10 - 50 Km",
+     "quiz2Question10Choice3": "0 - 10 Km",
+     "quiz2Question10Choice4": "85 - 500 Km",
+    "quiz2Title": "Atmosfer dan litosfer",
+    "@quiz2Title": {
+        "description" : "quiz 2 title"   
+    },
+    "video1Title": "Lapisan Bumi",
+    "@video1Title": {
+        "description" : "video 1 title"   
+    },
+    "video2Title": "Atmosfer dan Litosfer",
+    "@video2Title": {
+        "description" : "video 2 title"   
+    },
+    "video4Title": "Gunung Api, Gempa, dan Tsunami",
+    "@video4Title": {
+        "description" : "video 4 title"   
+    },
+    "developerTooltip": "Lihat profil kami",
+    "@developerTooltip": {
+        "description" : "dev tooltip"   
+    },
+    "developerRoles": "Kontribusi: ",
+    "@developerRoles": {
+        "description" : "dev role"   
+    },
+    "references" : "Referensi",
+    "@references": {
+        "description" : "references"   
+    },
+    "thanks" : "Terima kasih",
+    "@thanks": {
+        "description" : "thanks"   
+    },
+    "thanksDesc" : "Kontribusimu sangat berarti",
+    "@thanksDesc": {
+        "description" : "thanksDesc"   
+    },
+    "ourTeam" : "Tim kami",
+    "@ourTeam": {
+        "description" : "tim"   
+    },
+    "attribution" : "Atribusi",
+    "@attribution": {
+        "description" : "Atribusi"   
+    },
+    "royaltyFreeMusic" : "Music bebas royalti dari Bensound",
+    "@royaltyFreeMusic": {
+        "description" : "royalty"   
+    },
+    "prayIllus" : "Ilustrasi berdoa oleh Storyset",
+    "@prayIllus": {
+        "description" : "prayIllus"   
+    },
+    "playVideo" : "Putar video",
+    "@playVideo": {
+        "description" : "play video"   
+    },
+    "actionTitle0" : "Lapisan Bumi",
+    "@actionTitle0": {
+        "description" : "action title 0"   
+    },
+    "actionTitle1" : "Atmosfer Bumi",
+    "@actionTitle1": {
+        "description" : "action title 1"   
+    },
+    "actionTitle2" : "Litosfer Bumi",
+    "@actionTitle2": {
+        "description" : "action title 2"   
+    },
+    "actionTitle3" : "Bentuk dan tipe gunung api",
+    "@actionTitle3": {
+        "description" : "action title 3"   
+    },
+    "actionTitle4" : "Terjadinya gunung api",
+    "@actionTitle4": {
+        "description" : "action title 4"   
+    },
+    "actionTitle5" : "Mengenal Macam-macam Gempa Bumi dan Penyebab Terjadinya",
+    "@actionTitle5": {
+        "description" : "action title 5"   
+    },
+    "actionTitle6" : "Pergerakan lempeng",
+    "@actionTitle6": {
+        "description" : "action title 6"   
+    },
+    "actionTitle7" : "Lipatan dan Patahan",
+    "@actionTitle7": {
+        "description" : "action title 7"   
+    },
+    "learningMaterial" : "Materi belajar",
+    "@learningMaterial": {
+        "description" : "learning material"   
+    },
+    "lessons" : "Pelajaran",
+    "@lessons": {
+        "description" : "lessons"   
+    },
+    "learningGuide" : "Petunjuk belajar",
+    "@learningGuide": {
+        "description" : "learning guide"   
+    },
+    "learningGuideDesc" : "Ikuti panduan kami, agar cekatan!",
+    "@learningGuideDesc": {
+        "description" : "learning guide desc"   
+    },
+    "step": "Langkah {number}",
+    "@step": {
+        "description" : "Step number",
+        "placeholders" : {
+            "number" : {
+                "type" : "String"
+            }
+        }  
+    },
+    "next" : "Lanjut",
+    "@next": {
+        "description" : "lanjut"   
+    },
+    "getStarted" : "Mulai",
+    "@getStarted": {
+        "description" : "Mulai"   
+    },
+    "hi" : "Hai, siapa namamu?",
+    "@hi": {
+        "description" : "Hi, what's your name?"   
+    },
+    "hiDesc" : "Akankah kamu bersedia mengenalkan dirimu kepada kami? Saya sangat senang bertemu denganmu",
+    "@hiDesc": {
+        "description" : "hi desc"   
+    },
+    "nameCorrection" : "Ehh sepertinya kamu salah menulis nama",
+    "@nameCorrection": {
+        "description" : "hi desc"   
+    },
+    "yourName" : "Namamu",
+    "@yourName": {
+        "description" : "namamu"   
+    },
+    "letsGo" : "Ayo berangkat!",
+    "@letsGo": {
+        "description" : "lets go"   
+    },
+    "exitTryLater" : "Keluar, coba nanti",
+    "@exitTryLater": {
+        "description" : "exit try later"   
+    },
+    "selectLanguage" : "Pilih bahasa",
+    "@selectLanguage": {
+        "description" : "select language"   
+    },
+    "menusTitle0" : "Panduan belajar",
+    "@menusTitle0": {
+        "description" : "Panduan belajar"   
+    },
+    "menusTitle1" : "Tujuan pembelajaran",
+    "@menusTitle1": {
+        "description" : "Tujuan"   
+    },
+    "menusTitle2" : "Simulasi bencana",
+    "@menusTitle2": {
+        "description" : "simulasi bencana"   
+    },
+    "menusTitle3" : "Materi belajar",
+    "@menusTitle3": {
+        "description" : "materi belajar"   
+    },
+    "menusDesc0" : "Mulai belajar dengan panduan kami",
+    "@menusDesc0": {
+        "description" : "menus desc 0"   
+    },
+    "menusDesc1" : "Ketahui tujuan, agar belajar lebih mudah",
+    "@menusDesc1": {
+        "description" : "menus desc 1"   
+    },
+    "menusDesc2" : "Mainkan simulasi bencana nyata",
+    "@menusDesc2": {
+        "description" : "menus desc 2"   
+    },
+    "menusDesc3" : "Perbanyak latihan dan belajar",
+    "@menusDesc3": {
+        "description" : "menus desc 3"   
+    },
+    "selectMenu" : "Pilih menu",
+    "@selectMenu": {
+        "description" : "select menu"   
+    },
+    "sorryJustDemo" : "Mohon maaf aplikasi pada pameran ini hanya demo. Untuk mendapatkan versi utuh silakan hubungi developer",
+    "@sorryJustDemo": {
+        "description" : "Sorry just demo"   
+    },
+    "areYouReady" : "Hai, udah siap belum?",
+    "@areYouReady": {
+        "description" : "are u ready"   
+    },
+    "areYouReadyDesc" : "Berdoa dulu yaa sebelum latihan. Pastikan semua sudah siap. Setelah kamu mengklik saya sudah siap, kamu ga bisa kembali sampai menyelesaikan kuis",
+    "@areYouReadyDesc": {
+        "description" : "are u ready"   
+    },
+    "notYet" : "Belum",
+    "@notYet": {
+        "description" : "not yet"   
+    },
+    "iAmReady" : "Saya sudah siap",
+    "@iAmReady": {
+        "description" : "i am ready"   
+    },
+    "completePrevious" : "Selesaikan kuis sebelumnya dulu yaa...",
+    "@completePrevious": {
+        "description" : "Complete previous"   
+    },
+    "quizNum" : "Kuis {num}",
+    "@quizNum": {
+        "description" : "kuis",
+        "placeholders" : {
+            "num" : {
+                "type" : "String"
+            }
+        }  
+    },
+    "dontHaveStat" : "Upss kamu belum punya statistik nih, coba kuisnya dulu!",
+    "@dontHaveStat": {
+        "description" : "dontHaveStat"   
+    },
+    "accuracy" : "Ketepatan",
+    "@accuracy": {
+        "description" : "accuracy"   
+    },
+    "completion" : "Kelengkapan",
+    "@completion": {
+        "description" : "completion"   
+    },
+    "totalCorrect" : "Total jawaban benar :   ",
+    "@totalCorrect": {
+        "description" : "totalCorrect"   
+    },
+    "numOfTry" : "Jumlah percobaan :   ",
+    "@numOfTry": {
+        "description" : "num of try"   
+    },
+    "tryTimes" : "{num} kali",
+    "@tryTimes": {
+        "description" : "try times",
+        "placeholders" : {
+            "num" : {
+                "type" : "String"
+            }
+        }  
+    },
+    "drawerDesc" : "Di sini kamu dapat menemukan menu tersembunyi",
+    "@drawerDesc": {
+        "description" : "drawer desc"   
+    },
+    "setting" : "Pengaturan",
+    "@setting": {
+        "description" : "settings"   
+    },
+    "settingDesc" : "Ketuk di sini untuk mengatur aplikasi",
+    "@settingDesc": {
+        "description" : "settings desc"   
+    },
+    "selectMenuDesc" : "Pilih menu yang kamu suka",
+    "@selectMenuDesc": {
+        "description" : "selectMenuDesc"   
+    },
+    "menuBarDesc" : "Kamu bisa pilih dan ketuk menu di sini",
+    "@menuBarDesc": {
+        "description" : "bar ikon"   
+    },
+    "quizes" : "Kuis",
+    "@quizes": {
+        "description" : "kuiss"   
+    },
+    "stat" : "Statistik",
+    "@stat": {
+        "description" : "stat"   
+    },
+    "points20" : "20 poin",
+    "@points20": {
+        "description" : "points"   
+    },
+    "submit" : "Kirim",
+    "@submit": {
+        "description" : "submit"   
+    },
+    "selectOneAnswer" : "Pilih jawaban dulu",
+    "@selectOneAnswer": {
+        "description" : "select one answer"   
+    },
+    "questionNo" : "Pertanyan no. {num}",
+    "@questionNo": {
+        "description" : "number of question",
+        "placeholders" : {
+            "num" : {
+                "type" : "String"
+            }
+        }  
+    },
+    "congrat" : "Selamat",
+    "@congrat": {
+        "description" : "congratulation"   
+    },
+    "expGet" : "Kamu telah mendapat nilai",
+    "@expGet": {
+        "description" : "points get"   
+    },
+    "points" : "Poin",
+    "@points": {
+        "description" : "poin"   
+    },
+    "keepUpSpirirt" : "Tetap jaga semangatmu",
+    "@keepUpSpirirt": {
+        "description" : "keep spirit"   
+    },
+    "correctAns" : "Jawaban benar",
+    "@correctAns": {
+        "description" : "correct answer"   
+    },
+    "numOfCorrectAns" : "{num} jawaban",
+    "@numOfCorrectAns": {
+        "description" : "number of correct answer",
+        "placeholders" : {
+            "num" : {
+                "type" : "String"
+            }
+        }  
+    },
+    "rating" : "Klasifikasi",
+    "@rating": {
+        "description" : "rating"   
+    },
+    "skippedQuestion" : "Soal tak dijawab",
+    "@skippedQuestion": {
+        "description" : "skipped question"   
+    },
+    "numOfskippedQuestion" : "{num} soal",
+    "@numOfskippedQuestion": {
+        "description" : "number of skipped question",
+        "placeholders" : {
+            "num" : {
+                "type" : "String"
+            }
+        }  
+    },
+    "share" : "Bagikan",
+    "@share": {
+        "description" : "Share"   
+    },
+    "shareDesc" : "Yuk tekan di sini untuk bagi pencapaian ke teman-temanmu!",
+    "@shareDesc": {
+        "description" : "Share desc"   
+    },
+    "BackHome" : "Ke Halaman Utama",
+    "startLearning" : "Mulai belajar",
+    "summaryContent": "        Bumi merupakan planet ketiga dalam sistem tata surya, tempat yang paling ideal bagi makhluk hidup untuk tinggal. Di dalamnya terdapat semua yang diperlukan untuk membantu kehidupan, termasuk berbagai macam mineral. Bumi tersusun oleh 3 lapisan, dari dalam keluar yaitu lapisan inti bumi, lapisan selimut bumi, dan lapisan kulit bumi.",
+    "callingMe" : "Hai, kamu memanggilku?",
+    "startReading": "Kamu sedang membaca ya?",
+    "defaultMsg": "Baca rangkuman dengan cermat",
+    "summary": "Rangkuman",
+    "summaryDesc": "Ayo baca rangkuman ini agar memeroleh pemahaman akan topik pembelajaran",
+    "videoPlayer": "Pemutaran video",
+    "nowPlaying": "Sedang diputar",
+    "relatedVideo": "Video terkait",
+    "videoDuration": "{minute} menit {second} detik",
+    "@videoDuration" : {
+        "description" : "video duration",
+        "placeholder" : {
+            "minute" : {
+                "type" : "String"
+            },
+            "second" : {
+                "type" : "String"
+            }
+        }
+    },
+    "confirmExit": "Konfirmasi untuk keluar",
+    "exit": "Keluar",
+    "moreApps": "Aplikasi lain",
+    "learningGoal10": "Siswa dapat menyusun teks deskripsi berisi karakteristik kendaraan transportasi kota",
+    "learningGoal11": "Siswa mampu menyimpulkan penerapan Hukum Newton dari suatu fenomena",
+    "learningGoal12": "Siswa mampu menghitung luas dan volume geometri dari objek pada kendaraan transportasi kota.",
+    "tapTwice" : "Ketuk dua kali untuk keluar",
+    "bottomNavBar0Title": "Kredit",
+    "bottomNavBar1Title": "Mulai",
+    "bottomNavBar2Title": "Rangkuman",
+    "bottomNavBar0Tooltip": "Sumber daya dan tim pengembang",
+    "bottomNavBar1Tooltip": "Mainkan",
+    "bottomNavBar2Tooltip": "Rangkuman",
+    "bottomTabShowCaseTitle": "Tab bawah",
+    "bottomTabShowCaseDesc": "Ketuk di sini untuk mengganti tab",
+    "speedDial0" : "Panduan belajar",
+    "speedDial1" : "Tujuan pembelajaran",
+    "speedDial2" : "Simulasi bencana",
+    "speedDial3" : "Materi pembelajaran",
+    "yes" : "Ya",
+    "no" : "Tidak",
+    "bumikuTagLine": "Bumiku - Lapisan bumi dan bencana alam",
+    "morning" : "Selamat Pagi",
+    "afternoon" : "Selamat Siang",
+    "evening" : "Selamat Sore",
+    "night" : "Selamat Malam"
+}

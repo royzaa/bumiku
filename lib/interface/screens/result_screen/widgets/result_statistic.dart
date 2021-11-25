@@ -3,6 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import '../../../../services/quiz_controller.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class ResultStatistic extends StatelessWidget {
   const ResultStatistic({
@@ -35,7 +39,7 @@ class ResultStatistic extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Correct answers',
+                    _i10n.correctAns,
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 14.sp,
@@ -48,7 +52,9 @@ class ResultStatistic extends StatelessWidget {
                   Obx(
                     () {
                       return Text(
-                        '${quizController.correctAnswer.value} answers',
+                        _i10n.numOfCorrectAns(
+                          '${quizController.correctAnswer.value}',
+                        ),
                         style: TextStyle(
                           color: Theme.of(context).primaryColor,
                           fontSize: 24.sp,
@@ -63,7 +69,7 @@ class ResultStatistic extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Rating',
+                    _i10n.rating,
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 14.sp,
@@ -93,7 +99,7 @@ class ResultStatistic extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Accuracy',
+                    _i10n.accuracy,
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 14.sp,
@@ -119,7 +125,7 @@ class ResultStatistic extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Skipped questions',
+                    _i10n.skippedQuestion,
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 14.sp,
@@ -130,7 +136,9 @@ class ResultStatistic extends StatelessWidget {
                     height: 10.h,
                   ),
                   Text(
-                    '${totalQuestions - quizController.correctAnswer.value - quizController.wrongAnswer.value} questions',
+                    _i10n.numOfskippedQuestion(
+                      '${totalQuestions - quizController.correctAnswer.value - quizController.wrongAnswer.value}',
+                    ),
                     style: TextStyle(
                       color: Theme.of(context).primaryColor,
                       fontSize: 24.sp,

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class ActionBox extends StatelessWidget {
   const ActionBox({
@@ -94,7 +98,7 @@ class ActionBox extends StatelessWidget {
                                 width: 10.w,
                               ),
                               Text(
-                                'Play video',
+                                _i10n.playVideo,
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 17.sp,

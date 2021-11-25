@@ -3,200 +3,198 @@ import 'package:bumiku/model/quiz_item.dart';
 
 import '../model/quiz.dart';
 import '../services/shared_preferences.dart';
+import '../l10n/generated/l10n.dart';
+import '../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 MainQuiz firstQuiz = MainQuiz(
-  imageUrl: 'https://drive.google.com/uc?id=1Rl75BHbvnNsu56fzLyDhBXdq5fzH--h7',
+  imageUrl: 'https://drive.google.com/uc?id=1QHtIC3KFhE2ttg9uWkw8BegOQeGOKuu8',
   isOpen: true,
   quizNum: 1,
   quizItemData: [
     MainQuizItem(
-      quizQuestion: 'Bumi tersusun dari … lapisan utama',
+      quizQuestion: _i10n.quiz1Question1,
       choices: [
         ChoiceChip(
-          choice: '3',
+          choice: _i10n.quiz1Question1Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: '1',
+          choice: _i10n.quiz1Question1Choice2,
         ),
         ChoiceChip(
-          choice: '2',
+          choice: _i10n.quiz1Question1Choice3,
         ),
         ChoiceChip(
-          choice: '4',
+          choice: _i10n.quiz1Question1Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion: 'Urutan lapisan bumi dari luar ke dalam yaitu …',
+      quizQuestion: _i10n.quiz1Question2,
       choices: [
         ChoiceChip(
-          choice: 'Inti, selubung, dan kerak',
+          choice: _i10n.quiz1Question2Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Selubung, kerak dan inti',
+          choice: _i10n.quiz1Question2Choice2,
         ),
         ChoiceChip(
-          choice: 'Kerak, selubung dan inti',
+          choice: _i10n.quiz1Question2Choice3,
         ),
         ChoiceChip(
-          choice: 'Kerak, inti, dan selubung',
+          choice: _i10n.quiz1Question2Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Lapisan bumi yang terdiri dari material cair kental dan berpijar yaitu....',
+      quizQuestion: _i10n.quiz1Question3,
       choices: [
         ChoiceChip(
-          choice: 'Mantel bumi',
+          choice: _i10n.quiz1Question3Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Kerak bumi',
+          choice: _i10n.quiz1Question3Choice2,
         ),
         ChoiceChip(
-          choice: 'Inti bumi',
+          choice: _i10n.quiz1Question3Choice3,
         ),
         ChoiceChip(
-          choice: 'Kerak samudra',
+          choice: _i10n.quiz1Question3Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Lithosfer berasal dari bahasa Yunani yaitu lithos dan sphera. Lithos yang berarti....',
+      quizQuestion: _i10n.quiz1Question4,
       choices: [
         ChoiceChip(
-          choice: 'Batuan',
+          choice: _i10n.quiz1Question4Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Bola bumi',
+          choice: _i10n.quiz1Question4Choice2,
         ),
         ChoiceChip(
-          choice: 'Lapisan',
+          choice: _i10n.quiz1Question4Choice3,
         ),
         ChoiceChip(
-          choice: 'Uap',
+          choice: _i10n.quiz1Question4Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Lempeng yang tersusun oleh mineral yang kaya akan Silika, dan Magnesium, disebut sima. Lempeng ini biasanya disebut lapisan basaltis karena batuan penyusunnya terutama berkomposisi basalt. Nama lempeng tersebut adalah …',
+      quizQuestion: _i10n.quiz1Question5,
       choices: [
         ChoiceChip(
-          choice: 'Lempeng samudra',
+          choice: _i10n.quiz1Question5Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Lempeng tektonik',
+          choice: _i10n.quiz1Question5Choice2,
         ),
         ChoiceChip(
-          choice: 'Lempeng benua',
+          choice: _i10n.quiz1Question5Choice3,
         ),
         ChoiceChip(
-          choice: 'Lempeng besi',
+          choice: _i10n.quiz1Question5Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Litosfer terbentuk dari beberapa mineral yang disebut silikat yang merupakan gabungan antara....',
+      quizQuestion: _i10n.quiz1Question6,
       choices: [
         ChoiceChip(
-          choice: 'Oksigen dan silikon',
+          choice: _i10n.quiz1Question6Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Sulfur dan silikon',
+          choice: _i10n.quiz1Question6Choice2,
         ),
         ChoiceChip(
-          choice: 'Nitrogen dan silikon',
+          choice: _i10n.quiz1Question6Choice3,
         ),
         ChoiceChip(
-          choice: 'Karbondioksida dan silikon',
+          choice: _i10n.quiz1Question6Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion: 'Besi dan nikel merupakan materi penyusun lapisan....',
+      quizQuestion: _i10n.quiz1Question7,
       choices: [
         ChoiceChip(
-          choice: 'Inti bumi',
+          choice: _i10n.quiz1Question7Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Kerak bumi',
+          choice: _i10n.quiz1Question7Choice2,
         ),
         ChoiceChip(
-          choice: 'Mantel bagian luar',
+          choice: _i10n.quiz1Question7Choice3,
         ),
         ChoiceChip(
-          choice: 'Mantel bagian dalam',
+          choice: _i10n.quiz1Question7Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Lapisan yang berada dibawah litosfer termasuk dalam mantel bumi yang wujudnya sangat kental. Lapisan ini tersusun dari batuan yang meleleh akibat panas, namun kepadatannya rendah karenanya bersifat plastis. Lapisan ini kaya dengan silium, aluminium dan magnesium, dikenal dengan magma. Lapisan tersebut adalah …',
+      quizQuestion: _i10n.quiz1Question8,
       choices: [
         ChoiceChip(
-          choice: 'Astenosfer',
+          choice: _i10n.quiz1Question8Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Mesosfer',
+          choice: _i10n.quiz1Question8Choice2,
         ),
         ChoiceChip(
-          choice: 'Kerak bumi',
+          choice: _i10n.quiz1Question8Choice3,
         ),
         ChoiceChip(
-          choice: 'Inti bumi',
+          choice: _i10n.quiz1Question8Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Lapisan kulit bumi yang tersusun oleh mineral yang kaya akan Silika dan Aluminium, oleh karenanya di sebut sial. Lempeng ini biasanya disebut sebagai lapisan granitis karena batuan penyusunnya terutama terdiri dari batuan yang berkomposisi granit. Lepeng tersebut adalah …',
+      quizQuestion: _i10n.quiz1Question9,
       choices: [
         ChoiceChip(
-          choice: 'Lempeng benua',
+          choice: _i10n.quiz1Question9Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Lempeng tektonik',
+          choice: _i10n.quiz1Question9Choice2,
         ),
         ChoiceChip(
-          choice: 'Lempeng samudra',
+          choice: _i10n.quiz1Question9Choice3,
         ),
         ChoiceChip(
-          choice: 'Lempeng besi',
+          choice: _i10n.quiz1Question9Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion: 'lapisan paling luar bumi adalah...',
+      quizQuestion: _i10n.quiz1Question10,
       choices: [
         ChoiceChip(
-          choice: 'Kerak bumi',
+          choice: _i10n.quiz1Question10Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Inti bumi',
+          choice: _i10n.quiz1Question10Choice2,
         ),
         ChoiceChip(
-          choice: 'Mantel bumi',
+          choice: _i10n.quiz1Question10Choice3,
         ),
         ChoiceChip(
-          choice: 'Kerak samudra',
+          choice: _i10n.quiz1Question10Choice4,
         ),
       ],
     ),
   ],
-  title: 'Lapisan bumi',
+  title: _i10n.quiz1Title,
 );
 
 MainQuiz secondQuiz = MainQuiz(
@@ -205,200 +203,185 @@ MainQuiz secondQuiz = MainQuiz(
   quizNum: 2,
   quizItemData: [
     MainQuizItem(
-      quizQuestion:
-          'Lapisan bumi diselimuti oleh lapisan gas yang biasa disebut …',
+      quizQuestion: _i10n.quiz2Question1,
       choices: [
         ChoiceChip(
-          choice: 'Atmosfer',
+          choice: _i10n.quiz2Question1Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Geosfer',
+          choice: _i10n.quiz2Question1Choice2,
         ),
         ChoiceChip(
-          choice: 'Antoposfer',
+          choice: _i10n.quiz2Question1Choice3,
         ),
         ChoiceChip(
-          choice: 'Hidrosfer',
+          choice: _i10n.quiz2Question1Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion: '''Perhatikan Lapisan Atmosfer berikut !
-
-1)	Eksosfer
-2)	Mesosfer
-3)	Troposfer
-4)	Stratosfer
-5)	Termosfer
-
-Urutan lapisan atmosfer berdasarkan ketinggiannya dari permukaan laut dari yang terendah sampai yang tertinggi adalah….
-''',
+      quizQuestion: _i10n.quiz2Question2,
       choices: [
         ChoiceChip(
-          choice: '(3) – (4) – (2) – (5) – (1)',
+          choice: _i10n.quiz2Question2Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: '(1) – (2) – (4) – (5) – (3)',
+          choice: _i10n.quiz2Question2Choice2,
         ),
         ChoiceChip(
-          choice: '(3) – (4) – (2) – (1) – (5)',
+          choice: _i10n.quiz2Question2Choice3,
         ),
         ChoiceChip(
-          choice: '(4) – (5) – (2) – (1) – (3)',
+          choice: _i10n.quiz2Question2Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Atmosfer dibagi menjadi beberapa lapisan. Lapisan atmosfer dimana tempat terjadinya cuaca seperti awan, hujan yaitu....',
+      quizQuestion: _i10n.quiz2Question3,
       choices: [
         ChoiceChip(
-          choice: 'Troposfer',
+          choice: _i10n.quiz2Question3Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Eksosfer',
+          choice: _i10n.quiz2Question3Choice2,
         ),
         ChoiceChip(
-          choice: 'Mesosfer',
+          choice: _i10n.quiz2Question3Choice3,
         ),
         ChoiceChip(
-          choice: 'Stratosfer',
+          choice: _i10n.quiz2Question3Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Lapisan ozon diperlukan untuk melindungi Bumi dari radiasi sinar ultraviolet. Lapisan ozon ini terdapat pada ….',
+      quizQuestion: _i10n.quiz2Question4,
       choices: [
         ChoiceChip(
-          choice: 'Stratosfer',
+          choice: _i10n.quiz2Question4Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Termosfer',
+          choice: _i10n.quiz2Question4Choice2,
         ),
         ChoiceChip(
-          choice: 'Troposfer',
+          choice: _i10n.quiz2Question4Choice3,
         ),
         ChoiceChip(
-          choice: 'Mesosfer',
+          choice: _i10n.quiz2Question4Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Berikut ini yang merupakan fungsi dari lapisan ozon di atmosfer adalah .... ',
+      quizQuestion: _i10n.quiz2Question5,
       choices: [
         ChoiceChip(
-          choice: 'meindungi Bumi dari sinar ultraviolet ',
+          choice: _i10n.quiz2Question5Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'mengatur suhu Bumi ',
+          choice: _i10n.quiz2Question5Choice2,
         ),
         ChoiceChip(
-          choice: 'sebagai pemantul gelombang radio ',
+          choice: _i10n.quiz2Question5Choice3,
         ),
         ChoiceChip(
-          choice: 'melindungi Bumi dari cahaya Matahari ',
+          choice: _i10n.quiz2Question5Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion: 'Lapisan mesosfer berfungsi melindungi bumi dari...',
+      quizQuestion: _i10n.quiz2Question6,
       choices: [
         ChoiceChip(
-          choice: 'Benda luar angkasa yang jatuh ke bumi',
+          choice: _i10n.quiz2Question6Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Benda bumi yang jatuh ke bumi',
+          choice: _i10n.quiz2Question6Choice2,
         ),
         ChoiceChip(
-          choice: 'Radiasi matahari yang berupa ultraviolet',
+          choice: _i10n.quiz2Question6Choice3,
         ),
         ChoiceChip(
-          choice: 'Radiasi matahari yang berupa infra merah',
+          choice: _i10n.quiz2Question6Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Pada mesosfer dan termosfer terdapat lapisan \nyang memiliki partikel ion (bermuatan) yang \ndisebut lapisan …',
+      quizQuestion: _i10n.quiz2Question7,
       choices: [
         ChoiceChip(
-          choice: 'ionosfer',
+          choice: _i10n.quiz2Question7Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'termosfer',
+          choice: _i10n.quiz2Question7Choice2,
         ),
         ChoiceChip(
-          choice: 'stratosfer',
+          choice: _i10n.quiz2Question7Choice3,
         ),
         ChoiceChip(
-          choice: 'troposfer',
+          choice: _i10n.quiz2Question7Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion:
-          'Lapisan yang berada pada ketinggian diatas 500 Km, tempat mengorbit satelit buatan, memiliki molekul yang sangat sedikit. Merupakan lapisan atmosfer yaitu …',
+      quizQuestion: _i10n.quiz2Question8,
       choices: [
         ChoiceChip(
-          choice: 'Eksosfer',
+          choice: _i10n.quiz2Question8Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: 'Stratosfer',
+          choice: _i10n.quiz2Question8Choice2,
         ),
         ChoiceChip(
-          choice: 'Mesosfer',
+          choice: _i10n.quiz2Question8Choice3,
         ),
         ChoiceChip(
-          choice: 'Termosfer',
+          choice: _i10n.quiz2Question8Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion: 'Lapisan Troposfer berada pada ketinggian …',
+      quizQuestion: _i10n.quiz2Question9,
       choices: [
         ChoiceChip(
-          choice: '0 - 10 KM',
+          choice: _i10n.quiz2Question9Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: '10 - 50 KM',
+          choice: _i10n.quiz2Question9Choice2,
         ),
         ChoiceChip(
-          choice: '50 - 85 KM',
+          choice: _i10n.quiz2Question9Choice3,
         ),
         ChoiceChip(
-          choice: '85 - 500 KM',
+          choice: _i10n.quiz2Question9Choice4,
         ),
       ],
     ),
     MainQuizItem(
-      quizQuestion: 'Lapisan Mesosfer berada pada ketinggian …',
+      quizQuestion: _i10n.quiz2Question10,
       choices: [
         ChoiceChip(
-          choice: '50 - 85 KM',
+          choice: _i10n.quiz2Question10Choice1,
           isRightChoice: true,
         ),
         ChoiceChip(
-          choice: '0 - 10 KM',
+          choice: _i10n.quiz2Question10Choice2,
         ),
         ChoiceChip(
-          choice: '10 - 50 KM',
+          choice: _i10n.quiz2Question10Choice3,
         ),
         ChoiceChip(
-          choice: '85 - 500 KM',
+          choice: _i10n.quiz2Question10Choice4,
         ),
       ],
     ),
   ],
-  title: 'Atmosfer dan litosfer',
+  title: _i10n.quiz2Title,
 );

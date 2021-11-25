@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class ReferencModalBottom extends StatelessWidget {
   const ReferencModalBottom({Key? key}) : super(key: key);
@@ -59,7 +63,7 @@ class ReferencModalBottom extends StatelessWidget {
                     height: 20.h,
                   ),
                   Text(
-                    'References',
+                    _i10n.references,
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 20.sp,

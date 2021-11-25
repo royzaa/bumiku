@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import './start_learning_button.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class SynopsisModalBottom extends StatelessWidget {
   const SynopsisModalBottom({Key? key}) : super(key: key);
@@ -40,7 +44,7 @@ class SynopsisModalBottom extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Lapisan Bumi',
+                      _i10n.video1Title,
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 22.sp,
@@ -51,7 +55,7 @@ class SynopsisModalBottom extends StatelessWidget {
                       height: 10.h,
                     ),
                     Text(
-                      '''        Bumi merupakan planet ketiga dalam sistem tata surya, tempat yang paling ideal bagi makhluk hidup untuk tinggal. Di dalamnya terdapat semua yang diperlukan untuk membantu kehidupan, termasuk berbagai macam mineral. Bumi tersusun oleh 3 lapisan, dari dalam keluar yaitu lapisan inti bumi, lapisan selimut bumi, dan lapisan kulit bumi.''',
+                      _i10n.summaryContent,
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 17.sp,

@@ -4,6 +4,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import '../../learning_enrichment_screen/learning_enrichement_screen.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class StartLearningButton extends StatelessWidget {
   const StartLearningButton({
@@ -60,7 +64,7 @@ class StartLearningButton extends StatelessWidget {
                 width: constraints.maxWidth - 40.w - 24.w - 15.w,
                 child: FittedBox(
                   child: Text(
-                    'Start learning',
+                    _i10n.startLearning,
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,

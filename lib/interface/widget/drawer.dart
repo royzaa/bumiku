@@ -5,6 +5,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import './dialog_exit.dart';
 import './cached_image.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -38,7 +42,7 @@ class MyDrawer extends StatelessWidget {
                   height: 10.h,
                 ),
                 Text(
-                  'Bumiku - Lapisan bumi dan bencana alam',
+                  _i10n.bumikuTagLine,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w600,
@@ -73,7 +77,7 @@ class MyDrawer extends StatelessWidget {
                       size: 24.r,
                     ),
                     title: Text(
-                      'More apps',
+                      _i10n.moreApps,
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,
@@ -98,7 +102,7 @@ class MyDrawer extends StatelessWidget {
                     size: 24.r,
                   ),
                   title: Text(
-                    'Exit',
+                    _i10n.exit,
                     style: TextStyle(
                         color: Colors.grey,
                         fontWeight: FontWeight.w600,

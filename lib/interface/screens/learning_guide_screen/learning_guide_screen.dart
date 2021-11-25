@@ -6,8 +6,11 @@ import 'package:get/get.dart';
 import '../../../data/learning_guide_data.dart';
 import './widgets/learning_guide_card.dart';
 import './widgets/learning_guide_desc.dart';
-
 import '../../../services/audio_player_controller.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class LearningGuideScreen extends StatefulWidget {
   const LearningGuideScreen({Key? key}) : super(key: key);
@@ -62,7 +65,7 @@ class _LearningGuideScreenState extends State<LearningGuideScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Learning guide',
+                              _i10n.learningGuide,
                               style: TextStyle(
                                 fontSize: 20.sp,
                                 color: Colors.black87,
@@ -73,7 +76,7 @@ class _LearningGuideScreenState extends State<LearningGuideScreen> {
                               height: 2.5.h,
                             ),
                             Text(
-                              'Follow our guide, be agile!',
+                              _i10n.learningGuideDesc,
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 color: Colors.grey,
@@ -105,7 +108,7 @@ class _LearningGuideScreenState extends State<LearningGuideScreen> {
                   vertical: 8.h,
                 ),
                 child: Text(
-                  'Step ${_currentIndex + 1}',
+                  _i10n.step('${_currentIndex + 1}'),
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 17.sp,
@@ -186,9 +189,6 @@ class _LearningGuideScreenState extends State<LearningGuideScreen> {
                   },
                 ),
               ),
-              // SizedBox(
-              //   height: 20.h,
-              // ),
               SizedBox(
                 height: 8.h,
                 child: ListView.builder(

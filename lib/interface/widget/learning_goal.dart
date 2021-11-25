@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import './cached_svg.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class LearningGoal extends StatelessWidget {
   const LearningGoal({Key? key}) : super(key: key);
@@ -10,9 +14,9 @@ class LearningGoal extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final learningGoal = <String>[
-      'Siswa dapat menyusun teks deskripsi berisi karakteristik kendaraan transportasi kota',
-      'Siswa mampu menyimpulkan penerapan Hukum Newton dari suatu fenomena ',
-      'Siswa mampu menghitung luas dan volume geometri dari objek pada kendaraan transportasi kota. ',
+      _i10n.learningGoal10,
+      _i10n.learningGoal11,
+      _i10n.learningGoal12,
     ];
     return DraggableScrollableSheet(
         initialChildSize: 0.7,
@@ -47,7 +51,7 @@ class LearningGoal extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          'Learning goal',
+                          _i10n.speedDial1,
                           style: TextStyle(
                             color: Theme.of(context).primaryColor,
                             fontSize: 20.sp,

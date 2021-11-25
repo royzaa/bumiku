@@ -9,6 +9,10 @@ import '../../../widget/cached_svg.dart';
 import '../../quiz_screen/quiz_screen.dart';
 import '../../../../services/audio_player_controller.dart';
 import '../../../../services/quiz_controller.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class QuizBox extends StatelessWidget {
   const QuizBox({
@@ -44,13 +48,13 @@ class QuizBox extends StatelessWidget {
                 ),
                 buttonPadding: EdgeInsets.all(24.r),
                 title: Text(
-                  '😊 Hi, are you ready?',
+                  _i10n.areYouReady,
                   style: TextStyle(
                     fontSize: 19.sp,
                   ),
                 ),
                 content: Text(
-                  'Pray first before you try to practice. Ensure you have already all set. After you click ready, you cannot go back until you finish the quiz.',
+                  _i10n.areYouReadyDesc,
                   style: TextStyle(
                     fontSize: 15.sp,
                   ),
@@ -80,7 +84,7 @@ class QuizBox extends StatelessWidget {
                         ],
                       ),
                       child: Text(
-                        'Not yet',
+                        _i10n.notYet,
                         style: TextStyle(
                           color: Theme.of(context).primaryColor,
                           fontSize: 16.sp,
@@ -118,7 +122,7 @@ class QuizBox extends StatelessWidget {
                         ],
                       ),
                       child: Text(
-                        'I am ready',
+                        _i10n.iAmReady,
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 16.sp,
@@ -133,7 +137,7 @@ class QuizBox extends StatelessWidget {
         } else {
           HapticFeedback.mediumImpact();
           Fluttertoast.showToast(
-            msg: 'Complete previous quiz, please',
+            msg: _i10n.completePrevious,
             gravity: ToastGravity.BOTTOM,
             fontSize: 18.sp,
           );
@@ -195,7 +199,7 @@ class QuizBox extends StatelessWidget {
             height: 8.h,
           ),
           Text(
-            'Quiz $numQuiz',
+            _i10n.quizNum(numQuiz.toString()),
             style: TextStyle(fontSize: 14.sp),
           ),
         ],

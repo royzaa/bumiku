@@ -11,6 +11,10 @@ import '../youtube_player_screen/youtube_player_screen.dart';
 import '../../../data/lessons_data.dart';
 import '../lesson_screen/lessons_screen.dart';
 import '../../../services/audio_player_controller.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class LearningEnrichmentScreen extends StatefulWidget {
   const LearningEnrichmentScreen({Key? key}) : super(key: key);
@@ -25,21 +29,21 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
 
   final List<Map<String, dynamic>> _subjects = [
     {
-      'title': 'Lapisan Bumi',
+      'title': _i10n.video1Title,
       'icon': null,
       'lightIcon': null,
       'asset': 'assets/images/earth_layer1.png',
       'lightAsset': 'assets/images/earth_layer2.png',
     },
     {
-      'title': 'Atmosfer & Litosfer',
+      'title': _i10n.video2Title,
       'asset': 'assets/images/night.png',
       'lightAsset': 'assets/images/day.png',
       'icon': null,
       'lightIcon': null,
     },
     {
-      'title': 'Gunung Api, Gempa Bumi, & Tsunami',
+      'title': _i10n.video4Title,
       'asset': 'assets/images/mountain1.png',
       'lightAsset': 'assets/images/mountain2.png',
       'icon': null,
@@ -67,67 +71,67 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
     final List<List<Map<String, dynamic>>> _lessons = [
       [
         {
-          'title': 'Lapisan penyusun bumi',
+          'title': _i10n.lessonNameForEarthLayer0,
           'icon': Icons.looks_one,
         },
         {
-          'title': 'Lapisan inti bumi',
+          'title': _i10n.lessonNameForEarthLayer1,
           'icon': Icons.looks_two,
         },
         {
-          'title': 'Lapisan mantel bumi',
+          'title': _i10n.lessonNameForEarthLayer2,
           'icon': Icons.looks_3,
         },
         {
-          'title': 'Lapisan kulit bumi',
+          'title': _i10n.lessonNameForEarthLayer3,
           'icon': Icons.looks_4,
         },
       ],
       [
         {
-          'title': 'Lapisan Litosfer',
+          'title': _i10n.lessonNameForAtmosphere0,
           'icon': Icons.looks_one,
         },
         {
-          'title': 'Lapisan Atmosfer',
+          'title': _i10n.lessonNameForAtmosphere1,
           'icon': Icons.looks_two,
         },
       ],
       [
         {
-          'title': 'Struktur gunung api',
+          'title': _i10n.lessonNameForVolcano0,
           'icon': Icons.filter_1,
         },
         {
-          'title': 'Klasifikasi gunung part 1',
+          'title': _i10n.lessonNameForVolcano1,
           'icon': Icons.filter_2,
         },
         {
-          'title': 'Klasifikasi gunung part 2',
+          'title': _i10n.lessonNameForVolcano2,
           'icon': Icons.filter_3,
         },
         {
-          'title': 'Proses terbentuknya gunung api',
+          'title': _i10n.lessonNameForVolcano3,
           'icon': Icons.filter_4,
         },
         {
-          'title': 'Gempa bumi',
+          'title': _i10n.lessonNameForVolcano4,
           'icon': Icons.filter_5,
         },
         {
-          'title': 'Macam gempa bumi',
+          'title': _i10n.lessonNameForVolcano5,
           'icon': Icons.filter_6,
         },
         {
-          'title': 'Pergerakan lempeng',
+          'title': _i10n.lessonNameForVolcano6,
           'icon': Icons.filter_7,
         },
         {
-          'title': 'Lipatan dan Patahan',
+          'title': _i10n.lessonNameForVolcano7,
           'icon': Icons.filter_8,
         },
         {
-          'title': 'Tsunami',
+          'title': _i10n.lessonNameForVolcano8,
           'icon': Icons.filter_9,
         },
       ],
@@ -136,7 +140,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
     final List<List<Map<String, dynamic>>> _actions = [
       [
         {
-          'title': 'Lapisan Bumi',
+          'title': _i10n.actionTitle0,
           'imageUrl':
               'https://unsplash.com/photos/71QXQUSC_Do/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8ZWFydGh8fDB8fHx8MTYzNDY1MDM5OQ&force=true&w=1920',
           'function': () {
@@ -151,7 +155,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
       ],
       [
         {
-          'title': 'Atmosfer bumi',
+          'title': _i10n.actionTitle1,
           'imageUrl':
               'https://unsplash.com/photos/HNkgPFBShSw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8ZWFydGh8fDB8fHx8MTYzNDY1MDM5OQ&force=true&w=1920',
           'function': () {
@@ -163,7 +167,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
           },
         },
         {
-          'title': 'Litosfer bumi',
+          'title': _i10n.actionTitle2,
           'imageUrl':
               'https://unsplash.com/photos/EXdO9Z9Aof0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8ZWFydGglMjBsYXllcnx8MHx8fHwxNjM0NjQ1MTcw&force=true&w=1920',
           'function': () {
@@ -177,7 +181,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
       ],
       [
         {
-          'title': 'Bentuk dan tipe gunung api',
+          'title': _i10n.actionTitle3,
           'imageUrl':
               'https://unsplash.com/photos/xfngap_DToE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8bW91bnRhaW58fDB8fHx8MTYzNDY1MDkxOQ&force=true&w=1920',
           'function': () {
@@ -189,7 +193,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
           },
         },
         {
-          'title': 'Terjadinya gunung api',
+          'title': _i10n.actionTitle4,
           'imageUrl':
               'https://unsplash.com/photos/VbP9v1rh-sc/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0NjUyODc0&force=true&w=1920',
           'function': () {
@@ -202,7 +206,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
           },
         },
         {
-          'title': 'Mengenal Macam-macam Gempa Bumi dan Penyebab Terjadinya',
+          'title': _i10n.actionTitle5,
           'imageUrl':
               'https://unsplash.com/photos/9xAYGSnNmo0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTN8fHRzdW5hbWl8fDB8fHx8MTYzNDY0MTA3OQ&force=true&w=1920',
           'function': () {
@@ -215,7 +219,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
           },
         },
         {
-          'title': 'Pergerakan lempeng',
+          'title': _i10n.actionTitle6,
           'imageUrl':
               'https://unsplash.com/photos/yNFVWsQicdg/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0NjUzMDg4&force=true&w=1920',
           'function': () {
@@ -229,7 +233,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
           },
         },
         {
-          'title': 'Lipatan dan Patahan',
+          'title': _i10n.actionTitle7,
           'imageUrl':
               'https://unsplash.com/photos/B9Csff69Rfg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8dGVjdG9uaWN8fDB8fHx8MTYzNDY1Mjk0Ng&force=true&w=1920',
           'function': () {
@@ -270,7 +274,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
                         Padding(
                           padding: EdgeInsets.only(top: 8.h),
                           child: Text(
-                            'Learning enrichment',
+                            _i10n.learningMaterial,
                             style: TextStyle(fontSize: 20.sp),
                           ),
                         ),
@@ -384,7 +388,7 @@ class _LearningEnrichmentScreenState extends State<LearningEnrichmentScreen> {
                 height: 20.h,
               ),
               Text(
-                'Lessons',
+                _i10n.lessons,
                 style: TextStyle(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.bold,

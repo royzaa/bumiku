@@ -5,6 +5,10 @@ import 'package:flutter_placeholder_textlines/flutter_placeholder_textlines.dart
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../services/shared_preferences.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class WelcomeDialog extends StatefulWidget {
   const WelcomeDialog({Key? key}) : super(key: key);
@@ -75,7 +79,7 @@ class _WelcomeDialogState extends State<WelcomeDialog> {
                   height: 20.h,
                 ),
                 Text(
-                  'Hi, what\'s your name?',
+                  _i10n.hi,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 18.sp,
@@ -86,7 +90,7 @@ class _WelcomeDialogState extends State<WelcomeDialog> {
                   height: 12.5.h,
                 ),
                 Text(
-                  'Would you like to introduce your self to us? I am very happy to meet you',
+                  _i10n.hiDesc,
                   maxLines: 2,
                   style: TextStyle(
                     color: Colors.black,
@@ -103,24 +107,30 @@ class _WelcomeDialogState extends State<WelcomeDialog> {
                     autovalidateMode: AutovalidateMode.onUserInteraction,
                     validator: (name) {
                       if (name == '' || name!.isEmpty) {
-                        return 'Please input your name corectly';
+                        return _i10n.nameCorrection;
                       } else {
                         return null;
                       }
                     },
                     controller: controller,
-                    cursorColor: Colors.black,
+                    cursorColor: Colors.green,
                     decoration: InputDecoration(
                       prefixIcon: Icon(
                         Icons.person,
                         color: Colors.grey,
                         size: 24.r,
                       ),
-                      labelText: 'Your name',
+                      labelText: _i10n.yourName,
                       labelStyle: const TextStyle(color: Colors.black),
                       floatingLabelBehavior: FloatingLabelBehavior.always,
-                      enabledBorder: const UnderlineInputBorder(
+                      disabledBorder: const UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey),
+                      ),
+                      border: const UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.black),
+                      ),
+                      focusedBorder: const UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.green),
                       ),
                     ),
                   ),
@@ -142,7 +152,7 @@ class _WelcomeDialogState extends State<WelcomeDialog> {
                   child: SizedBox(
                     width: size.width * 0.5.w,
                     child: Text(
-                      'Let\'s go!',
+                      _i10n.letsGo,
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
@@ -160,7 +170,7 @@ class _WelcomeDialogState extends State<WelcomeDialog> {
                     SystemNavigator.pop();
                   },
                   child: Text(
-                    'Exit, I\'ll try later',
+                    _i10n.exitTryLater,
                     style: TextStyle(
                         color: Colors.grey,
                         fontWeight: FontWeight.w500,

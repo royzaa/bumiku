@@ -15,6 +15,10 @@ import '../../../data/quizes.dart';
 import '../../../services/shared_preferences.dart';
 import '../../widget/share_card.dart';
 import '../../widget/my_show_case.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class ResultScreen extends StatefulWidget {
   const ResultScreen({Key? key}) : super(key: key);
@@ -80,8 +84,8 @@ class _ResultScreenState extends State<ResultScreen> {
           },
           child: MyShowCase(
             showCaseKey: _five,
-            desc: 'Tekan untuk membagikan pencapaian anda',
-            title: 'Bagikan',
+            desc: _i10n.shareDesc,
+            title: _i10n.share,
             child: Icon(
               Icons.share,
               size: 28.r,
@@ -129,7 +133,7 @@ class _ResultScreenState extends State<ResultScreen> {
                         ),
                       ),
                       child: Text(
-                        "Back to home",
+                        _i10n.BackHome,
                         style: TextStyle(
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w500,

@@ -3,15 +3,19 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import './widget/pop_up_volume.dart';
+import './widget/pop_up_settings.dart';
 import './widget/menus.dart';
-import 'widget/quiiz_box.dart';
+import './widget/quiiz_box.dart';
 import '../../../data/quizes.dart';
 import '../../widget/my_show_case.dart';
 import '../../../services/shared_preferences.dart';
 import '../../../services/time_session.dart';
 import '../../widget/cached_image.dart';
 import './widget/statistics.dart';
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
 
 class PlayScreen extends StatefulWidget {
   static const routeName = '/player-screen';
@@ -112,7 +116,7 @@ class _PlayScreenState extends State<PlayScreen>
                 icon: MyShowCase(
                   showCaseKey: widget.secondShowCaseKey,
                   title: 'Drawer',
-                  desc: 'Here you can find other specific menu',
+                  desc: _i10n.drawerDesc,
                   child: Icon(
                     Icons.filter_list,
                     size: 32.r,
@@ -124,10 +128,10 @@ class _PlayScreenState extends State<PlayScreen>
               backgroundColor: Colors.white,
               actions: [
                 MyShowCase(
-                  title: "Settings",
-                  desc: "Tap here to adjust app setting",
+                  title: _i10n.setting,
+                  desc: _i10n.settingDesc,
                   showCaseKey: widget.thirdShowCaseKey,
-                  child: PopUpVolume(
+                  child: PopUpSettings(
                     iconColor: drawerColor,
                   ),
                 ),
@@ -182,7 +186,7 @@ class _PlayScreenState extends State<PlayScreen>
                   height: 20.h,
                 ),
                 Text(
-                  'Select menu',
+                  _i10n.selectMenu,
                   style:
                       TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w600),
                 ),
@@ -190,7 +194,7 @@ class _PlayScreenState extends State<PlayScreen>
                   height: 5.h,
                 ),
                 Text(
-                  'Find menu you want to explore',
+                  _i10n.selectMenuDesc,
                   style: TextStyle(
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w600,
@@ -201,7 +205,7 @@ class _PlayScreenState extends State<PlayScreen>
                 ),
                 MyShowCase(
                   title: 'Menu',
-                  desc: "You can select menu icon to start your learning",
+                  desc: _i10n.menuBarDesc,
                   showCaseKey: widget.fourthShowCaseKey,
                   child: const Menus(),
                 ),
@@ -209,7 +213,7 @@ class _PlayScreenState extends State<PlayScreen>
                   height: 20.h,
                 ),
                 Text(
-                  'Quizes',
+                  _i10n.quizes,
                   style:
                       TextStyle(fontSize: 22.sp, fontWeight: FontWeight.w600),
                 ),
@@ -238,7 +242,7 @@ class _PlayScreenState extends State<PlayScreen>
                   height: 25.h,
                 ),
                 Text(
-                  'Statistics',
+                  _i10n.stat,
                   style: TextStyle(
                     fontSize: 22.sp,
                     fontWeight: FontWeight.bold,

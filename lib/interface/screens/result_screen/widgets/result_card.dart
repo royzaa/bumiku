@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../l10n/generated/l10n.dart';
+import '../../../../services/locator.dart';
+
+final I10n _i10n = locator<I10n>();
+
 class ResultCard extends StatefulWidget {
   const ResultCard({
     Key? key,
@@ -72,7 +77,7 @@ class _ResultCardState extends State<ResultCard>
               borderRadius: BorderRadius.circular(40.r),
             ),
             child: Text(
-              'Congratulation',
+              _i10n.congrat,
               style: TextStyle(
                 color: Theme.of(context).primaryColor,
                 fontSize: 16.sp,
@@ -83,7 +88,7 @@ class _ResultCardState extends State<ResultCard>
           SizedBox(
             width: widget.mediaQuery.width.w * 0.5,
             child: Text(
-              'Your experiences have increased by',
+              _i10n.expGet,
               style: TextStyle(
                 color: Theme.of(context).primaryColor,
                 fontSize: 16.sp,
@@ -166,7 +171,7 @@ class _ResultCardState extends State<ResultCard>
                         },
                       ),
                       Text(
-                        'points',
+                        _i10n.points,
                         style: TextStyle(
                           color: Colors.grey.shade400,
                           fontSize: 12.sp,
@@ -179,7 +184,7 @@ class _ResultCardState extends State<ResultCard>
             ),
           ),
           Text(
-            "Keep up your spirit!",
+            _i10n.keepUpSpirirt,
             style: TextStyle(
               color: Theme.of(context).primaryColor,
               fontSize: 16.sp,
