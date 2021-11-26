@@ -21,6 +21,8 @@ class DataSharedPreferences {
 
   static const _keyFirstTimeResult = 'result';
 
+  static const _lang = 'i10n';
+
   static Future init() async =>
       _preferences = await SharedPreferences.getInstance();
 
@@ -117,4 +119,12 @@ class DataSharedPreferences {
         0,
         0,
       ];
+
+  /// language setting
+  static Future<bool> setLocaleCode(String code) async {
+    return _preferences.setString(_lang, code);
+  }
+
+  /// get locale code
+  static String? getLocaleCode() => _preferences.getString(_lang);
 }

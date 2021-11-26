@@ -1010,10 +1010,10 @@ class I10n {
     );
   }
 
-  /// `Kerak bumi`
+  /// `Atmosfer bumi`
   String get quiz1Question10Choice4 {
     return Intl.message(
-      'Kerak bumi',
+      'Atmosfer bumi',
       name: 'quiz1Question10Choice4',
       desc: '',
       args: [],
@@ -1610,10 +1610,10 @@ class I10n {
     );
   }
 
-  /// `Kontribusimu sangat berarti`
+  /// `Kontribusimu sangat berarti untuk\npengembangan aplikasi`
   String get thanksDesc {
     return Intl.message(
-      'Kontribusimu sangat berarti',
+      'Kontribusimu sangat berarti untuk\npengembangan aplikasi',
       name: 'thanksDesc',
       desc: 'thanksDesc',
       args: [],
@@ -2020,10 +2020,10 @@ class I10n {
     );
   }
 
-  /// `Saya sudah siap`
+  /// `Saya siap`
   String get iAmReady {
     return Intl.message(
-      'Saya sudah siap',
+      'Saya siap',
       name: 'iAmReady',
       desc: 'i am ready',
       args: [],
@@ -2060,10 +2060,10 @@ class I10n {
     );
   }
 
-  /// `Ketepatan`
+  /// `Akurasi`
   String get accuracy {
     return Intl.message(
-      'Ketepatan',
+      'Akurasi',
       name: 'accuracy',
       desc: 'accuracy',
       args: [],

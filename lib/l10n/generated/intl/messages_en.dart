@@ -250,7 +250,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "quiz1Question10Choice3":
             MessageLookupByLibrary.simpleMessage("Earth Mantle"),
         "quiz1Question10Choice4":
-            MessageLookupByLibrary.simpleMessage("Earth\'s crust"),
+            MessageLookupByLibrary.simpleMessage("Earth\'s atmosphere"),
         "quiz1Question1Choice1": MessageLookupByLibrary.simpleMessage("3"),
         "quiz1Question1Choice2": MessageLookupByLibrary.simpleMessage("1"),
         "quiz1Question1Choice3": MessageLookupByLibrary.simpleMessage("2"),
@@ -480,7 +480,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "tapTwice": MessageLookupByLibrary.simpleMessage("Double tap to exit"),
         "thanks": MessageLookupByLibrary.simpleMessage("Thank you"),
         "thanksDesc": MessageLookupByLibrary.simpleMessage(
-            "Your contributions give enhancement in this project"),
+            "Your contributions give enhancement\n in this project"),
         "totalCorrect":
             MessageLookupByLibrary.simpleMessage("Total correct answer :   "),
         "tryTimes": m7,

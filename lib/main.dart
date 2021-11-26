@@ -26,14 +26,13 @@ import './services/lang_controller.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await DataSharedPreferences.init();
-  await _localPath().then((dirApp) async {
-    await compute(writeMusicinLocal, dirApp);
-  });
   setupLocator();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((_) => runApp(const MyApp()));
+  await _localPath().then((dirApp) async {
+    await compute(writeMusicinLocal, dirApp);
+  });
 }
 
 Future<String> _localPath() async {
@@ -138,7 +137,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
           },
-          locale: langController.langValue ?? const Locale('id', ''),
+          locale: langController.langValue,
           supportedLocales: I10n.delegate.supportedLocales,
           localizationsDelegates: const [
             I10n.delegate,

@@ -42,7 +42,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "BackHome": MessageLookupByLibrary.simpleMessage("Ke Halaman Utama"),
-        "accuracy": MessageLookupByLibrary.simpleMessage("Ketepatan"),
+        "accuracy": MessageLookupByLibrary.simpleMessage("Akurasi"),
         "actionTitle0": MessageLookupByLibrary.simpleMessage("Lapisan Bumi"),
         "actionTitle1": MessageLookupByLibrary.simpleMessage("Atmosfer Bumi"),
         "actionTitle2": MessageLookupByLibrary.simpleMessage("Litosfer Bumi"),
@@ -104,7 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "hi": MessageLookupByLibrary.simpleMessage("Hai, siapa namamu?"),
         "hiDesc": MessageLookupByLibrary.simpleMessage(
             "Akankah kamu bersedia mengenalkan dirimu kepada kami? Saya sangat senang bertemu denganmu"),
-        "iAmReady": MessageLookupByLibrary.simpleMessage("Saya sudah siap"),
+        "iAmReady": MessageLookupByLibrary.simpleMessage("Saya siap"),
         "keepUpSpirirt":
             MessageLookupByLibrary.simpleMessage("Tetap jaga semangatmu"),
         "language": MessageLookupByLibrary.simpleMessage("Indonesia"),
@@ -254,7 +254,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "quiz1Question10Choice3":
             MessageLookupByLibrary.simpleMessage("Mantel bumi"),
         "quiz1Question10Choice4":
-            MessageLookupByLibrary.simpleMessage("Kerak bumi"),
+            MessageLookupByLibrary.simpleMessage("Atmosfer bumi"),
         "quiz1Question1Choice1": MessageLookupByLibrary.simpleMessage("3"),
         "quiz1Question1Choice2": MessageLookupByLibrary.simpleMessage("1"),
         "quiz1Question1Choice3": MessageLookupByLibrary.simpleMessage("2"),
@@ -484,8 +484,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "tapTwice":
             MessageLookupByLibrary.simpleMessage("Ketuk dua kali untuk keluar"),
         "thanks": MessageLookupByLibrary.simpleMessage("Terima kasih"),
-        "thanksDesc":
-            MessageLookupByLibrary.simpleMessage("Kontribusimu sangat berarti"),
+        "thanksDesc": MessageLookupByLibrary.simpleMessage(
+            "Kontribusimu sangat berarti untuk\npengembangan aplikasi"),
         "totalCorrect":
             MessageLookupByLibrary.simpleMessage("Total jawaban benar :   "),
         "tryTimes": m7,

@@ -276,7 +276,7 @@
     "quiz1Question10Choice1": "Kerak bumi",
     "quiz1Question10Choice2": "Inti bumi",
     "quiz1Question10Choice3": "Mantel bumi",
-    "quiz1Question10Choice4": "Kerak bumi",
+    "quiz1Question10Choice4": "Atmosfer bumi",
     "quiz1Title": "Lapisan bumi",
     "@quiz1Title": {
         "description" : "quiz 1 title"   
@@ -393,7 +393,7 @@
     "@thanks": {
         "description" : "thanks"   
     },
-    "thanksDesc" : "Kontribusimu sangat berarti",
+    "thanksDesc" : "Kontribusimu sangat berarti untuk\npengembangan aplikasi",
     "@thanksDesc": {
         "description" : "thanksDesc"   
     },
@@ -562,7 +562,7 @@
     "@notYet": {
         "description" : "not yet"   
     },
-    "iAmReady" : "Saya sudah siap",
+    "iAmReady" : "Saya siap",
     "@iAmReady": {
         "description" : "i am ready"   
     },
@@ -583,7 +583,7 @@
     "@dontHaveStat": {
         "description" : "dontHaveStat"   
     },
-    "accuracy" : "Ketepatan",
+    "accuracy" : "Akurasi",
     "@accuracy": {
         "description" : "accuracy"   
     },
