@@ -23,11 +23,10 @@ class LangController extends GetxController {
 
     if (savedLocale == 'id') {
       _langValue = const Locale('id', '');
-    } else if (lang == 'en') {
+    } else if (savedLocale == 'en') {
       _langValue = const Locale('en', '');
     }
-    update();
-    if (langRefresh != null) {
+    if (langRefresh != null && localeCode.isNotEmpty) {
       langRefresh!();
     }
   }
