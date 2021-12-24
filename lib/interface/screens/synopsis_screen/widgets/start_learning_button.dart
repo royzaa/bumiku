@@ -16,69 +16,58 @@ class StartLearningButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return ConstrainedBox(
-      constraints: BoxConstraints(
-        maxHeight: size.height * 0.125.h,
-        minWidth: size.width * 0.4.w,
-        maxWidth: size.width * 0.5.w,
-        minHeight: size.height * 0.08.h,
-      ),
-      child: LayoutBuilder(
-        builder: (context, constraints) => ElevatedButton(
-          onPressed: () {
-            HapticFeedback.mediumImpact();
-            Get.to(
-              const LearningEnrichmentScreen(),
-              transition: Transition.rightToLeftWithFade,
-            );
-          },
-          style: ElevatedButton.styleFrom(
-            maximumSize: Size(constraints.maxWidth, constraints.maxHeight),
-            minimumSize: Size(constraints.minWidth, constraints.minHeight),
-            alignment: Alignment.center,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30.r),
-            ),
-            primary: const Color.fromRGBO(
-              255,
-              135,
-              127,
-              1,
-            ),
-            shadowColor: const Color.fromRGBO(
-              255,
-              135,
-              127,
-              0.25,
-            ),
-            elevation: 20,
-            padding: EdgeInsets.symmetric(
-              horizontal: 20.w,
-            ),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              SizedBox(
-                width: constraints.maxWidth - 40.w - 24.w - 15.w,
-                child: FittedBox(
-                  child: Text(
-                    _i10n.startLearning,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 14.sp),
-                  ),
-                ),
-              ),
-              const Icon(
-                Icons.arrow_forward,
-                color: Colors.white,
-              )
-            ],
-          ),
+    //   Size size = MediaQuery.of(context).size;
+    return ElevatedButton(
+      onPressed: () {
+        HapticFeedback.mediumImpact();
+        Get.to(
+          const LearningEnrichmentScreen(),
+          transition: Transition.rightToLeftWithFade,
+        );
+      },
+      style: ElevatedButton.styleFrom(
+        alignment: Alignment.center,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30.r),
         ),
+        primary: const Color.fromRGBO(
+          255,
+          135,
+          127,
+          1,
+        ),
+        shadowColor: const Color.fromRGBO(
+          255,
+          135,
+          127,
+          0.25,
+        ),
+        elevation: 20,
+        padding: EdgeInsets.symmetric(
+          horizontal: 35.w,
+          vertical: 20.w,
+        ),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            _i10n.startLearning,
+            style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+                fontSize: 16.sp),
+          ),
+          SizedBox(
+            width: 30.w,
+          ),
+          Icon(
+            Icons.arrow_forward,
+            color: Colors.white,
+            size: 24.sp,
+          )
+        ],
       ),
     );
   }

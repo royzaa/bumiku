@@ -70,12 +70,12 @@ class SubjectBox extends StatelessWidget {
               height: 15.h,
             ),
             Expanded(
-              flex: 1,
+              flex: 2,
               child: Text(
                 title,
                 style: TextStyle(
                   color: isSelected ? Colors.white : Colors.black,
-                  fontSize: 12.sp,
+                  fontSize: title.length < 22 ? 12.sp : 11.sp,
                 ),
               ),
             ),

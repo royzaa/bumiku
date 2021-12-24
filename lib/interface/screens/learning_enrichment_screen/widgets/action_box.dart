@@ -69,7 +69,10 @@ class ActionBox extends StatelessWidget {
                     children: [
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          fixedSize: Size(153.w, 53.h),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 24.r,
+                            vertical: 15.r,
+                          ),
                           primary: Theme.of(context).primaryColor,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.r),
@@ -88,6 +91,7 @@ class ActionBox extends StatelessWidget {
                             ],
                           ),
                           child: Row(
+                            mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.play_arrow_rounded,
